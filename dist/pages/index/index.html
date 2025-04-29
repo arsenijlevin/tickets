@@ -1,0 +1,976 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Главная</title>
+    <script type="module" crossorigin src="/tickets/pages/index/index.js"></script>
+    <link rel="stylesheet" crossorigin href="/tickets/pages/index/index.css">
+  </head>
+
+  <body>
+    <header class="main-header grid-wrapper">
+      <div class="shop-logo">
+        <img src="/tickets/assets/icons/logo-shop.svg" alt="Магазин 'никола-ленивец'" />
+      </div>
+      <div class="header-menu">
+        <div class="cart">
+          <img src="data:image/svg+xml,%3csvg%20width='36'%20height='43'%20viewBox='0%200%2036%2043'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M0.0149176%2018L0%2020.7523L35.9851%2021L36%2018.2477L0.0149176%2018Z'%20fill='%231D1D1B'/%3e%3cpath%20d='M11.0649%2039L11%2041.6137L23.9351%2042L24%2039.3863L11.0649%2039Z'%20fill='%231D1D1B'/%3e%3cpath%20d='M33.6544%2022L26%2040.1052L28.3456%2041L36%2022.8948L33.6544%2022Z'%20fill='%231D1D1B'/%3e%3cpath%20d='M2.28864%2022L0%2022.9154L7.71136%2041L10%2040.0846L2.28864%2022Z'%20fill='%231D1D1B'/%3e%3cpath%20d='M21.1244%200L19%200.999442L25.8756%2017L28%2016.0006L21.1244%200Z'%20fill='%231D1D1B'/%3e%3cpath%20d='M14.8545%200L8%2015.0216L10.1455%2016L17%200.978317L14.8545%200Z'%20fill='%231D1D1B'/%3e%3c/svg%3e" alt="Корзина" />
+          <span class="cart__counter">1</span>
+        </div>
+        <div class="mobile-navigation">
+          <button class="btn btn__mobile-menu">
+            <img src="data:image/svg+xml,%3csvg%20width='27'%20height='14'%20viewBox='0%200%2027%2014'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M27%200.5H0V3.5H27V0.5Z'%20fill='black'/%3e%3cpath%20d='M27%205.5H0V8.5H27V5.5Z'%20fill='black'/%3e%3cpath%20d='M27%2010.5H0V13.5H27V10.5Z'%20fill='black'/%3e%3c/svg%3e" alt="Открыть меню навигации" />
+          </button>
+        </div>
+        <button class="btn cart-overlay">
+          <span>оформить заказ</span>
+          <div class="cart">
+            <img src="data:image/svg+xml,%3csvg%20width='36'%20height='43'%20viewBox='0%200%2036%2043'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M0.0149176%2018L0%2020.7523L35.9851%2021L36%2018.2477L0.0149176%2018Z'%20fill='%231D1D1B'/%3e%3cpath%20d='M11.0649%2039L11%2041.6137L23.9351%2042L24%2039.3863L11.0649%2039Z'%20fill='%231D1D1B'/%3e%3cpath%20d='M33.6544%2022L26%2040.1052L28.3456%2041L36%2022.8948L33.6544%2022Z'%20fill='%231D1D1B'/%3e%3cpath%20d='M2.28864%2022L0%2022.9154L7.71136%2041L10%2040.0846L2.28864%2022Z'%20fill='%231D1D1B'/%3e%3cpath%20d='M21.1244%200L19%200.999442L25.8756%2017L28%2016.0006L21.1244%200Z'%20fill='%231D1D1B'/%3e%3cpath%20d='M14.8545%200L8%2015.0216L10.1455%2016L17%200.978317L14.8545%200Z'%20fill='%231D1D1B'/%3e%3c/svg%3e" alt="Корзина" />
+            <span class="cart__counter">1</span>
+          </div>
+        </button>
+      </div>
+
+      <div class="desktop-navigation">
+        <nav>
+          <ul class="list">
+            <li class="typography-h3"><a class="link" href="#">мерч</a></li>
+            <li class="typography-h3"><a class="link" href="#">школа</a></li>
+            <li class="typography-h3"><a class="link" href="#">арт-объекты</a></li>
+            <li class="typography-h3"><a class="link" href="#">фестивали</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main-content grid-wrapper">
+      <section class="hero-section">
+        <div class="hero-text">
+          <h1>масленица 2025</h1>
+          <p>
+            раздел для тех, кому нужно докупить билет определенной категории или выбрать сразу несколько сценариев
+            поездки для большой компании.
+          </p>
+          <p>
+            <b>прежде чем покупать входной билет — продумайте, как будете добираться.</b>
+          </p>
+          <p>обратите внимание: в 1 заказе можно оплатить 1 место на парковку.</p>
+          <p>
+            оставить машину «где-нибудь» без билета на парковку не получится: расчищенную площадку окружают заснеженные
+            поля, на которых небезопасно оставлять машину.
+          </p>
+          <p>
+            ответы на частые вопросы собрали
+            <a href="#">тут</a>
+          </p>
+        </div>
+        <div class="hero-image">
+          <img src="/tickets/assets/img/hero.png" alt="1 марта 2025, масленица в никола-ленивце" />
+        </div>
+      </section>
+      <section class="offers-section">
+        <div class="offer">
+          <div class="offer__header">
+            <div class="offer__title">
+              <h3 class="typography-h2">билеты</h3>
+            </div>
+            <button class="btn btn__offer-toggle">
+              <img src="data:image/svg+xml,%3csvg%20width='43'%20height='24'%20viewBox='0%200%2043%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M2%2022L21.5%203L41%2022'%20stroke='black'%20stroke-width='3'/%3e%3c/svg%3e" alt="Просмотреть билеты" />
+            </button>
+          </div>
+          <div class="offer__content">
+            <div class="offer-item">
+              <div class="offer-item__image">
+                <div class="offer-item__image-overlay-text"></div>
+                <img src="/tickets/assets/img/ticket-1.png" alt="Входной билет" />
+              </div>
+              <div class="offer-item__info">
+                <div class="offer-item__main-description">
+                  <p>
+                    <b>защищено: билет стандарт на масленицу в никола-ленивце / 1 марта 2025</b>
+                  </p>
+                </div>
+                <div class="offer-item__tickets-count-text">
+                  <p>
+                    <b>осталось 12 билетов</b>
+                  </p>
+                </div>
+                <div class="offer-item__full-description"></div>
+              </div>
+              <div class="offer-item__commerce">
+                <div class="offer-item__price typography-h3">
+                  <span><b>5900 ₽</b></span>
+                </div>
+                <div class="offer-item__to-cart">
+                  <button class="btn btn-offer-to-cart typography-h3">в корзину</button>
+                  <div class="cart-controls" style="display: none">
+                    <button class="btn btn-decrease">
+                      <img src="data:image/svg+xml,%3csvg%20width='20'%20height='4'%20viewBox='0%200%2020%204'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8.19789%204H0V0H8.19789H11.8021H20V4H11.8021H8.19789Z'%20fill='black'/%3e%3c/svg%3e" alt="Добавить" />
+                    </button>
+                    <span class="typography-h3">в корзине</span>
+
+                    <span class="typography-h3 counter">1</span>
+                    <button class="btn btn-increase">
+                      <img src="data:image/svg+xml,%3csvg%20width='20'%20height='20'%20viewBox='0%200%2020%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8.19789%2011.8021H0V8.1979H8.19789V0H11.8021V8.1979H20V11.8021H11.8021V20H8.19789V11.8021Z'%20fill='black'/%3e%3c/svg%3e" alt="Удалить" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="offer-item">
+              <div class="offer-item__image">
+                <div class="offer-item__image-overlay-text"></div>
+                <img src="/tickets/assets/img/ticket-1-grey.png" alt="Входной билет" />
+              </div>
+              <div class="offer-item__info">
+                <div class="offer-item__main-description">
+                  <p>
+                    <b>защищено: билет стандарт на масленицу в никола-ленивце / 1 марта 2025</b>
+                  </p>
+                </div>
+                <div class="offer-item__tickets-count-text">
+                  <p>
+                    <b>осталось 12 билетов</b>
+                  </p>
+                </div>
+                <div class="offer-item__full-description"></div>
+              </div>
+              <div class="offer-item__commerce">
+                <div class="offer-item__price typography-h3">
+                  <span><b>35000 ₽</b></span>
+                </div>
+                <div class="offer-item__to-cart">
+                  <button class="btn btn-offer-to-cart typography-h3">в корзину</button>
+                  <div class="cart-controls" style="display: none">
+                    <button class="btn btn-decrease">
+                      <img src="data:image/svg+xml,%3csvg%20width='20'%20height='4'%20viewBox='0%200%2020%204'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8.19789%204H0V0H8.19789H11.8021H20V4H11.8021H8.19789Z'%20fill='black'/%3e%3c/svg%3e" alt="Добавить" />
+                    </button>
+                    <span class="typography-h3">в корзине</span>
+
+                    <span class="typography-h3 counter">1</span>
+                    <button class="btn btn-increase">
+                      <img src="data:image/svg+xml,%3csvg%20width='20'%20height='20'%20viewBox='0%200%2020%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8.19789%2011.8021H0V8.1979H8.19789V0H11.8021V8.1979H20V11.8021H11.8021V20H8.19789V11.8021Z'%20fill='black'/%3e%3c/svg%3e" alt="Удалить" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="offer">
+          <div class="offer__header">
+            <div class="offer__title">
+              <h3 class="typography-h2">парковка для легковых авто</h3>
+            </div>
+            <button class="btn btn__offer-toggle">
+              <img src="data:image/svg+xml,%3csvg%20width='43'%20height='24'%20viewBox='0%200%2043%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M2%2022L21.5%203L41%2022'%20stroke='black'%20stroke-width='3'/%3e%3c/svg%3e" alt="Просмотреть билеты" />
+            </button>
+          </div>
+          <div class="offer__content">
+            <div class="offer-item">
+              <div class="offer-item__image">
+                <div class="offer-item__image-overlay-text"></div>
+                <img src="/tickets/assets/img/fast-track.png" alt="Fast track" />
+              </div>
+              <div class="offer-item__info">
+                <div class="offer-item__main-description">
+                  <p>
+                    <b>защищено: билет стандарт на масленицу в никола-ленивце / 1 марта 2025</b>
+                  </p>
+                </div>
+                <div class="offer-item__tickets-count-text">
+                  <p>
+                    <b>осталось 12 билетов</b>
+                  </p>
+                </div>
+                <div class="offer-item__full-description">
+                  <strong>включено в стоимость:</strong>
+                  <ul>
+                    <li>
+                      <span>Вход на территорию фестиваля с 10:00 до 22:00</span>
+                    </li>
+                    <li>
+                      <span>Доступ к основным мероприятиям праздника</span>
+                    </li>
+                  </ul>
+                </div>
+                <button class="btn btn-offer-item__show-full-description">показать больше</button>
+              </div>
+              <div class="offer-item__commerce">
+                <div class="offer-item__price typography-h3">
+                  <span><b>1200 ₽</b></span>
+                </div>
+                <div class="offer-item__to-cart">
+                  <button class="btn btn-offer-to-cart typography-h3">в корзину</button>
+                  <div class="cart-controls" style="display: none">
+                    <button class="btn btn-decrease">
+                      <img src="data:image/svg+xml,%3csvg%20width='20'%20height='4'%20viewBox='0%200%2020%204'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8.19789%204H0V0H8.19789H11.8021H20V4H11.8021H8.19789Z'%20fill='black'/%3e%3c/svg%3e" alt="Добавить" />
+                    </button>
+                    <span class="typography-h3">в корзине</span>
+
+                    <span class="typography-h3 counter">1</span>
+                    <button class="btn btn-increase">
+                      <img src="data:image/svg+xml,%3csvg%20width='20'%20height='20'%20viewBox='0%200%2020%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8.19789%2011.8021H0V8.1979H8.19789V0H11.8021V8.1979H20V11.8021H11.8021V20H8.19789V11.8021Z'%20fill='black'/%3e%3c/svg%3e" alt="Удалить" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="offer-item">
+              <div class="offer-item__image">
+                <div class="offer-item__image-overlay-text"></div>
+                <img src="/tickets/assets/img/parking-1.png" alt="Парковка" />
+              </div>
+              <div class="offer-item__info">
+                <div class="offer-item__main-description">
+                  <p>
+                    <b>защищено: билет стандарт на масленицу в никола-ленивце / 1 марта 2025</b>
+                  </p>
+                </div>
+                <div class="offer-item__tickets-count-text">
+                  <p>
+                    <b>осталось 12 билетов</b>
+                  </p>
+                </div>
+                <div class="offer-item__full-description">
+                  <strong>включено в стоимость:</strong>
+                  <ul>
+                    <li>Вход на территорию фестиваля с 10:00 до 22:00</li>
+                    <li>Доступ к основным мероприятиям праздника</li>
+                  </ul>
+                  <p>
+                    Этот билет предоставляет вам доступ к уникальному событию, которое пройдет 1 марта 2025 года в
+                    арт-парке Никола-Ленивец. Масленица — это грандиозный праздник с перфомансами, музыкой, огненными
+                    шоу и, конечно же, традиционным сжиганием арт-объекта!
+                  </p>
+                  <b>включено в стоимость билета:</b>
+                  <ul>
+                    <li>Вход на территорию фестиваля с 14:00 29 февраля до 12:00 2 марта</li>
+                    <li>Полный доступ ко всем арт-объектам и площадкам фестиваля</li>
+                    <li>
+                      Участие в закрытой программе «Крестовщина» — экскурсия и рассказ от кураторов, художников и
+                      организаторов фестиваля
+                    </li>
+                    <li>Вечерняя музыкальная программа с участием диджеев и живых исполнителей</li>
+                    <li>Доступ к театральным постановкам и перформансам</li>
+                    <li>Открытые мастер-классы по традиционным ремеслам и современному искусству</li>
+                    <li>Возможность бронирования бани (оплачивается отдельно)</li>
+                    <li>Участие в традиционных народных забавах и спортивных состязаниях</li>
+                    <li>Работа фуд-корта с большим выбором блюд от уличной еды до ресторанных сетов</li>
+                    <li>Наличие парковки при предварительном бронировании</li>
+                  </ul>
+                  <b>важно знать:</b>
+                  <ul>
+                    <li>
+                      Билеты возврату не подлежат. После покупки вы получите электронный билет, который необходимо
+                      предъявить на входе.
+                    </li>
+                    <li>Дети до 5 лет проходят бесплатно в сопровождении взрослых.</li>
+                    <li>Место проведения: арт-парк Никола-Ленивец, Калужская область.</li>
+                    <li>
+                      Главное событие фестиваля — традиционное сожжение арт-объекта, специально созданного для
+                      Масленицы, которое состоится вечером 1 марта.
+                    </li>
+                    <li>
+                      На фестивале вас ждут костюмированные шествия, театральные постановки, музыкальные концерты,
+                      современные и традиционные масленичные забавы.
+                    </li>
+                    <li>
+                      Размещение: можно остановиться в кемпинге (при наличии своего снаряжения) или забронировать
+                      проживание в одном из партнерских отелей.
+                    </li>
+                    <li>
+                      <span>Осталось 12 билетов — успейте купить.</span>
+                    </li>
+                  </ul>
+                </div>
+                <button class="btn btn-offer-item__show-full-description">показать больше</button>
+              </div>
+              <div class="offer-item__commerce">
+                <div class="offer-item__price typography-h3">
+                  <span><b>600 ₽</b></span>
+                </div>
+                <div class="offer-item__to-cart">
+                  <button class="btn btn-offer-to-cart typography-h3">в корзину</button>
+                  <div class="cart-controls" style="display: none">
+                    <button class="btn btn-decrease">
+                      <img src="data:image/svg+xml,%3csvg%20width='20'%20height='4'%20viewBox='0%200%2020%204'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8.19789%204H0V0H8.19789H11.8021H20V4H11.8021H8.19789Z'%20fill='black'/%3e%3c/svg%3e" alt="Добавить" />
+                    </button>
+                    <span class="typography-h3">в корзине</span>
+
+                    <span class="typography-h3 counter">1</span>
+                    <button class="btn btn-increase">
+                      <img src="data:image/svg+xml,%3csvg%20width='20'%20height='20'%20viewBox='0%200%2020%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8.19789%2011.8021H0V8.1979H8.19789V0H11.8021V8.1979H20V11.8021H11.8021V20H8.19789V11.8021Z'%20fill='black'/%3e%3c/svg%3e" alt="Удалить" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="offer-item">
+              <div class="offer-item__image">
+                <div class="offer-item__image-overlay-text"></div>
+                <img src="/tickets/assets/img/parking-2.png" alt="Парковка 2" />
+              </div>
+              <div class="offer-item__info">
+                <div class="offer-item__main-description">
+                  <p>
+                    <b>защищено: билет стандарт на масленицу в никола-ленивце / 1 марта 2025</b>
+                  </p>
+                </div>
+                <div class="offer-item__tickets-count-text">
+                  <p>
+                    <b>осталось 12 билетов</b>
+                  </p>
+                </div>
+                <div class="offer-item__full-description"></div>
+              </div>
+              <div class="offer-item__commerce">
+                <div class="offer-item__price typography-h3">
+                  <span><b>1200 ₽</b></span>
+                </div>
+                <div class="offer-item__to-cart">
+                  <button class="btn btn-offer-to-cart typography-h3">в корзину</button>
+                  <div class="cart-controls" style="display: none">
+                    <button class="btn btn-decrease">
+                      <img src="data:image/svg+xml,%3csvg%20width='20'%20height='4'%20viewBox='0%200%2020%204'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8.19789%204H0V0H8.19789H11.8021H20V4H11.8021H8.19789Z'%20fill='black'/%3e%3c/svg%3e" alt="Добавить" />
+                    </button>
+                    <span class="typography-h3">в корзине</span>
+
+                    <span class="typography-h3 counter">1</span>
+                    <button class="btn btn-increase">
+                      <img src="data:image/svg+xml,%3csvg%20width='20'%20height='20'%20viewBox='0%200%2020%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8.19789%2011.8021H0V8.1979H8.19789V0H11.8021V8.1979H20V11.8021H11.8021V20H8.19789V11.8021Z'%20fill='black'/%3e%3c/svg%3e" alt="Удалить" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="offer">
+          <div class="offer__header">
+            <div class="offer__title">
+              <h3 class="typography-h2">парковка для автобусов</h3>
+            </div>
+            <button class="btn btn__offer-toggle">
+              <img src="data:image/svg+xml,%3csvg%20width='43'%20height='24'%20viewBox='0%200%2043%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M2%2022L21.5%203L41%2022'%20stroke='black'%20stroke-width='3'/%3e%3c/svg%3e" alt="Просмотреть билеты" />
+            </button>
+          </div>
+          <div class="offer__content">
+            <div class="offer-item">
+              <div class="offer-item__image">
+                <div class="offer-item__image-overlay-text"></div>
+                <img src="/tickets/assets/img/parking-bus.png" alt="Парковка автобус" />
+              </div>
+              <div class="offer-item__info">
+                <div class="offer-item__main-description">
+                  <p>
+                    <b>защищено: билет стандарт на масленицу в никола-ленивце / 1 марта 2025</b>
+                  </p>
+                </div>
+                <div class="offer-item__tickets-count-text">
+                  <p>
+                    <b>осталось 12 билетов</b>
+                  </p>
+                </div>
+                <div class="offer-item__full-description">
+                  <strong>включено в стоимость:</strong>
+                  <ul>
+                    <li>Вход на территорию фестиваля с 10:00 до 22:00</li>
+                    <li>Доступ к основным мероприятиям праздника</li>
+                  </ul>
+                  <p>
+                    Этот билет предоставляет вам доступ к уникальному событию, которое пройдет 1 марта 2025 года в
+                    арт-парке Никола-Ленивец. Масленица — это грандиозный праздник с перфомансами, музыкой, огненными
+                    шоу и, конечно же, традиционным сжиганием арт-объекта!
+                  </p>
+                  <b>включено в стоимость билета:</b>
+                  <ul>
+                    <li>Вход на территорию фестиваля с 14:00 29 февраля до 12:00 2 марта</li>
+                    <li>Полный доступ ко всем арт-объектам и площадкам фестиваля</li>
+                    <li>
+                      Участие в закрытой программе «Крестовщина» — экскурсия и рассказ от кураторов, художников и
+                      организаторов фестиваля
+                    </li>
+                    <li>Вечерняя музыкальная программа с участием диджеев и живых исполнителей</li>
+                    <li>Доступ к театральным постановкам и перформансам</li>
+                    <li>Открытые мастер-классы по традиционным ремеслам и современному искусству</li>
+                    <li>Возможность бронирования бани (оплачивается отдельно)</li>
+                    <li>Участие в традиционных народных забавах и спортивных состязаниях</li>
+                    <li>Работа фуд-корта с большим выбором блюд от уличной еды до ресторанных сетов</li>
+                    <li>Наличие парковки при предварительном бронировании</li>
+                  </ul>
+                  <b>важно знать:</b>
+                  <ul>
+                    <li>
+                      Билеты возврату не подлежат. После покупки вы получите электронный билет, который необходимо
+                      предъявить на входе.
+                    </li>
+                    <li>Дети до 5 лет проходят бесплатно в сопровождении взрослых.</li>
+                    <li>Место проведения: арт-парк Никола-Ленивец, Калужская область.</li>
+                    <li>
+                      Главное событие фестиваля — традиционное сожжение арт-объекта, специально созданного для
+                      Масленицы, которое состоится вечером 1 марта.
+                    </li>
+                    <li>
+                      На фестивале вас ждут костюмированные шествия, театральные постановки, музыкальные концерты,
+                      современные и традиционные масленичные забавы.
+                    </li>
+                    <li>
+                      Размещение: можно остановиться в кемпинге (при наличии своего снаряжения) или забронировать
+                      проживание в одном из партнерских отелей.
+                    </li>
+                    <li>
+                      <span>Осталось 12 билетов — успейте купить.</span>
+                    </li>
+                  </ul>
+                </div>
+                <button class="btn btn-offer-item__show-full-description">показать больше</button>
+              </div>
+              <div class="offer-item__commerce">
+                <div class="offer-item__price typography-h3">
+                  <span><b>5000 ₽</b></span>
+                </div>
+                <div class="offer-item__to-cart">
+                  <button class="btn btn-offer-to-cart typography-h3">в корзину</button>
+                  <div class="cart-controls" style="display: none">
+                    <button class="btn btn-decrease">
+                      <img src="data:image/svg+xml,%3csvg%20width='20'%20height='4'%20viewBox='0%200%2020%204'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8.19789%204H0V0H8.19789H11.8021H20V4H11.8021H8.19789Z'%20fill='black'/%3e%3c/svg%3e" alt="Добавить" />
+                    </button>
+                    <span class="typography-h3">в корзине</span>
+
+                    <span class="typography-h3 counter">1</span>
+                    <button class="btn btn-increase">
+                      <img src="data:image/svg+xml,%3csvg%20width='20'%20height='20'%20viewBox='0%200%2020%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8.19789%2011.8021H0V8.1979H8.19789V0H11.8021V8.1979H20V11.8021H11.8021V20H8.19789V11.8021Z'%20fill='black'/%3e%3c/svg%3e" alt="Удалить" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="offer-item">
+              <div class="offer-item__image">
+                <div class="offer-item__image-overlay-text"></div>
+                <img src="/tickets/assets/img/parking-microbus.png" alt="Парковка микроавтобус" />
+              </div>
+              <div class="offer-item__info">
+                <div class="offer-item__main-description">
+                  <p>
+                    <b>защищено: билет стандарт на масленицу в никола-ленивце / 1 марта 2025</b>
+                  </p>
+                </div>
+                <div class="offer-item__tickets-count-text">
+                  <p>
+                    <b>осталось 12 билетов</b>
+                  </p>
+                </div>
+                <div class="offer-item__full-description"></div>
+              </div>
+              <div class="offer-item__commerce">
+                <div class="offer-item__price typography-h3">
+                  <span><b>5000 ₽</b></span>
+                </div>
+                <div class="offer-item__to-cart">
+                  <button class="btn btn-offer-to-cart typography-h3">в корзину</button>
+                  <div class="cart-controls" style="display: none">
+                    <button class="btn btn-decrease">
+                      <img src="data:image/svg+xml,%3csvg%20width='20'%20height='4'%20viewBox='0%200%2020%204'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8.19789%204H0V0H8.19789H11.8021H20V4H11.8021H8.19789Z'%20fill='black'/%3e%3c/svg%3e" alt="Добавить" />
+                    </button>
+                    <span class="typography-h3">в корзине</span>
+
+                    <span class="typography-h3 counter">1</span>
+                    <button class="btn btn-increase">
+                      <img src="data:image/svg+xml,%3csvg%20width='20'%20height='20'%20viewBox='0%200%2020%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8.19789%2011.8021H0V8.1979H8.19789V0H11.8021V8.1979H20V11.8021H11.8021V20H8.19789V11.8021Z'%20fill='black'/%3e%3c/svg%3e" alt="Удалить" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="offer">
+          <div class="offer__header">
+            <div class="offer__title">
+              <h3 class="typography-h2">трансфер</h3>
+            </div>
+            <button class="btn btn__offer-toggle">
+              <img src="data:image/svg+xml,%3csvg%20width='43'%20height='24'%20viewBox='0%200%2043%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M2%2022L21.5%203L41%2022'%20stroke='black'%20stroke-width='3'/%3e%3c/svg%3e" alt="Просмотреть билеты" />
+            </button>
+          </div>
+          <div class="offer__content">
+            <div class="offer-item offer-item__out-of-stock">
+              <div class="offer-item__image">
+                <div class="offer-item__image-overlay-text">
+                  <span>нет в наличии</span>
+                </div>
+                <img src="/tickets/assets/img/transfer-8.png" alt="Трансфер 8:00 (нет в наличии)" />
+              </div>
+              <div class="offer-item__info">
+                <div class="offer-item__main-description">
+                  <p>
+                    <b>трансфер туда-обратно / из москвы / регистрация в 8:00 / выезд до 8:45</b>
+                  </p>
+                </div>
+                <div class="offer-item__tickets-count-text">
+                  <p class="out-of-stock-text"><b>нет в наличии</b></p>
+                </div>
+                <div class="offer-item__full-description">
+                  <p>
+                    <b>дата:</b>1 марта 2025<br />
+                    <b>тип трансфера:</b>из москвы в никола-ленивец и обратно
+                  </p>
+                </div>
+                <button class="btn btn-offer-item__show-full-description">показать больше</button>
+              </div>
+              <div class="offer-item__commerce">
+                <div class="offer-item__price typography-h3">
+                  <span><b>5900 ₽</b></span>
+                </div>
+                <div class="offer-item__to-cart">
+                  <a href="#" class="btn btn-offer-to-cart typography-h3 btn-offer-to-cart__out-of-stock"
+                    >что делать?</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="offer-item offer-item__out-of-stock">
+              <div class="offer-item__image">
+                <div class="offer-item__image-overlay-text">
+                  <span>нет в наличии</span>
+                </div>
+                <img src="/tickets/assets/img/transfer-8.png" alt="Трансфер 8:00 (нет в наличии)" />
+              </div>
+              <div class="offer-item__info">
+                <div class="offer-item__main-description">
+                  <p>
+                    <b>трансфер туда-обратно / из москвы / регистрация в 8:00 / выезд до 8:45</b>
+                  </p>
+                </div>
+                <div class="offer-item__tickets-count-text">
+                  <p class="out-of-stock-text"><b>нет в наличии</b></p>
+                </div>
+                <div class="offer-item__full-description">
+                  <p>
+                    <b>дата:</b>1 марта 2025<br />
+                    <b>тип трансфера:</b>из москвы в никола-ленивец и обратно
+                  </p>
+                  <p>
+                    Этот билет предоставляет вам доступ к уникальному событию, которое пройдет 1 марта 2025 года в
+                    арт-парке Никола-Ленивец. Масленица — это грандиозный праздник с перфомансами, музыкой, огненными
+                    шоу и, конечно же, традиционным сжиганием арт-объекта!
+                  </p>
+                  <b>включено в стоимость билета:</b>
+                  <ul>
+                    <li>Вход на территорию фестиваля с 14:00 29 февраля до 12:00 2 марта</li>
+                    <li>Полный доступ ко всем арт-объектам и площадкам фестиваля</li>
+                    <li>
+                      Участие в закрытой программе «Крестовщина» — экскурсия и рассказ от кураторов, художников и
+                      организаторов фестиваля
+                    </li>
+                    <li>Вечерняя музыкальная программа с участием диджеев и живых исполнителей</li>
+                    <li>Доступ к театральным постановкам и перформансам</li>
+                    <li>Открытые мастер-классы по традиционным ремеслам и современному искусству</li>
+                    <li>Возможность бронирования бани (оплачивается отдельно)</li>
+                    <li>Участие в традиционных народных забавах и спортивных состязаниях</li>
+                    <li>Работа фуд-корта с большим выбором блюд от уличной еды до ресторанных сетов</li>
+                    <li>Наличие парковки при предварительном бронировании</li>
+                  </ul>
+                  <b>важно знать:</b>
+                  <ul>
+                    <li>
+                      Билеты возврату не подлежат. После покупки вы получите электронный билет, который необходимо
+                      предъявить на входе.
+                    </li>
+                    <li>Дети до 5 лет проходят бесплатно в сопровождении взрослых.</li>
+                    <li>Место проведения: арт-парк Никола-Ленивец, Калужская область.</li>
+                    <li>
+                      Главное событие фестиваля — традиционное сожжение арт-объекта, специально созданного для
+                      Масленицы, которое состоится вечером 1 марта.
+                    </li>
+                    <li>
+                      На фестивале вас ждут костюмированные шествия, театральные постановки, музыкальные концерты,
+                      современные и традиционные масленичные забавы.
+                    </li>
+                    <li>
+                      Размещение: можно остановиться в кемпинге (при наличии своего снаряжения) или забронировать
+                      проживание в одном из партнерских отелей.
+                    </li>
+                    <li>
+                      <span>Осталось 12 билетов — успейте купить.</span>
+                    </li>
+                  </ul>
+                </div>
+                <button class="btn btn-offer-item__show-full-description">показать больше</button>
+              </div>
+              <div class="offer-item__commerce">
+                <div class="offer-item__price typography-h3">
+                  <span><b>5900 ₽</b></span>
+                </div>
+                <div class="offer-item__to-cart">
+                  <a href="#" class="btn btn-offer-to-cart typography-h3 btn-offer-to-cart__out-of-stock"
+                    >что делать?</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="related-products-section">
+        <h2 class="typography-h3">сопутствующие товары</h2>
+        <div class="related-products">
+          <div class="related-product">
+            <div class="related-product__image">
+              <img src="/tickets/assets/img/rp-socks.png" alt="Носки Н-Л Масленица" />
+            </div>
+            <div class="related-product__title">
+              <h3>
+                <b>Носки «Н-Л Масленица»</b>
+              </h3>
+            </div>
+            <div class="related-product__price">
+              <span><b>990 ₽</b></span>
+            </div>
+            <div class="related-product__add-to-cart">
+              <button class="btn btn-related-product__add-to-cart">в корзину</button>
+            </div>
+          </div>
+          <div class="related-product">
+            <div class="related-product__image">
+              <img src="/tickets/assets/img/rp-shopping-bag-1.png" alt="Шоппер Масленица" />
+            </div>
+            <div class="related-product__title">
+              <h3><b>Шоппер Масленица</b></h3>
+            </div>
+            <div class="related-product__price">
+              <span><b>1500 ₽</b></span>
+            </div>
+            <div class="related-product__add-to-cart">
+              <button class="btn btn-related-product__add-to-cart">в корзину</button>
+            </div>
+          </div>
+          <div class="related-product">
+            <div class="related-product__image">
+              <img src="/tickets/assets/img/rp-shopping-bag-2.png" alt="Шоппер Красный" />
+            </div>
+            <div class="related-product__title">
+              <h3><b>Шоппер Красный</b></h3>
+            </div>
+            <div class="related-product__price">
+              <span><b>1200 ₽</b></span>
+            </div>
+            <div class="related-product__add-to-cart">
+              <button class="btn btn-related-product__add-to-cart">в корзину</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="faq">
+        <h2 class="typography-h3">вопрос - ответ</h2>
+        <div class="faq-question">
+          <div class="faq-question__header" aria-expanded="false">
+            <div class="faq-question__title">
+              <h3>билеты закончились</h3>
+            </div>
+            <button class="btn btn-faq-question-toggle" aria-hidden="true">
+              <img src="data:image/svg+xml,%3csvg%20width='20'%20height='20'%20viewBox='0%200%2020%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8.19789%2011.8021H0V8.1979H8.19789V0H11.8021V8.1979H20V11.8021H11.8021V20H8.19789V11.8021Z'%20fill='black'/%3e%3c/svg%3e" alt="Узнать ответ" />
+            </button>
+          </div>
+          <div class="faq-question__answer" aria-hidden="true">
+            <p>
+              Билеты на это мероприятие распроданы, но иногда появляются дополнительные или возвращённые билеты.
+              Рекомендуем периодически проверять сайт. Также можно подписаться на уведомления, чтобы не пропустить новые
+              поступления. Если билетов не будет, рассмотрите другие даты или мероприятия
+            </p>
+          </div>
+        </div>
+        <div class="faq-question">
+          <div class="faq-question__header" aria-expanded="false">
+            <div class="faq-question__title">
+              <h3>проблема с билетами</h3>
+            </div>
+            <button class="btn btn-faq-question-toggle" aria-hidden="true">
+              <img src="data:image/svg+xml,%3csvg%20width='20'%20height='20'%20viewBox='0%200%2020%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8.19789%2011.8021H0V8.1979H8.19789V0H11.8021V8.1979H20V11.8021H11.8021V20H8.19789V11.8021Z'%20fill='black'/%3e%3c/svg%3e" alt="Узнать ответ" />
+            </button>
+          </div>
+          <div class="faq-question__answer" aria-hidden="true">
+            <p>После оплаты вам на почту придет автоматическое письмо с билетами.</p>
+            <p>
+              Если этого не случилось, отправьте запрос на почту
+              <a href="mailto:shop@nikola-lenivets.com">shop@nikola-lenivets.com</a>
+              с указанием имени и фамилии, указанной при оформлении покупки, и не забудьте приложить чек.
+            </p>
+          </div>
+        </div>
+        <div class="faq-question">
+          <div class="faq-question__header" aria-expanded="false">
+            <div class="faq-question__title">
+              <h3>входной билет стандарт</h3>
+            </div>
+            <button class="btn btn-faq-question-toggle" aria-hidden="true">
+              <img src="data:image/svg+xml,%3csvg%20width='20'%20height='20'%20viewBox='0%200%2020%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8.19789%2011.8021H0V8.1979H8.19789V0H11.8021V8.1979H20V11.8021H11.8021V20H8.19789V11.8021Z'%20fill='black'/%3e%3c/svg%3e" alt="Узнать ответ" />
+            </button>
+          </div>
+          <div class="faq-question__answer" aria-hidden="true">
+            <p>После оплаты вам на почту придет автоматическое письмо с билетами.</p>
+            <p>
+              Если этого не случилось, отправьте запрос на почту
+              <a href="mailto:shop@nikola-lenivets.com">shop@nikola-lenivets.com</a>
+              с указанием имени и фамилии, указанной при оформлении покупки, и не забудьте приложить чек.
+            </p>
+          </div>
+        </div>
+        <div class="faq-question">
+          <div class="faq-question__header" aria-expanded="false">
+            <div class="faq-question__title">
+              <h3>билет приоритет</h3>
+            </div>
+            <button class="btn btn-faq-question-toggle" aria-hidden="true">
+              <img src="data:image/svg+xml,%3csvg%20width='20'%20height='20'%20viewBox='0%200%2020%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8.19789%2011.8021H0V8.1979H8.19789V0H11.8021V8.1979H20V11.8021H11.8021V20H8.19789V11.8021Z'%20fill='black'/%3e%3c/svg%3e" alt="Узнать ответ" />
+            </button>
+          </div>
+          <div class="faq-question__answer" aria-hidden="true">
+            <p>После оплаты вам на почту придет автоматическое письмо с билетами.</p>
+            <p>
+              Если этого не случилось, отправьте запрос на почту
+              <a href="mailto:shop@nikola-lenivets.com">shop@nikola-lenivets.com</a>
+              с указанием имени и фамилии, указанной при оформлении покупки, и не забудьте приложить чек.
+            </p>
+          </div>
+        </div>
+        <div class="faq-question">
+          <div class="faq-question__header" aria-expanded="false">
+            <div class="faq-question__title">
+              <h3>билеты для детей</h3>
+            </div>
+            <button class="btn btn-faq-question-toggle" aria-hidden="true">
+              <img src="data:image/svg+xml,%3csvg%20width='20'%20height='20'%20viewBox='0%200%2020%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8.19789%2011.8021H0V8.1979H8.19789V0H11.8021V8.1979H20V11.8021H11.8021V20H8.19789V11.8021Z'%20fill='black'/%3e%3c/svg%3e" alt="Узнать ответ" />
+            </button>
+          </div>
+          <div class="faq-question__answer" aria-hidden="true">
+            <p>После оплаты вам на почту придет автоматическое письмо с билетами.</p>
+            <p>
+              Если этого не случилось, отправьте запрос на почту
+              <a href="mailto:shop@nikola-lenivets.com">shop@nikola-lenivets.com</a>
+              с указанием имени и фамилии, указанной при оформлении покупки, и не забудьте приложить чек.
+            </p>
+          </div>
+        </div>
+        <div class="faq-question">
+          <div class="faq-question__header" aria-expanded="false">
+            <div class="faq-question__title">
+              <h3>поездка с животным</h3>
+            </div>
+            <button class="btn btn-faq-question-toggle" aria-hidden="true">
+              <img src="data:image/svg+xml,%3csvg%20width='20'%20height='20'%20viewBox='0%200%2020%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8.19789%2011.8021H0V8.1979H8.19789V0H11.8021V8.1979H20V11.8021H11.8021V20H8.19789V11.8021Z'%20fill='black'/%3e%3c/svg%3e" alt="Узнать ответ" />
+            </button>
+          </div>
+          <div class="faq-question__answer" aria-hidden="true">
+            <p>После оплаты вам на почту придет автоматическое письмо с билетами.</p>
+            <p>
+              Если этого не случилось, отправьте запрос на почту
+              <a href="mailto:shop@nikola-lenivets.com">shop@nikola-lenivets.com</a>
+              с указанием имени и фамилии, указанной при оформлении покупки, и не забудьте приложить чек.
+            </p>
+          </div>
+        </div>
+        <div class="faq-question">
+          <div class="faq-question__header" aria-expanded="false">
+            <div class="faq-question__title">
+              <h3>трансфер</h3>
+            </div>
+            <button class="btn btn-faq-question-toggle" aria-hidden="true">
+              <img src="data:image/svg+xml,%3csvg%20width='20'%20height='20'%20viewBox='0%200%2020%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8.19789%2011.8021H0V8.1979H8.19789V0H11.8021V8.1979H20V11.8021H11.8021V20H8.19789V11.8021Z'%20fill='black'/%3e%3c/svg%3e" alt="Узнать ответ" />
+            </button>
+          </div>
+          <div class="faq-question__answer" aria-hidden="true">
+            <p>После оплаты вам на почту придет автоматическое письмо с билетами.</p>
+            <p>
+              Если этого не случилось, отправьте запрос на почту
+              <a href="mailto:shop@nikola-lenivets.com">shop@nikola-lenivets.com</a>
+              с указанием имени и фамилии, указанной при оформлении покупки, и не забудьте приложить чек.
+            </p>
+          </div>
+        </div>
+        <div class="faq-question">
+          <div class="faq-question__header" aria-expanded="false">
+            <div class="faq-question__title">
+              <h3>место и время отправления трансфера</h3>
+            </div>
+            <button class="btn btn-faq-question-toggle" aria-hidden="true">
+              <img src="data:image/svg+xml,%3csvg%20width='20'%20height='20'%20viewBox='0%200%2020%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8.19789%2011.8021H0V8.1979H8.19789V0H11.8021V8.1979H20V11.8021H11.8021V20H8.19789V11.8021Z'%20fill='black'/%3e%3c/svg%3e" alt="Узнать ответ" />
+            </button>
+          </div>
+          <div class="faq-question__answer" aria-hidden="true">
+            <p>После оплаты вам на почту придет автоматическое письмо с билетами.</p>
+            <p>
+              Если этого не случилось, отправьте запрос на почту
+              <a href="mailto:shop@nikola-lenivets.com">shop@nikola-lenivets.com</a>
+              с указанием имени и фамилии, указанной при оформлении покупки, и не забудьте приложить чек.
+            </p>
+          </div>
+        </div>
+        <div class="faq-question">
+          <div class="faq-question__header" aria-expanded="false">
+            <div class="faq-question__title">
+              <h3>жильё</h3>
+            </div>
+            <button class="btn btn-faq-question-toggle" aria-hidden="true">
+              <img src="data:image/svg+xml,%3csvg%20width='20'%20height='20'%20viewBox='0%200%2020%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8.19789%2011.8021H0V8.1979H8.19789V0H11.8021V8.1979H20V11.8021H11.8021V20H8.19789V11.8021Z'%20fill='black'/%3e%3c/svg%3e" alt="Узнать ответ" />
+            </button>
+          </div>
+          <div class="faq-question__answer" aria-hidden="true">
+            <p>После оплаты вам на почту придет автоматическое письмо с билетами.</p>
+            <p>
+              Если этого не случилось, отправьте запрос на почту
+              <a href="mailto:shop@nikola-lenivets.com">shop@nikola-lenivets.com</a>
+              с указанием имени и фамилии, указанной при оформлении покупки, и не забудьте приложить чек.
+            </p>
+          </div>
+        </div>
+        <div class="faq-question">
+          <div class="faq-question__header" aria-expanded="false">
+            <div class="faq-question__title">
+              <h3>парковка</h3>
+            </div>
+            <button class="btn btn-faq-question-toggle" aria-hidden="true">
+              <img src="data:image/svg+xml,%3csvg%20width='20'%20height='20'%20viewBox='0%200%2020%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8.19789%2011.8021H0V8.1979H8.19789V0H11.8021V8.1979H20V11.8021H11.8021V20H8.19789V11.8021Z'%20fill='black'/%3e%3c/svg%3e" alt="Узнать ответ" />
+            </button>
+          </div>
+          <div class="faq-question__answer" aria-hidden="true">
+            <p>После оплаты вам на почту придет автоматическое письмо с билетами.</p>
+            <p>
+              Если этого не случилось, отправьте запрос на почту
+              <a href="mailto:shop@nikola-lenivets.com">shop@nikola-lenivets.com</a>
+              с указанием имени и фамилии, указанной при оформлении покупки, и не забудьте приложить чек.
+            </p>
+          </div>
+        </div>
+        <div class="faq-question">
+          <div class="faq-question__header" aria-expanded="false">
+            <div class="faq-question__title">
+              <h3>парковка для автобусов и микроавтобусов</h3>
+            </div>
+            <button class="btn btn-faq-question-toggle" aria-hidden="true">
+              <img src="data:image/svg+xml,%3csvg%20width='20'%20height='20'%20viewBox='0%200%2020%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8.19789%2011.8021H0V8.1979H8.19789V0H11.8021V8.1979H20V11.8021H11.8021V20H8.19789V11.8021Z'%20fill='black'/%3e%3c/svg%3e" alt="Узнать ответ" />
+            </button>
+          </div>
+          <div class="faq-question__answer" aria-hidden="true">
+            <p>После оплаты вам на почту придет автоматическое письмо с билетами.</p>
+            <p>
+              Если этого не случилось, отправьте запрос на почту
+              <a href="mailto:shop@nikola-lenivets.com">shop@nikola-lenivets.com</a>
+              с указанием имени и фамилии, указанной при оформлении покупки, и не забудьте приложить чек.
+            </p>
+          </div>
+        </div>
+        <div class="faq-question">
+          <div class="faq-question__header" aria-expanded="false">
+            <div class="faq-question__title">
+              <h3>способ оплаты</h3>
+            </div>
+            <button class="btn btn-faq-question-toggle" aria-hidden="true">
+              <img src="data:image/svg+xml,%3csvg%20width='20'%20height='20'%20viewBox='0%200%2020%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8.19789%2011.8021H0V8.1979H8.19789V0H11.8021V8.1979H20V11.8021H11.8021V20H8.19789V11.8021Z'%20fill='black'/%3e%3c/svg%3e" alt="Узнать ответ" />
+            </button>
+          </div>
+          <div class="faq-question__answer" aria-hidden="true">
+            <p>После оплаты вам на почту придет автоматическое письмо с билетами.</p>
+            <p>
+              Если этого не случилось, отправьте запрос на почту
+              <a href="mailto:shop@nikola-lenivets.com">shop@nikola-lenivets.com</a>
+              с указанием имени и фамилии, указанной при оформлении покупки, и не забудьте приложить чек.
+            </p>
+          </div>
+        </div>
+        <div class="faq-question">
+          <div class="faq-question__header" aria-expanded="false">
+            <div class="faq-question__title">
+              <h3>условия возврата</h3>
+            </div>
+            <button class="btn btn-faq-question-toggle" aria-hidden="true">
+              <img src="data:image/svg+xml,%3csvg%20width='20'%20height='20'%20viewBox='0%200%2020%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8.19789%2011.8021H0V8.1979H8.19789V0H11.8021V8.1979H20V11.8021H11.8021V20H8.19789V11.8021Z'%20fill='black'/%3e%3c/svg%3e" alt="Узнать ответ" />
+            </button>
+          </div>
+          <div class="faq-question__answer" aria-hidden="true">
+            <p>После оплаты вам на почту придет автоматическое письмо с билетами.</p>
+            <p>
+              Если этого не случилось, отправьте запрос на почту
+              <a href="mailto:shop@nikola-lenivets.com">shop@nikola-lenivets.com</a>
+              с указанием имени и фамилии, указанной при оформлении покупки, и не забудьте приложить чек.
+            </p>
+          </div>
+        </div>
+        <div class="faq-question">
+          <div class="faq-question__header" aria-expanded="false">
+            <div class="faq-question__title">
+              <h3>льготы</h3>
+            </div>
+            <button class="btn btn-faq-question-toggle" aria-hidden="true">
+              <img src="data:image/svg+xml,%3csvg%20width='20'%20height='20'%20viewBox='0%200%2020%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8.19789%2011.8021H0V8.1979H8.19789V0H11.8021V8.1979H20V11.8021H11.8021V20H8.19789V11.8021Z'%20fill='black'/%3e%3c/svg%3e" alt="Узнать ответ" />
+            </button>
+          </div>
+          <div class="faq-question__answer" aria-hidden="true">
+            <p>После оплаты вам на почту придет автоматическое письмо с билетами.</p>
+            <p>
+              Если этого не случилось, отправьте запрос на почту
+              <a href="mailto:shop@nikola-lenivets.com">shop@nikola-lenivets.com</a>
+              с указанием имени и фамилии, указанной при оформлении покупки, и не забудьте приложить чек.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="main-footer grid-wrapper">
+      <div class="footer-left-block">
+        <div class="logo">
+          <img src="/tickets/assets/icons/logo.svg" alt="никола-ленивец" />
+        </div>
+        <div class="info">
+          <div class="info-title">
+            <h6 class="typography-h6">арт-парк <br />«никола-ленивец»</h6>
+          </div>
+          <div class="info-contact">
+            <span class="address typography-h6">Калужская область дзержинский район деревня звизжи</span>
+            <span class="contacts">
+              <a class="link typography-h6" href="mailto:shop@nikola-lenivets.com">shop@nikola-lenivets.com</a>
+              <a class="link typography-h6" href="tel:+74951505475">+7 (495) 150-54-75</a>
+            </span>
+          </div>
+        </div>
+        <div class="policy">
+          <ul class="list">
+            <li class="link typography-text-sm">
+              <a class="link" href="#">политика конфиденциальности</a>
+            </li>
+            <li class="link typography-text-sm">
+              <a class="link" href="#">пользовательское соглашение</a>
+            </li>
+            <li class="link typography-text-sm">
+              <a class="link" href="#">способ оплаты и условия возврата</a>
+            </li>
+            <li class="link typography-text-sm">
+              <a class="link" href="#">контакты</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-right-block">
+        <div class="subscribe">
+          <h4 class="typography-h4">подписаться на новости, скидки, старт продаж фестивалей</h4>
+          <input type="email" class="subscribe-input typography-input" placeholder="nikola-lenivets@mail.ru" />
+          <button class="btn btn-subscribe typography-btn-sm">подписаться</button>
+        </div>
+
+        <div class="legal-info typography-text-sm">
+          <span class="legal-title">ООО Фестивали Николы-Ленивца</span><br /><br />
+          <span
+            >инн: 4004022620 кпп: 400401001 огрн: 1234000001872 расчетный счет: 40702810422240000722 банк: калужское
+            отделение n8608 пао сбербанк бик: 042908612 корр. счет: 30101810100000000612 юридический адрес: 249866,
+            калужская область, м.р-н дзержинский, с.п. угорское, д никола-ленивец, дом 11</span
+          >
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>

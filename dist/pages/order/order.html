@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Оформление заказа</title>
+    <script type="module" crossorigin src="/tickets/pages/order/order.js"></script>
+    <link rel="stylesheet" crossorigin href="/tickets/pages/order/order.css">
+  </head>
+
+  <body>
+    <header class="main-header grid-wrapper">
+      <div class="shop-logo">
+        <img src="/tickets/assets/icons/logo-shop.svg" alt="Магазин 'никола-ленивец'" />
+      </div>
+      <div class="header-menu">
+        <div class="cart">
+          <img src="data:image/svg+xml,%3csvg%20width='36'%20height='43'%20viewBox='0%200%2036%2043'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M0.0149176%2018L0%2020.7523L35.9851%2021L36%2018.2477L0.0149176%2018Z'%20fill='%231D1D1B'/%3e%3cpath%20d='M11.0649%2039L11%2041.6137L23.9351%2042L24%2039.3863L11.0649%2039Z'%20fill='%231D1D1B'/%3e%3cpath%20d='M33.6544%2022L26%2040.1052L28.3456%2041L36%2022.8948L33.6544%2022Z'%20fill='%231D1D1B'/%3e%3cpath%20d='M2.28864%2022L0%2022.9154L7.71136%2041L10%2040.0846L2.28864%2022Z'%20fill='%231D1D1B'/%3e%3cpath%20d='M21.1244%200L19%200.999442L25.8756%2017L28%2016.0006L21.1244%200Z'%20fill='%231D1D1B'/%3e%3cpath%20d='M14.8545%200L8%2015.0216L10.1455%2016L17%200.978317L14.8545%200Z'%20fill='%231D1D1B'/%3e%3c/svg%3e" alt="Корзина" />
+          <span class="cart__counter">1</span>
+        </div>
+        <div class="mobile-navigation">
+          <button class="btn btn__mobile-menu">
+            <img src="data:image/svg+xml,%3csvg%20width='27'%20height='14'%20viewBox='0%200%2027%2014'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M27%200.5H0V3.5H27V0.5Z'%20fill='black'/%3e%3cpath%20d='M27%205.5H0V8.5H27V5.5Z'%20fill='black'/%3e%3cpath%20d='M27%2010.5H0V13.5H27V10.5Z'%20fill='black'/%3e%3c/svg%3e" alt="Открыть меню навигации" />
+          </button>
+        </div>
+        <button class="btn cart-overlay">
+          <span>оформить заказ</span>
+          <div class="cart">
+            <img src="data:image/svg+xml,%3csvg%20width='36'%20height='43'%20viewBox='0%200%2036%2043'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M0.0149176%2018L0%2020.7523L35.9851%2021L36%2018.2477L0.0149176%2018Z'%20fill='%231D1D1B'/%3e%3cpath%20d='M11.0649%2039L11%2041.6137L23.9351%2042L24%2039.3863L11.0649%2039Z'%20fill='%231D1D1B'/%3e%3cpath%20d='M33.6544%2022L26%2040.1052L28.3456%2041L36%2022.8948L33.6544%2022Z'%20fill='%231D1D1B'/%3e%3cpath%20d='M2.28864%2022L0%2022.9154L7.71136%2041L10%2040.0846L2.28864%2022Z'%20fill='%231D1D1B'/%3e%3cpath%20d='M21.1244%200L19%200.999442L25.8756%2017L28%2016.0006L21.1244%200Z'%20fill='%231D1D1B'/%3e%3cpath%20d='M14.8545%200L8%2015.0216L10.1455%2016L17%200.978317L14.8545%200Z'%20fill='%231D1D1B'/%3e%3c/svg%3e" alt="Корзина" />
+            <span class="cart__counter">1</span>
+          </div>
+        </button>
+      </div>
+
+      <div class="desktop-navigation">
+        <nav>
+          <ul class="list">
+            <li class="typography-h3"><a class="link" href="#">мерч</a></li>
+            <li class="typography-h3"><a class="link" href="#">школа</a></li>
+            <li class="typography-h3"><a class="link" href="#">арт-объекты</a></li>
+            <li class="typography-h3"><a class="link" href="#">фестивали</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main-content grid-wrapper">
+      <form class="user-form">
+        <h2 class="typography-h2">получатель и доставка</h2>
+
+        <div class="form-input">
+          <label for="name" class="typography-text"><span>имя</span><span>*</span></label>
+          <input type="text" id="name" name="name" required />
+          <span class="input-incorrect"></span>
+        </div>
+        <div class="form-input">
+          <label for="surname" class="typography-text"><span>фамилия</span><span>*</span></label>
+          <input type="text" id="surname" name="surname" required />
+          <span class="input-incorrect"></span>
+        </div>
+        <div class="form-input">
+          <label for="city" class="typography-text"><span>населённый пункт</span><span>*</span></label>
+          <input type="text" id="city" name="city" required placeholder="введите название города" />
+          <span class="input-incorrect"></span>
+        </div>
+        <div class="form-input">
+          <label for="address" class="typography-text"><span>адрес</span><span>*</span></label>
+          <input type="text" id="address" name="address" required placeholder="номер дома и название улицы" />
+          <span class="input-incorrect"></span>
+        </div>
+        <div class="form-input">
+          <label for="tel" class="typography-text"><span>телефон</span><span>*</span></label>
+          <input type="text" id="tel" name="tel" required />
+          <span class="input-incorrect"></span>
+        </div>
+        <div class="form-input">
+          <label for="email" class="typography-text"><span>email</span><span>*</span></label>
+          <input type="text" id="email" name="email" required />
+          <span class="input-incorrect"></span>
+        </div>
+        <div class="subscription-input">
+          <input type="checkbox" id="sub" name="sub" />
+          <div class="subscription-input__info typography-text">
+            <label for="sub">
+              <span>включить меня в рассылку о событиях, программах и скидках в никола - ленивце</span>
+            </label>
+            <span>(необязательно)</span>
+          </div>
+        </div>
+        <h3 class="typography-h3">детали</h3>
+        <div class="form-input promocode-input">
+          <div class="promocode-enter-image">
+            <img src="data:image/svg+xml,%3csvg%20width='13'%20height='20'%20viewBox='0%200%2013%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M13%2010L0%200L0%2020L13%2010Z'%20fill='%23888888'/%3e%3c/svg%3e" alt="" />
+          </div>
+          <label for="promocode" class="typography-h3"><span>промокод</span></label>
+          <input type="text" id="promocode" name="promocode" required placeholder="введите промокод" />
+          <span class="input-incorrect">промокод не действителен</span>
+        </div>
+        <h3 class="typography-h5">выберите способ доставки</h3>
+        <span class="address-hint typography-text">введите свой адрес для просмотра параметров доставки</span>
+        <div class="totals">
+          <div class="product-sum">
+            <span class="typography-h3">товаров на сумму</span>
+            <span class="typography-h3">12 540 ₽</span>
+          </div>
+          <div class="delivery-sum">
+            <span class="typography-h3">доставка</span>
+            <span class="typography-h3">бесплатно!</span>
+          </div>
+          <div class="total-sum">
+            <span class="typography-h3">итого</span>
+            <span class="typography-h3">12 540 ₽</span>
+          </div>
+        </div>
+        <div class="payment-methods">
+          <h3 class="typography-h3">способ оплаты</h3>
+          <div class="yookassa">
+            <div class="yookassa__dot"></div>
+            <span class="typography-text">юkassa</span>
+            <img src="data:image/png;base64,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" alt="ЮKassa" width="33px" height="22px" />
+          </div>
+          <span class="typography-text">банковской картой, через sberpay и другими подключёнными способами</span>
+          <button type="submit" class="btn btn-make-order typography-h3">подтвердить заказ</button>
+          <div class="order-policy typography-text">
+            <p>
+              ваши личные данные будут использоваться для обработки ваших заказов, упрощения вашей работы с сайтом и для
+              других целей, описанных в нашей политика конфиденциальности.
+            </p>
+            <div class="policy-checkbox">
+              <input type="checkbox" name="policy-accept" id="policy-accept" />
+              <label for="policy-accept">я прочитал(а) и принимаю правила и условия сайта</label>
+            </div>
+          </div>
+        </div>
+      </form>
+      <section class="cart-content">
+        <div class="cart-item">
+          <button class="btn btn-cart-item__remove">
+            <img src="data:image/svg+xml,%3csvg%20width='20'%20height='20'%20viewBox='0%200%2020%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8.19789%2011.8021H0V8.1979H8.19789V0H11.8021V8.1979H20V11.8021H11.8021V20H8.19789V11.8021Z'%20fill='black'/%3e%3c/svg%3e" alt="Убрать из корзины" />
+          </button>
+          <div class="cart-item__image">
+            <img src="/tickets/assets/img/product-1.png" alt="Зимний Бафф «Дядя Ваня»" />
+          </div>
+          <div class="cart-item__title">
+            <h5 class="typography-h5">зимний бафф «дядя ваня»</h5>
+            <div class="cart-item__counter">
+              <button class="btn btn-decrease" id="cart-decrease">
+                <img src="data:image/svg+xml,%3csvg%20width='20'%20height='4'%20viewBox='0%200%2020%204'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8.19789%204H0V0H8.19789H11.8021H20V4H11.8021H8.19789Z'%20fill='black'/%3e%3c/svg%3e" alt="Убрать товар" width="20px" height="4px" />
+              </button>
+              <div class="cart-counter">
+                <span class="typography-h3">1</span>
+              </div>
+              <button class="btn btn-increase" id="cart-increase">
+                <img src="data:image/svg+xml,%3csvg%20width='20'%20height='20'%20viewBox='0%200%2020%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8.19789%2011.8021H0V8.1979H8.19789V0H11.8021V8.1979H20V11.8021H11.8021V20H8.19789V11.8021Z'%20fill='black'/%3e%3c/svg%3e" alt="Убрать товар" width="20px" height="20px" />
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="cart-item">
+          <button class="btn btn-cart-item__remove">
+            <img src="data:image/svg+xml,%3csvg%20width='20'%20height='20'%20viewBox='0%200%2020%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8.19789%2011.8021H0V8.1979H8.19789V0H11.8021V8.1979H20V11.8021H11.8021V20H8.19789V11.8021Z'%20fill='black'/%3e%3c/svg%3e" alt="Убрать из корзины" />
+          </button>
+          <div class="cart-item__image">
+            <img src="/tickets/assets/img/product-2.png" alt="худи “н-л”" />
+          </div>
+          <div class="cart-item__title">
+            <h5 class="typography-h5">худи “н-л”</h5>
+            <p class="typography-h5">размер: <span>s</span></p>
+            <div class="cart-item__counter">
+              <button class="btn btn-decrease" id="cart-decrease">
+                <img src="data:image/svg+xml,%3csvg%20width='20'%20height='4'%20viewBox='0%200%2020%204'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8.19789%204H0V0H8.19789H11.8021H20V4H11.8021H8.19789Z'%20fill='black'/%3e%3c/svg%3e" alt="Убрать товар" width="20px" height="4px" />
+              </button>
+              <div class="cart-counter">
+                <span class="typography-h3">1</span>
+              </div>
+              <button class="btn btn-increase" id="cart-increase">
+                <img src="data:image/svg+xml,%3csvg%20width='20'%20height='20'%20viewBox='0%200%2020%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8.19789%2011.8021H0V8.1979H8.19789V0H11.8021V8.1979H20V11.8021H11.8021V20H8.19789V11.8021Z'%20fill='black'/%3e%3c/svg%3e" alt="Убрать товар" width="20px" height="20px" />
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="cart-item">
+          <button class="btn btn-cart-item__remove">
+            <img src="data:image/svg+xml,%3csvg%20width='20'%20height='20'%20viewBox='0%200%2020%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8.19789%2011.8021H0V8.1979H8.19789V0H11.8021V8.1979H20V11.8021H11.8021V20H8.19789V11.8021Z'%20fill='black'/%3e%3c/svg%3e" alt="Убрать из корзины" />
+          </button>
+          <div class="cart-item__image">
+            <img src="/tickets/assets/img/product-3.png" alt="подарочный набор “творец снеговиков ”" />
+          </div>
+          <div class="cart-item__title">
+            <h5 class="typography-h5">подарочный набор “творец снеговиков”</h5>
+            <div class="cart-item__counter">
+              <button class="btn btn-decrease" id="cart-decrease">
+                <img src="data:image/svg+xml,%3csvg%20width='20'%20height='4'%20viewBox='0%200%2020%204'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8.19789%204H0V0H8.19789H11.8021H20V4H11.8021H8.19789Z'%20fill='black'/%3e%3c/svg%3e" alt="Убрать товар" width="20px" height="4px" />
+              </button>
+              <div class="cart-counter">
+                <span class="typography-h3">1</span>
+              </div>
+              <button class="btn btn-increase" id="cart-increase">
+                <img src="data:image/svg+xml,%3csvg%20width='20'%20height='20'%20viewBox='0%200%2020%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8.19789%2011.8021H0V8.1979H8.19789V0H11.8021V8.1979H20V11.8021H11.8021V20H8.19789V11.8021Z'%20fill='black'/%3e%3c/svg%3e" alt="Убрать товар" width="20px" height="20px" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="payment-info">
+        <p>
+          Для оплаты (ввода реквизитов Вашей карты) Вы будете перенаправлены на платежный шлюз ПАО СБЕРБАНК. Соединение
+          с платежным шлюзом и передача информации осуществляется в защищенном режиме с использованием протокола
+          шифрования SSL. В случае если Ваш банк поддерживает технологию безопасного проведения интернет-платежей
+          Verified By Visa, MasterCard SecureCode, MIR Accept, J-Secure для проведения платежа также может потребоваться
+          ввод специального пароля. Настоящий сайт поддерживает 256-битное шифрование. Конфиденциальность сообщаемой
+          персональной информации обеспечивается ПАО СБЕРБАНК. Введенная информация не будет предоставлена третьим лицам
+          за исключением случаев, предусмотренных законодательством РФ. Проведение платежей по банковским картам
+          осуществляется в строгом соответствии с требованиями платежных систем МИР, Visa Int., MasterCard Europe Sprl,
+          JCB
+        </p>
+      </div>
+    </main>
+
+    <footer class="main-footer grid-wrapper">
+      <div class="footer-left-block">
+        <div class="logo">
+          <img src="/tickets/assets/icons/logo.svg" alt="никола-ленивец" />
+        </div>
+        <div class="info">
+          <div class="info-title">
+            <h6 class="typography-h6">арт-парк <br />«никола-ленивец»</h6>
+          </div>
+          <div class="info-contact">
+            <span class="address typography-h6">Калужская область дзержинский район деревня звизжи</span>
+            <span class="contacts">
+              <a class="link typography-h6" href="mailto:shop@nikola-lenivets.com">shop@nikola-lenivets.com</a>
+              <a class="link typography-h6" href="tel:+74951505475">+7 (495) 150-54-75</a>
+            </span>
+          </div>
+        </div>
+        <div class="policy">
+          <ul class="list">
+            <li class="link typography-text-sm">
+              <a class="link" href="#">политика конфиденциальности</a>
+            </li>
+            <li class="link typography-text-sm">
+              <a class="link" href="#">пользовательское соглашение</a>
+            </li>
+            <li class="link typography-text-sm">
+              <a class="link" href="#">способ оплаты и условия возврата</a>
+            </li>
+            <li class="link typography-text-sm">
+              <a class="link" href="#">контакты</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-right-block">
+        <div class="subscribe">
+          <h4 class="typography-h4">подписаться на новости, скидки, старт продаж фестивалей</h4>
+          <input type="email" class="subscribe-input typography-input" placeholder="nikola-lenivets@mail.ru" />
+          <button class="btn btn-subscribe typography-btn-sm">подписаться</button>
+        </div>
+
+        <div class="legal-info typography-text-sm">
+          <span class="legal-title">ООО Фестивали Николы-Ленивца</span><br /><br />
+          <span
+            >инн: 4004022620 кпп: 400401001 огрн: 1234000001872 расчетный счет: 40702810422240000722 банк: калужское
+            отделение n8608 пао сбербанк бик: 042908612 корр. счет: 30101810100000000612 юридический адрес: 249866,
+            калужская область, м.р-н дзержинский, с.п. угорское, д никола-ленивец, дом 11</span
+          >
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

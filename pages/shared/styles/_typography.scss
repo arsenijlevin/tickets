@@ -1,0 +1,98 @@
+@use "./fonts" as *;
+@use "./breakpoints" as *;
+
+.typography-h2 {
+  @include pragmatica-bold;
+
+  font-size: 30px;
+  line-height: 30px;
+  letter-spacing: -0.9px;
+}
+
+.typography-h3 {
+  @include pragmatica-bold;
+
+  font-size: 23px;
+  line-height: 23px;
+  letter-spacing: -0.7px;
+}
+
+.typography-h4 {
+  @include pragmatica-bold;
+
+  font-size: 19px;
+  line-height: 23px;
+  letter-spacing: -0.7px;
+
+  @media (min-width: $mobile-md) {
+    font-size: 23px;
+  }
+}
+
+.typography-h5 {
+  @include pragmatica-bold;
+
+  font-size: 16px;
+  line-height: 17px;
+  letter-spacing: -0.1px;
+
+  @media (min-width: $mobile-md) {
+    font-size: 18px;
+    line-height: 19px;
+  }
+}
+
+.typography-h6 {
+  @include pragmatica-bold;
+
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: -0.05px;
+
+  @media (min-width: $mobile-md) {
+    font-size: 14px;
+    line-height: 14px;
+  }
+}
+
+.typography-input {
+  @include pragmatica-book;
+
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: -0.1px;
+}
+
+.typography-btn-sm {
+  @include pragmatica-bold;
+
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: -0.4px;
+}
+
+.typography-text-sm {
+  @include pragmatica-book;
+
+  font-size: 11px;
+  line-height: 13px;
+  letter-spacing: -0.05px;
+
+  @media (min-width: $mobile-md) {
+    font-size: 14px;
+    line-height: 14px;
+  }
+}
+
+.typography-text {
+  @include pragmatica-book;
+
+  font-size: 14px;
+  line-height: 15px;
+  letter-spacing: -0.1px;
+
+  @media (min-width: $mobile-md) {
+    font-size: 16px;
+    line-height: 17px;
+  }
+}

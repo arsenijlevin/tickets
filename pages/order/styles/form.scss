@@ -1,0 +1,126 @@
+@use "../../shared/styles/shared.scss" as *;
+
+/** Form */
+.user-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-input {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  label {
+    display: flex;
+    gap: 20px;
+  }
+
+  input {
+    padding: 15px;
+    background: #f3f2f3;
+    border: 0;
+
+    &:focus-within {
+      outline-color: black;
+    }
+
+    &[type="checkbox"] {
+      accent-color: black;
+    }
+  }
+}
+
+.subscription-input {
+  display: flex;
+  gap: 10px;
+}
+
+.subscription-input__info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  @media (width >= $mobile-md) {
+    display: contents;
+  }
+}
+
+.promocode-input {
+  position: relative;
+}
+
+.promocode-enter-image {
+  position: absolute;
+  top: 50px;
+  right: 20px;
+}
+
+.input-incorrect {
+  color: #f04822;
+}
+
+.totals {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  border-bottom: 5px solid black;
+  padding-bottom: 30px;
+
+  > div {
+    display: flex;
+    justify-content: space-between;
+
+    span:first-child {
+      color: #333;
+    }
+  }
+}
+
+.yookassa {
+  display: flex;
+  margin-top: 10px;
+  align-items: center;
+  margin-bottom: 30px;
+
+  .typography-text {
+    flex: 1;
+  }
+
+  img {
+    max-width: 33px;
+    height: 22px;
+    align-self: flex-end;
+    flex: 1;
+  }
+}
+
+.yookassa__dot {
+  width: 17px;
+  height: 17px;
+  flex-shrink: 0;
+  margin-right: 3px;
+  background-color: #000;
+  border-radius: 50%;
+}
+
+.btn-make-order {
+  color: #fff;
+  background: #000;
+  padding: 20px 20px 20px 15px;
+  text-align: left;
+  width: 100%;
+}
+
+.order-policy {
+  margin-top: 10px;
+  color: #7b7b7b;
+}
+
+.policy-checkbox {
+  margin-top: 6px;
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}

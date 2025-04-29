@@ -1,0 +1,92 @@
+@use "./breakpoints" as *;
+@use "./fonts" as *;
+
+/** Global styles */
+.list {
+  list-style: none;
+  padding: 0;
+}
+
+.link {
+  color: inherit;
+  text-decoration: none;
+
+  &:visited {
+    color: inherit;
+  }
+}
+
+.grid-wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+
+  * {
+    font-family: Pragmatica, sans-serif;
+  }
+
+  // p,
+  // h1,
+  // h2,
+  // h3,
+  // h4,
+  // h5,
+  // h6,
+  // li,
+  // blockquote,
+  // figcaption,
+  // dt,
+  // dd,
+  // td,
+  // th,
+  // b,
+  // strong,
+  // em,
+  // mark,
+  // small,
+  // del,
+  // ins,
+  // sub,
+  // sup,
+  // span,
+  // button {
+  //   white-space: pre-wrap;
+  // }
+
+  @media (width >= $mobile-md) {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  @media (width >= $laptop-sm) {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}
+
+a.btn {
+  display: block;
+  text-decoration: none;
+}
+
+.btn {
+  border: none;
+  width: auto;
+  overflow: visible;
+  background: transparent;
+  padding: 0;
+
+  /* Inherit font & color from ancestor */
+  color: inherit;
+  font: inherit;
+
+  /* Normalize `line-height`. */
+  line-height: normal;
+
+  /* Corrects font smoothing for webkit */
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+
+  /* Corrects inability to style clickable `input` types in iOS */
+  appearance: none;
+  cursor: pointer;
+}

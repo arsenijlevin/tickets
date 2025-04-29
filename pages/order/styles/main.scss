@@ -1,0 +1,41 @@
+@use "../../shared/styles/shared" as *;
+@use "./form";
+@use "./cart";
+
+.cart-overlay {
+  display: none;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+
+  > * {
+    color: #404040;
+  }
+
+  @media (width >= $laptop-sm) {
+    flex-flow: row wrap;
+    gap: 20px;
+
+    > * {
+      flex: 1;
+    }
+  }
+}
+
+.payment-info {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-size: 16px;
+  line-height: 18px;
+  color: #404040;
+
+  @media (width >= $laptop-sm) {
+    flex: 100%;
+
+    > p {
+      max-width: 70%;
+    }
+  }
+}

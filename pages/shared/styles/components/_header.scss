@@ -1,0 +1,103 @@
+/** Header styles */
+
+@use "../fonts" as *;
+@use "../breakpoints" as *;
+
+.main-header {
+  display: flex;
+  margin: 30px 0;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  max-height: 47px;
+
+  @media (width >= $tablet-md) {
+    gap: 30px;
+  }
+
+  @media (width >= $mobile-md) {
+    margin-bottom: 80px;
+    max-height: 100%;
+  }
+}
+
+.shop-logo {
+  display: flex;
+  flex: 1;
+
+  @media (width >= $laptop-sm) {
+    order: 2;
+    flex: unset;
+  }
+}
+
+.shop-logo img {
+  height: 47px;
+  width: 157px;
+
+  @media (width >= $mobile-md) {
+    height: 86px;
+    width: 290px;
+  }
+}
+
+.header-menu {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  height: 100%;
+  flex: 1;
+  justify-content: flex-end;
+
+  @media (width >= $laptop-sm) {
+    order: 3;
+    flex: unset;
+  }
+}
+
+.cart,
+.mobile-navigation {
+  position: relative;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+.mobile-navigation {
+  display: flex;
+
+  @media (width >= $tablet-md) {
+    display: none;
+  }
+}
+
+.desktop-navigation {
+  display: none;
+  flex: 100%;
+
+  nav ul {
+    display: flex;
+    gap: 40px;
+  }
+
+  @media (width >= $tablet-md) {
+    display: flex;
+  }
+
+  @media (width >= $laptop-sm) {
+    order: 2;
+    flex: unset;
+  }
+}
+
+.cart__counter {
+  @include pragmatica-bold;
+
+  font-size: 14px;
+  line-height: 16px;
+  color: #000;
+  position: absolute;
+  top: 22px;
+  left: 50%;
+  transform: translateX(-50%);
+}
