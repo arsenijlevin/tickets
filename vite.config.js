@@ -33,5 +33,5 @@ export default defineConfig({
     minify: false,
     cssMinify: false,
   },
-  base: "/tickets/",
+  base: "/tickets/dist/",
 });
