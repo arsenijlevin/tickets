@@ -41,6 +41,22 @@
           </ul>
         </nav>
       </div>
+
+      <!-- Mobile Menu Panel -->
+      <div class="mobile-menu" id="mobileMenu">
+        <button class="mobile-menu__close" id="closeMobileMenu">✕</button>
+        <nav>
+          <ul class="mobile-menu__list">
+            <li class="typography-h3"><a class="link" href="#">мерч</a></li>
+            <li class="typography-h3"><a class="link" href="#">школа</a></li>
+            <li class="typography-h3"><a class="link" href="#">арт-объекты</a></li>
+            <li class="typography-h3"><a class="link" href="#">фестивали</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- Optional overlay for better UX -->
+      <div class="mobile-menu__overlay" id="menuOverlay"></div>
     </header>
 
     <main class="main-content grid-wrapper">
@@ -79,7 +95,7 @@
             </button>
           </div>
           <div class="offer__content">
-            <div class="offer-item">
+            <div class="offer-item" data-id="1">
               <div class="offer-item__image">
                 <div class="offer-item__image-overlay-text"></div>
                 <img src="/assets/img/ticket-1.png" alt="Входной билет" />
@@ -117,7 +133,7 @@
                 </div>
               </div>
             </div>
-            <div class="offer-item">
+            <div class="offer-item" data-id="2">
               <div class="offer-item__image">
                 <div class="offer-item__image-overlay-text"></div>
                 <img src="/assets/img/ticket-1-grey.png" alt="Входной билет" />
@@ -167,7 +183,7 @@
             </button>
           </div>
           <div class="offer__content">
-            <div class="offer-item">
+            <div class="offer-item" data-id="3">
               <div class="offer-item__image">
                 <div class="offer-item__image-overlay-text"></div>
                 <img src="/assets/img/fast-track.png" alt="Fast track" />
@@ -216,7 +232,7 @@
                 </div>
               </div>
             </div>
-            <div class="offer-item">
+            <div class="offer-item" data-id="4">
               <div class="offer-item__image">
                 <div class="offer-item__image-overlay-text"></div>
                 <img src="/assets/img/parking-1.png" alt="Парковка" />
@@ -306,7 +322,7 @@
                 </div>
               </div>
             </div>
-            <div class="offer-item">
+            <div class="offer-item" data-id="5">
               <div class="offer-item__image">
                 <div class="offer-item__image-overlay-text"></div>
                 <img src="/assets/img/parking-2.png" alt="Парковка 2" />
@@ -356,7 +372,7 @@
             </button>
           </div>
           <div class="offer__content">
-            <div class="offer-item">
+            <div class="offer-item" data-id="6">
               <div class="offer-item__image">
                 <div class="offer-item__image-overlay-text"></div>
                 <img src="/assets/img/parking-bus.png" alt="Парковка автобус" />
@@ -446,7 +462,7 @@
                 </div>
               </div>
             </div>
-            <div class="offer-item">
+            <div class="offer-item" data-id="7">
               <div class="offer-item__image">
                 <div class="offer-item__image-overlay-text"></div>
                 <img src="/assets/img/parking-microbus.png" alt="Парковка микроавтобус" />

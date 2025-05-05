@@ -8,6 +8,7 @@
 
 .offer:last-child {
   border-bottom: 5px solid black;
+  padding-bottom: 20px;
 }
 
 .btn__offer-toggle {
@@ -49,6 +50,32 @@
 
 .offer-item.description-open .offer-item__full-description::after {
   background: none;
+}
+
+@media (width <= $mobile-md) {
+  .offer-item {
+    padding-left: 8px;
+    padding-right: 8px;
+
+    &:not(:last-child) {
+      border-bottom: 3px solid #000;
+      padding-bottom: 20px;
+    }
+
+    &__to-cart {
+      margin-left: -4px;
+      margin-right: -4px;
+    }
+  }
+}
+
+@media (width >= $laptop-sm) {
+  .main-content .offer-item__main-description p,
+  .main-content .offer-item__tickets-count-text p {
+    font-size: 23px;
+    line-height: 24px;
+    letter-spacing: -0.7px;
+  }
 }
 
 .offer-item {

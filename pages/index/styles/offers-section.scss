@@ -114,6 +114,11 @@
         font-size: 27px;
         line-height: 21px;
       }
+
+      @media (width >= $tablet-md) {
+        font-size: 50px;
+        line-height: 40px;
+      }
     }
   }
 
@@ -122,6 +127,18 @@
     display: flex;
     flex-direction: column;
     gap: 15px;
+
+    .offer-item__main-description {
+      margin-top: -3px;
+    }
+
+    @media (width >= $laptop-sm) {
+      .offer-item__main-description p,
+      .offer-item__tickets-count-text p {
+        font-size: 23px;
+        line-height: 23px;
+      }
+    }
   }
 
   &__commerce {
@@ -191,12 +208,30 @@
   transition: height 0.4s ease;
 }
 
-.btn__offer-toggle img {
-  transition: transform 0.4s ease;
+@media (width >= $tablet-sm) {
+  .offer__header {
+    cursor: default;
+  }
+
+  .btn__offer-toggle {
+    display: none;
+  }
+
+  .offer__content {
+    height: auto !important;
+    overflow: visible;
+    transition: none !important;
+  }
 }
 
 .offer.open .btn__offer-toggle img {
   transform: rotate(180deg); /* or 90deg if you prefer */
+}
+
+.main-content p.out-of-stock-text {
+  font-size: 23px;
+  line-height: 23px;
+  font-weight: normal;
 }
 
 @media (width >= $mobile-md) {
@@ -225,3 +260,72 @@
 .btn-decrease {
   filter: invert(1);
 }
+
+.sticky-cart-button {
+  position: fixed;
+  bottom: 0;
+  opacity: 1;
+  z-index: 999;
+  animation: fade-in-slide-up 0.3s ease-out;
+  left: 20px;
+  width: calc(100% - 40px);
+
+  @media (width >= $mobile-md) {
+    left: 40px;
+    width: calc(100% - 80px);
+  }
+
+  @media (width >= $laptop-sm) {
+    left: 80px;
+    width: calc(100% - 160px);
+  }
+}
+
+@keyframes fade-in-slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.sticky-cart-button.fade-out {
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+}
+
+// /* Debug: highlight active item */
+// .offer-item.debug-active {
+//   outline: 2px solid red;
+// }
+
+// /* Debug: blue line at showButtonHeight */
+// #sticky-debug-line {
+//   position: fixed;
+//   top: 700px;
+//   left: 0;
+//   right: 0;
+//   height: 1px;
+//   background-color: blue;
+//   z-index: 9999;
+//   pointer-events: none;
+// }
+
+// /* Debug: floating info panel */
+// #sticky-debug-panel {
+//   position: fixed;
+//   bottom: 10px;
+//   right: 10px;
+//   background: rgb(0 0 0 / 70%);
+//   color: white;
+//   padding: 8px;
+//   font-size: 12px;
+//   z-index: 9999;
+//   max-height: 200px;
+//   overflow-y: auto;
+//   white-space: pre;
+// }

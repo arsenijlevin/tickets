@@ -1,7 +1,13 @@
 /** "Hero" section */
 @use "../../shared/styles/shared" as *;
 
-.hero-section {
+.hero-image img {
+  @media (min-width: $laptop-sm) {
+    min-width: 597px;
+  }
+}
+
+.main-content .hero-section {
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -53,10 +59,4 @@
   gap: 15px;
   flex: 1;
   flex-basis: 690px;
-}
-
-.hero-image img {
-  @media (min-width: $laptop-sm) {
-    min-width: 597px;
-  }
 }

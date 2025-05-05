@@ -48,13 +48,14 @@
 }
 
 .btn-related-product__add-to-cart {
-  padding: 12px 30px 12px 15px;
+  padding: 4px 15px 4px 10px;
   width: 100%;
   background-color: #000;
   color: #fff;
   border: 5px solid #000;
   text-align: left;
   font-weight: bold;
+  font-size: 13px;
 }
 
 @media (width >= $tablet-sm) {

@@ -9,6 +9,8 @@ export function setupOfferItemDescriptions() {
 
     const descriptionHeight = fullDescription.scrollHeight;
 
+    const isMobile = window.innerWidth < 768;
+
     if (descriptionHeight <= 200) {
       // Small description — no need for toggle
       toggleButton.style.display = "none";
@@ -18,12 +20,23 @@ export function setupOfferItemDescriptions() {
       return;
     }
 
-    // Big description — need toggle
-    fullDescription.setAttribute("aria-hidden", "true");
-    toggleButton.setAttribute("aria-expanded", "false");
+    if (!isMobile) {
+      // Always fully open on page load in desktop
+      fullDescription.setAttribute("aria-hidden", "false");
+      toggleButton.setAttribute("aria-expanded", "true");
 
-    // Show part of the content (e.g., 200px) initially
-    fullDescription.style.height = "200px";
+      item.classList.add("description-open");
+      toggleButton.textContent = "скрыть";
+
+      fullDescription.style.height = descriptionHeight + "px";
+    } else {
+      // Big description — need toggle
+      fullDescription.setAttribute("aria-hidden", "true");
+      toggleButton.setAttribute("aria-expanded", "false");
+
+      // Show part of the content (e.g., 200px) initially
+      fullDescription.style.height = "200px";
+    }
 
     toggleButton.addEventListener("click", () => {
       const isOpen = item.classList.contains("description-open");
