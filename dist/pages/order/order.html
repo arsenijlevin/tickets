@@ -2,9 +2,10 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Оформление заказа</title>
     <script type="module" crossorigin src="/tickets/dist/pages/order/order.js"></script>
+    <link rel="modulepreload" crossorigin href="/tickets/dist/pages/shared/shared.js">
     <link rel="stylesheet" crossorigin href="/tickets/dist/pages/order/order.css">
   </head>
 
@@ -42,6 +43,22 @@
           </ul>
         </nav>
       </div>
+
+      <!-- Mobile Menu Panel -->
+      <div class="mobile-menu" id="mobileMenu">
+        <button class="mobile-menu__close" id="closeMobileMenu">✕</button>
+        <nav>
+          <ul class="mobile-menu__list">
+            <li class="typography-h3"><a class="link" href="#">мерч</a></li>
+            <li class="typography-h3"><a class="link" href="#">школа</a></li>
+            <li class="typography-h3"><a class="link" href="#">арт-объекты</a></li>
+            <li class="typography-h3"><a class="link" href="#">фестивали</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- Optional overlay for better UX -->
+      <div class="mobile-menu__overlay" id="menuOverlay"></div>
     </header>
 
     <main class="main-content grid-wrapper">
@@ -268,6 +285,6 @@
           >
         </div>
       </div>
-    </footer>
+    </footer>
   </body>
 </html>

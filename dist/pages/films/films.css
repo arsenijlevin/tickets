@@ -60,24 +60,19 @@ h6 {
 /** Fonts */
 @font-face {
   font-family: Pragmatica;
-  src: url("/tickets/dist/assets/fonts/Pragmatica-Black.eot");
-  src: local("Pragmatica Black"), local("Pragmatica-Black"), url("/tickets/dist/assets/fonts/Pragmatica-Black.eot?#iefix") format("embedded-opentype"), url("/tickets/dist/assets/fonts/Pragmatica-Black.woff2") format("woff2"), url("/tickets/dist/assets/fonts/Pragmatica-Black.woff") format("woff"), url("/tickets/dist/assets/fonts/Pragmatica-Black.ttf") format("truetype");
-  font-weight: 900;
-  font-style: normal;
-}
-@font-face {
-  font-family: Pragmatica;
   src: url("/tickets/dist/assets/fonts/Pragmatica-Bold.eot");
-  src: local("Pragmatica Bold"), local("Pragmatica-Bold"), url("/tickets/dist/assets/fonts/Pragmatica-Bold.eot?#iefix") format("embedded-opentype"), url("/tickets/dist/assets/fonts/Pragmatica-Bold.woff2") format("woff2"), url("/tickets/dist/assets/fonts/Pragmatica-Bold.woff") format("woff"), url("/tickets/dist/assets/fonts/Pragmatica-Bold.ttf") format("truetype");
+  src: url("/tickets/dist/assets/fonts/Pragmatica-Bold.eot?#iefix") format("embedded-opentype"), url("/tickets/dist/assets/fonts/Pragmatica-Bold.woff2") format("woff2"), url("/tickets/dist/assets/fonts/Pragmatica-Bold.woff") format("woff"), url("/tickets/dist/assets/fonts/Pragmatica-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
+  text-rendering: optimizelegibility;
 }
 @font-face {
   font-family: Pragmatica;
   src: url("/tickets/dist/assets/fonts/Pragmatica-Book.eot");
-  src: local("Pragmatica Book"), local("Pragmatica-Book"), url("/tickets/dist/assets/fonts/Pragmatica-Book.eot?#iefix") format("embedded-opentype"), url("/tickets/dist/assets/fonts/Pragmatica-Book.woff2") format("woff2"), url("/tickets/dist/assets/fonts/Pragmatica-Book.woff") format("woff"), url("/tickets/dist/assets/fonts/Pragmatica-Book.ttf") format("truetype");
+  src: url("/tickets/dist/assets/fonts/Pragmatica-Book.eot?#iefix") format("embedded-opentype"), url("/tickets/dist/assets/fonts/Pragmatica-Book.woff2") format("woff2"), url("/tickets/dist/assets/fonts/Pragmatica-Book.woff") format("woff"), url("/tickets/dist/assets/fonts/Pragmatica-Book.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
+  text-rendering: optimizelegibility;
 }
 /** Global styles */
 .list {
@@ -317,6 +312,9 @@ a.btn {
 .mobile-navigation {
   display: flex;
 }
+.mobile-navigation .btn__mobile-menu {
+  z-index: 100;
+}
 @media (width >= 1024px) {
   .mobile-navigation {
     display: none;
@@ -354,6 +352,122 @@ a.btn {
   top: 22px;
   left: 50%;
   transform: translateX(-50%);
+}
+
+.cart-overlay {
+  font-family: Pragmatica, sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  filter: invert(1);
+  position: fixed;
+  z-index: 10;
+  top: 30px;
+  padding: 20px;
+  background-color: #fff;
+  display: flex;
+  opacity: 0;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.4s ease;
+}
+.cart-overlay .cart {
+  width: 26px;
+  height: 31px;
+}
+.cart-overlay .cart__counter {
+  top: 13px;
+  font-size: 12px;
+}
+.cart-overlay > span {
+  display: none;
+}
+@media (width >= 668px) {
+  .cart-overlay > span {
+    display: block;
+  }
+}
+@media (width >= 768px) {
+  .cart-overlay {
+    top: 40px;
+  }
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: -450px;
+  width: 450px;
+  height: 100%;
+  background-color: #000;
+  padding: 24px 24px 25px;
+  z-index: 1000;
+  transition: right 0.3s ease;
+  color: white;
+}
+@media (width <= 480px) {
+  .mobile-menu {
+    width: 100%;
+  }
+}
+
+.mobile-menu.open {
+  right: 0;
+}
+
+.mobile-menu__close {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 28px;
+  cursor: pointer;
+  position: absolute;
+  top: 35px;
+  right: 20px;
+}
+@media (width >= 668px) {
+  .mobile-menu__close {
+    top: 55px;
+    right: 35px;
+  }
+}
+@media (width >= 1280px) {
+  .mobile-menu__close {
+    right: 80px;
+  }
+}
+
+.mobile-menu__list {
+  list-style: none;
+  margin-top: 60px;
+  padding: 0;
+}
+
+.mobile-menu__list li {
+  margin-bottom: 20px;
+}
+
+.mobile-menu__list a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.mobile-menu__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.7);
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+}
+
+.mobile-menu__overlay.visible {
+  opacity: 1;
+  visibility: visible;
 }
 
 /** Footer styles */
@@ -499,39 +613,45 @@ a.btn {
 }
 /** Pages specific styles */
 /** "Hero" section */
-.hero-section {
+@media (min-width: 1280px) {
+  .hero-image img {
+    min-width: 597px;
+  }
+}
+
+.main-content .hero-section {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
-.hero-section h1 {
+.main-content .hero-section h1 {
   margin-bottom: 15px;
 }
 @media (min-width: 668px) {
-  .hero-section h1 {
+  .main-content .hero-section h1 {
     font-size: 50px;
     line-height: 40px;
     letter-spacing: -1.5px;
   }
 }
-.hero-section h1,
-.hero-section p {
+.main-content .hero-section h1,
+.main-content .hero-section p {
   color: #333;
 }
-.hero-section img {
+.main-content .hero-section img {
   margin-top: 15px;
 }
 @media (min-width: 668px) {
-  .hero-section img {
+  .main-content .hero-section img {
     margin-top: 25px;
   }
 }
 @media (min-width: 1280px) {
-  .hero-section {
+  .main-content .hero-section {
     flex-direction: row-reverse;
     gap: 40px;
   }
-  .hero-section img {
+  .main-content .hero-section img {
     margin-top: 0;
   }
 }
@@ -554,12 +674,6 @@ a.btn {
   flex-basis: 690px;
 }
 
-@media (min-width: 1280px) {
-  .hero-image img {
-    min-width: 597px;
-  }
-}
-
 /** Offers section */
 .offer__header,
 .offer-item {
@@ -568,6 +682,7 @@ a.btn {
 
 .offer:last-child {
   border-bottom: 5px solid black;
+  padding-bottom: 20px;
 }
 
 .btn__offer-toggle {
@@ -610,6 +725,28 @@ a.btn {
   background: none;
 }
 
+@media (width <= 668px) {
+  .offer-item {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  .offer-item:not(:last-child) {
+    border-bottom: 3px solid #000;
+    padding-bottom: 20px;
+  }
+  .offer-item__to-cart {
+    margin-left: -4px;
+    margin-right: -4px;
+  }
+}
+@media (width >= 1280px) {
+  .main-content .offer-item__main-description p,
+  .main-content .offer-item__tickets-count-text p {
+    font-size: 23px;
+    line-height: 24px;
+    letter-spacing: -0.7px;
+  }
+}
 .offer-item {
   display: flex;
   gap: 20px;
@@ -845,13 +982,14 @@ a.btn {
 }
 
 .btn-related-product__add-to-cart {
-  padding: 12px 30px 12px 15px;
+  padding: 4px 15px 4px 10px;
   width: 100%;
   background-color: #000;
   color: #fff;
   border: 5px solid #000;
   text-align: left;
   font-weight: bold;
+  font-size: 13px;
 }
 
 @media (width >= 768px) {
@@ -973,42 +1111,5 @@ a.btn {
   .related-products-section {
     order: 3;
     margin-bottom: 40px;
-  }
-}
-.cart-overlay {
-  font-family: Pragmatica, sans-serif;
-  font-weight: bold;
-  font-style: normal;
-  filter: invert(1);
-  position: fixed;
-  z-index: 10;
-  bottom: 30px;
-  padding: 20px;
-  background-color: #fff;
-  display: flex;
-  opacity: 0;
-  align-items: center;
-  gap: 10px;
-  transition: all 0.4s ease;
-}
-.cart-overlay .cart {
-  width: 26px;
-  height: 31px;
-}
-.cart-overlay .cart__counter {
-  top: 13px;
-  font-size: 10px;
-}
-.cart-overlay > span {
-  display: none;
-}
-@media (width >= 668px) {
-  .cart-overlay > span {
-    display: block;
-  }
-}
-@media (width >= 768px) {
-  .cart-overlay {
-    bottom: 40px;
   }
 }

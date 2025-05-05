@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Главная</title>
     <script type="module" crossorigin src="/tickets/dist/pages/index/index.js"></script>
+    <link rel="modulepreload" crossorigin href="/tickets/dist/pages/shared/shared.js">
     <link rel="stylesheet" crossorigin href="/tickets/dist/pages/index/index.css">
   </head>
 
@@ -42,6 +43,22 @@
           </ul>
         </nav>
       </div>
+
+      <!-- Mobile Menu Panel -->
+      <div class="mobile-menu" id="mobileMenu">
+        <button class="mobile-menu__close" id="closeMobileMenu">✕</button>
+        <nav>
+          <ul class="mobile-menu__list">
+            <li class="typography-h3"><a class="link" href="#">мерч</a></li>
+            <li class="typography-h3"><a class="link" href="#">школа</a></li>
+            <li class="typography-h3"><a class="link" href="#">арт-объекты</a></li>
+            <li class="typography-h3"><a class="link" href="#">фестивали</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- Optional overlay for better UX -->
+      <div class="mobile-menu__overlay" id="menuOverlay"></div>
     </header>
 
     <main class="main-content grid-wrapper">
@@ -76,11 +93,11 @@
               <h3 class="typography-h2">билеты</h3>
             </div>
             <button class="btn btn__offer-toggle">
-              <img src="data:image/svg+xml,%3csvg%20width='43'%20height='24'%20viewBox='0%200%2043%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M2%2022L21.5%203L41%2022'%20stroke='black'%20stroke-width='3'/%3e%3c/svg%3e" alt="Просмотреть билеты" />
+              <img src="data:image/svg+xml,%3csvg%20width='43'%20height='24'%20viewBox='0%200%2043%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M2%2022L21.5%203L41%2022'%20stroke='black'%20stroke-width='3'%20transform='rotate(180%2021.5%2012)'%3e%3c/path%3e%3c/svg%3e" alt="Просмотреть билеты" />
             </button>
           </div>
           <div class="offer__content">
-            <div class="offer-item">
+            <div class="offer-item" data-id="1">
               <div class="offer-item__image">
                 <div class="offer-item__image-overlay-text"></div>
                 <img src="/tickets/dist/assets/img/ticket-1.png" alt="Входной билет" />
@@ -118,7 +135,7 @@
                 </div>
               </div>
             </div>
-            <div class="offer-item">
+            <div class="offer-item" data-id="2">
               <div class="offer-item__image">
                 <div class="offer-item__image-overlay-text"></div>
                 <img src="/tickets/dist/assets/img/ticket-1-grey.png" alt="Входной билет" />
@@ -164,11 +181,11 @@
               <h3 class="typography-h2">парковка для легковых авто</h3>
             </div>
             <button class="btn btn__offer-toggle">
-              <img src="data:image/svg+xml,%3csvg%20width='43'%20height='24'%20viewBox='0%200%2043%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M2%2022L21.5%203L41%2022'%20stroke='black'%20stroke-width='3'/%3e%3c/svg%3e" alt="Просмотреть билеты" />
+              <img src="data:image/svg+xml,%3csvg%20width='43'%20height='24'%20viewBox='0%200%2043%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M2%2022L21.5%203L41%2022'%20stroke='black'%20stroke-width='3'%20transform='rotate(180%2021.5%2012)'%3e%3c/path%3e%3c/svg%3e" alt="Просмотреть билеты" />
             </button>
           </div>
           <div class="offer__content">
-            <div class="offer-item">
+            <div class="offer-item" data-id="3">
               <div class="offer-item__image">
                 <div class="offer-item__image-overlay-text"></div>
                 <img src="/tickets/dist/assets/img/fast-track.png" alt="Fast track" />
@@ -217,7 +234,7 @@
                 </div>
               </div>
             </div>
-            <div class="offer-item">
+            <div class="offer-item" data-id="4">
               <div class="offer-item__image">
                 <div class="offer-item__image-overlay-text"></div>
                 <img src="/tickets/dist/assets/img/parking-1.png" alt="Парковка" />
@@ -307,7 +324,7 @@
                 </div>
               </div>
             </div>
-            <div class="offer-item">
+            <div class="offer-item" data-id="5">
               <div class="offer-item__image">
                 <div class="offer-item__image-overlay-text"></div>
                 <img src="/tickets/dist/assets/img/parking-2.png" alt="Парковка 2" />
@@ -353,11 +370,11 @@
               <h3 class="typography-h2">парковка для автобусов</h3>
             </div>
             <button class="btn btn__offer-toggle">
-              <img src="data:image/svg+xml,%3csvg%20width='43'%20height='24'%20viewBox='0%200%2043%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M2%2022L21.5%203L41%2022'%20stroke='black'%20stroke-width='3'/%3e%3c/svg%3e" alt="Просмотреть билеты" />
+              <img src="data:image/svg+xml,%3csvg%20width='43'%20height='24'%20viewBox='0%200%2043%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M2%2022L21.5%203L41%2022'%20stroke='black'%20stroke-width='3'%20transform='rotate(180%2021.5%2012)'%3e%3c/path%3e%3c/svg%3e" alt="Просмотреть билеты" />
             </button>
           </div>
           <div class="offer__content">
-            <div class="offer-item">
+            <div class="offer-item" data-id="6">
               <div class="offer-item__image">
                 <div class="offer-item__image-overlay-text"></div>
                 <img src="/tickets/dist/assets/img/parking-bus.png" alt="Парковка автобус" />
@@ -447,7 +464,7 @@
                 </div>
               </div>
             </div>
-            <div class="offer-item">
+            <div class="offer-item" data-id="7">
               <div class="offer-item__image">
                 <div class="offer-item__image-overlay-text"></div>
                 <img src="/tickets/dist/assets/img/parking-microbus.png" alt="Парковка микроавтобус" />
@@ -493,7 +510,7 @@
               <h3 class="typography-h2">трансфер</h3>
             </div>
             <button class="btn btn__offer-toggle">
-              <img src="data:image/svg+xml,%3csvg%20width='43'%20height='24'%20viewBox='0%200%2043%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M2%2022L21.5%203L41%2022'%20stroke='black'%20stroke-width='3'/%3e%3c/svg%3e" alt="Просмотреть билеты" />
+              <img src="data:image/svg+xml,%3csvg%20width='43'%20height='24'%20viewBox='0%200%2043%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M2%2022L21.5%203L41%2022'%20stroke='black'%20stroke-width='3'%20transform='rotate(180%2021.5%2012)'%3e%3c/path%3e%3c/svg%3e" alt="Просмотреть билеты" />
             </button>
           </div>
           <div class="offer__content">

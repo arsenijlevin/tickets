@@ -1,3 +1,4 @@
+import { s as setupSharedJS } from "../shared/shared.js";
 function setupAddToCardButtons() {
   const addToCartButtons = document.querySelectorAll(".btn-offer-to-cart");
   addToCartButtons.forEach((button) => {
@@ -72,6 +73,7 @@ function setupHeaderCart() {
   });
 }
 document.addEventListener("DOMContentLoaded", () => {
+  setupSharedJS();
   setupAddToCardButtons();
   setupHeaderCart();
   setupFAQ();

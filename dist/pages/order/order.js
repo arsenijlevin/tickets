@@ -1,3 +1,4 @@
+import { s as setupSharedJS } from "../shared/shared.js";
 function setupAddToCardButtons() {
   document.querySelectorAll(".cart-item__counter").forEach((counter) => {
     const decreaseBtn = counter.querySelector(".btn-decrease");
@@ -18,5 +19,6 @@ function setupAddToCardButtons() {
   });
 }
 document.addEventListener("DOMContentLoaded", () => {
+  setupSharedJS();
   setupAddToCardButtons();
 });
