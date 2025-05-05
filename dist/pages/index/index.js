@@ -113,7 +113,14 @@ function setupAddToCartStickyButton() {
     removeStickyButton();
     stickyButton = originalBtn.cloneNode(true);
     stickyButton.classList.add("sticky-cart-button");
-    stickyButton.addEventListener("click", () => originalBtn.click());
+    stickyButton.addEventListener("click", () => {
+      originalBtn.scrollIntoView({
+        behavior: "smooth",
+        block: "center"
+        // Align the button in the center of the viewport
+      });
+      setTimeout(() => originalBtn.click(), 500);
+    });
     document.body.appendChild(stickyButton);
   }
   function removeStickyButton() {

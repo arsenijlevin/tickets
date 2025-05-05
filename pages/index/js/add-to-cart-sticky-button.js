@@ -1,4 +1,4 @@
-const debugStickyButtons = false;
+const debugStickyButtons = false; // Set to true, than change css removing commented code
 
 export function setupAddToCartStickyButton() {
   const showButtonHeight = 700;
@@ -49,7 +49,16 @@ export function setupAddToCartStickyButton() {
     stickyButton = originalBtn.cloneNode(true);
     stickyButton.classList.add("sticky-cart-button");
 
-    stickyButton.addEventListener("click", () => originalBtn.click());
+    stickyButton.addEventListener("click", () => {
+      // Scroll to the original button with smooth behavior
+      originalBtn.scrollIntoView({
+        behavior: "smooth",
+        block: "center", // Align the button in the center of the viewport
+      });
+
+      // Simulate the original button click after scrolling
+      setTimeout(() => originalBtn.click(), 500); // Delay the click to allow scroll to complete
+    });
 
     document.body.appendChild(stickyButton);
   }
