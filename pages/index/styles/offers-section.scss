@@ -224,6 +224,10 @@
   }
 }
 
+.offer .btn__offer-toggle img {
+  transition: transform 0.3s ease;
+}
+
 .offer.open .btn__offer-toggle img {
   transform: rotate(180deg); /* or 90deg if you prefer */
 }
@@ -263,7 +267,7 @@
 
 .sticky-cart-button {
   position: fixed;
-  bottom: 0;
+  bottom: 5px;
   opacity: 1;
   z-index: 999;
   animation: fade-in-slide-up 0.3s ease-out;
@@ -296,6 +300,7 @@
 .sticky-cart-button.fade-out {
   opacity: 0;
   transition: opacity 0.3s ease-out;
+  z-index: -1;
 }
 
 // /* Debug: highlight active item */

@@ -8,9 +8,11 @@ export function setupHeaderCart() {
     if (headerPosition.top > 0) {
       // Hide the button if the header is visible
       cart.style.opacity = "0";
+      cart.style.zIndex = "-1";
     } else {
       // Show the button if the header is not visible
       cart.style.opacity = "1";
+      cart.style.zIndex = "10";
     }
   });
 }

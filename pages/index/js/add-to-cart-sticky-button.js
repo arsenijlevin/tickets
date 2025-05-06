@@ -49,15 +49,18 @@ export function setupAddToCartStickyButton() {
     stickyButton = originalBtn.cloneNode(true);
     stickyButton.classList.add("sticky-cart-button");
 
-    stickyButton.addEventListener("click", () => {
+    stickyButton.addEventListener("click", (event) => {
+      event.preventDefault();
+
       // Scroll to the original button with smooth behavior
       originalBtn.scrollIntoView({
         behavior: "smooth",
         block: "center", // Align the button in the center of the viewport
       });
 
-      // Simulate the original button click after scrolling
-      setTimeout(() => originalBtn.click(), 500); // Delay the click to allow scroll to complete
+      setTimeout(() => {
+        originalBtn.click();
+      }, 500); // Delay the click to allow scroll to complete
     });
 
     document.body.appendChild(stickyButton);
@@ -67,12 +70,16 @@ export function setupAddToCartStickyButton() {
     if (stickyButton) {
       stickyButton.classList.add("fade-out");
 
-      setTimeout(() => {
-        if (stickyButton) {
-          stickyButton.remove();
-          stickyButton = null;
-        }
-      }, 300); // match the CSS transition duration
+      setTimeout(
+        (stickyButton) => {
+          if (stickyButton) {
+            stickyButton.remove();
+            stickyButton = null;
+          }
+        },
+        300,
+        stickyButton,
+      ); // match the CSS transition duration
     }
   }
 
