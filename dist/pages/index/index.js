@@ -113,25 +113,32 @@ function setupAddToCartStickyButton() {
     removeStickyButton();
     stickyButton = originalBtn.cloneNode(true);
     stickyButton.classList.add("sticky-cart-button");
-    stickyButton.addEventListener("click", () => {
+    stickyButton.addEventListener("click", (event) => {
+      event.preventDefault();
       originalBtn.scrollIntoView({
         behavior: "smooth",
         block: "center"
         // Align the button in the center of the viewport
       });
-      setTimeout(() => originalBtn.click(), 500);
+      setTimeout(() => {
+        originalBtn.click();
+      }, 500);
     });
     document.body.appendChild(stickyButton);
   }
   function removeStickyButton() {
     if (stickyButton) {
       stickyButton.classList.add("fade-out");
-      setTimeout(() => {
-        if (stickyButton) {
-          stickyButton.remove();
-          stickyButton = null;
-        }
-      }, 300);
+      setTimeout(
+        (stickyButton2) => {
+          if (stickyButton2) {
+            stickyButton2.remove();
+            stickyButton2 = null;
+          }
+        },
+        300,
+        stickyButton
+      );
     }
   }
   function updateStickyLogic() {
@@ -254,8 +261,10 @@ function setupHeaderCart() {
     const headerPosition = header.getBoundingClientRect();
     if (headerPosition.top > 0) {
       cart.style.opacity = "0";
+      cart.style.zIndex = "-1";
     } else {
       cart.style.opacity = "1";
+      cart.style.zIndex = "10";
     }
   });
 }

@@ -360,7 +360,7 @@ a.btn {
   font-style: normal;
   filter: invert(1);
   position: fixed;
-  z-index: 10;
+  z-index: -1;
   top: 30px;
   padding: 20px;
   background-color: #fff;

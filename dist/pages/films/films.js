@@ -67,8 +67,10 @@ function setupHeaderCart() {
     const headerPosition = header.getBoundingClientRect();
     if (headerPosition.top > 0) {
       cart.style.opacity = "0";
+      cart.style.zIndex = "-1";
     } else {
       cart.style.opacity = "1";
+      cart.style.zIndex = "10";
     }
   });
 }
