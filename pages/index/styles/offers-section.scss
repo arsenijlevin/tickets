@@ -5,16 +5,10 @@
 .offer-item {
   border-bottom: 3px solid black;
   padding: 20px 0;
-}
 
-@media (width >= $tablet-sm) {
-  .offer__header {
-    border-bottom: 5px solid black;
+  @media (width >= $tablet-sm) {
+    padding: 25px 0;
   }
-}
-
-.btn__offer-toggle {
-  flex-shrink: 0;
 }
 
 .offer__header {
@@ -22,6 +16,36 @@
   justify-content: space-between;
   cursor: pointer;
   user-select: none;
+}
+
+@media (width >= $mobile-md) {
+  .offer.open {
+    border-bottom: 3px solid black;
+  }
+}
+
+.offer.open .offer__header {
+  border-bottom: 0;
+}
+
+@media (width >= $mobile-md) and (width < $tablet-sm) {
+  .offer:not(.open) .offer-item {
+    border-top: 0;
+  }
+}
+
+@media (width >= $tablet-sm) {
+  .offer__header {
+    border-bottom: 0;
+  }
+
+  .offer:not(:first-child) .offer__header {
+    border-top: 5px solid black;
+  }
+}
+
+.btn__offer-toggle {
+  flex-shrink: 0;
 }
 
 .offer-item__full-description {
@@ -33,6 +57,10 @@
   transition: height 0.4s ease;
   position: relative;
 
+  > *:nth-child(2) {
+    margin-bottom: 30px;
+  }
+
   &::after {
     content: "";
     position: absolute;
@@ -42,6 +70,49 @@
     height: 20px;
     background: linear-gradient(to bottom, rgb(255 255 255 / 0%) 0%, rgb(255 255 255 / 100%) 100%);
     transition: background 0.4s ease;
+  }
+
+  @media (width < $mobile-md) {
+    right: 120px;
+    width: calc(100% + 120px);
+
+    .btn-offer-item__show-full-description {
+      right: 120px;
+      position: relative;
+    }
+
+    > *:first-child,
+    > *:nth-child(2) {
+      position: relative;
+      width: calc(100% - 120px);
+      left: 120px;
+    }
+  }
+
+  @media (width >= $mobile-md) and (width < $tablet-sm) {
+    right: 178px;
+    width: calc(100% + 178px);
+
+    > *:first-child,
+    > *:nth-child(2) {
+      position: relative;
+      width: calc(100% - 178px);
+      left: 178px;
+    }
+  }
+}
+
+@media (width < $mobile-md) {
+  .btn-offer-item__show-full-description {
+    right: 120px;
+    position: relative;
+  }
+}
+
+@media (width >= $mobile-md) and (width < $tablet-sm) {
+  .btn-offer-item__show-full-description {
+    right: 178px;
+    position: relative;
   }
 }
 
@@ -154,7 +225,7 @@
 
   @media (width >= $mobile-md) {
     border: 3px solid #000;
-    margin: 30px 0;
+    margin-bottom: 30px;
     padding: 20px;
   }
 
@@ -275,13 +346,13 @@
   width: calc(100% - 40px);
 
   @media (width >= $mobile-md) {
-    left: 40px;
-    width: calc(100% - 80px);
+    left: 63px;
+    width: calc(100% - 126px);
   }
 
   @media (width >= $laptop-sm) {
-    left: 80px;
-    width: calc(100% - 160px);
+    left: 103px;
+    width: calc(100% - 206px);
   }
 }
 
