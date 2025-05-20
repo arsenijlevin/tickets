@@ -907,6 +907,12 @@ a.btn {
   flex: 100%;
 }
 
+@media (width <= 1024px) {
+  .offer-item__tickets-count-text,
+  .offer-item__price {
+    align-self: flex-end;
+  }
+}
 @media (width >= 1024px) {
   .offer-item__tickets-count-text {
     position: absolute;

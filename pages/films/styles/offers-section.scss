@@ -242,6 +242,13 @@
   flex: 100%;
 }
 
+@media (width <= $tablet-md) {
+  .offer-item__tickets-count-text,
+  .offer-item__price {
+    align-self: flex-end;
+  }
+}
+
 @media (width >= $tablet-md) {
   .offer-item__tickets-count-text {
     position: absolute;
