@@ -108,12 +108,12 @@ h6 {
   }
 }
 
-a.btn {
+a.custom-btn {
   display: block;
   text-decoration: none;
 }
 
-.btn {
+.custom-btn {
   border: none;
   width: auto;
   overflow: visible;
@@ -136,31 +136,31 @@ a.btn {
   font-family: Pragmatica, sans-serif;
   font-weight: bold;
   font-style: normal;
-  font-size: 30px;
-  line-height: 30px;
-  letter-spacing: -0.9px;
+  font-size: 30px !important;
+  line-height: 30px !important;
+  letter-spacing: -0.9px !important;
 }
 
 .typography-h3 {
   font-family: Pragmatica, sans-serif;
   font-weight: bold;
   font-style: normal;
-  font-size: 23px;
-  line-height: 23px;
-  letter-spacing: -0.7px;
+  font-size: 23px !important;
+  line-height: 23px !important;
+  letter-spacing: -0.7px !important;
 }
 
 .typography-h4 {
   font-family: Pragmatica, sans-serif;
   font-weight: bold;
   font-style: normal;
-  font-size: 19px;
-  line-height: 23px;
-  letter-spacing: -0.7px;
+  font-size: 19px !important;
+  line-height: 23px !important;
+  letter-spacing: -0.7px !important;
 }
 @media (min-width: 668px) {
   .typography-h4 {
-    font-size: 23px;
+    font-size: 23px !important;
   }
 }
 
@@ -168,14 +168,14 @@ a.btn {
   font-family: Pragmatica, sans-serif;
   font-weight: bold;
   font-style: normal;
-  font-size: 16px;
-  line-height: 17px;
-  letter-spacing: -0.1px;
+  font-size: 16px !important;
+  line-height: 17px !important;
+  letter-spacing: -0.1px !important;
 }
 @media (min-width: 668px) {
   .typography-h5 {
-    font-size: 18px;
-    line-height: 19px;
+    font-size: 18px !important;
+    line-height: 19px !important;
   }
 }
 
@@ -183,14 +183,14 @@ a.btn {
   font-family: Pragmatica, sans-serif;
   font-weight: bold;
   font-style: normal;
-  font-size: 10px;
-  line-height: 12px;
-  letter-spacing: -0.05px;
+  font-size: 10px !important;
+  line-height: 12px !important;
+  letter-spacing: -0.05px !important;
 }
 @media (min-width: 668px) {
   .typography-h6 {
-    font-size: 14px;
-    line-height: 14px;
+    font-size: 14px !important;
+    line-height: 14px !important;
   }
 }
 
@@ -198,32 +198,32 @@ a.btn {
   font-family: Pragmatica, sans-serif;
   font-weight: normal;
   font-style: normal;
-  font-size: 16px;
-  line-height: 18px;
-  letter-spacing: -0.1px;
+  font-size: 16px !important;
+  line-height: 18px !important;
+  letter-spacing: -0.1px !important;
 }
 
 .typography-btn-sm {
   font-family: Pragmatica, sans-serif;
   font-weight: bold;
   font-style: normal;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: -0.4px;
+  font-size: 14px !important;
+  line-height: 16px !important;
+  letter-spacing: -0.4px !important;
 }
 
 .typography-text-sm {
   font-family: Pragmatica, sans-serif;
   font-weight: normal;
   font-style: normal;
-  font-size: 11px;
-  line-height: 13px;
-  letter-spacing: -0.05px;
+  font-size: 11px !important;
+  line-height: 13px !important;
+  letter-spacing: -0.05px !important;
 }
 @media (min-width: 668px) {
   .typography-text-sm {
-    font-size: 14px;
-    line-height: 14px;
+    font-size: 14px !important;
+    line-height: 14px !important;
   }
 }
 
@@ -231,14 +231,14 @@ a.btn {
   font-family: Pragmatica, sans-serif;
   font-weight: normal;
   font-style: normal;
-  font-size: 14px;
-  line-height: 15px;
-  letter-spacing: -0.1px;
+  font-size: 14px !important;
+  line-height: 15px !important;
+  letter-spacing: -0.1px !important;
 }
 @media (min-width: 668px) {
   .typography-text {
-    font-size: 16px;
-    line-height: 17px;
+    font-size: 16px !important;
+    line-height: 17px !important;
   }
 }
 

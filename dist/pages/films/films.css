@@ -108,12 +108,12 @@ h6 {
   }
 }
 
-a.btn {
+a.custom-btn {
   display: block;
   text-decoration: none;
 }
 
-.btn {
+.custom-btn {
   border: none;
   width: auto;
   overflow: visible;
@@ -136,31 +136,31 @@ a.btn {
   font-family: Pragmatica, sans-serif;
   font-weight: bold;
   font-style: normal;
-  font-size: 30px;
-  line-height: 30px;
-  letter-spacing: -0.9px;
+  font-size: 30px !important;
+  line-height: 30px !important;
+  letter-spacing: -0.9px !important;
 }
 
 .typography-h3 {
   font-family: Pragmatica, sans-serif;
   font-weight: bold;
   font-style: normal;
-  font-size: 23px;
-  line-height: 23px;
-  letter-spacing: -0.7px;
+  font-size: 23px !important;
+  line-height: 23px !important;
+  letter-spacing: -0.7px !important;
 }
 
 .typography-h4 {
   font-family: Pragmatica, sans-serif;
   font-weight: bold;
   font-style: normal;
-  font-size: 19px;
-  line-height: 23px;
-  letter-spacing: -0.7px;
+  font-size: 19px !important;
+  line-height: 23px !important;
+  letter-spacing: -0.7px !important;
 }
 @media (min-width: 668px) {
   .typography-h4 {
-    font-size: 23px;
+    font-size: 23px !important;
   }
 }
 
@@ -168,14 +168,14 @@ a.btn {
   font-family: Pragmatica, sans-serif;
   font-weight: bold;
   font-style: normal;
-  font-size: 16px;
-  line-height: 17px;
-  letter-spacing: -0.1px;
+  font-size: 16px !important;
+  line-height: 17px !important;
+  letter-spacing: -0.1px !important;
 }
 @media (min-width: 668px) {
   .typography-h5 {
-    font-size: 18px;
-    line-height: 19px;
+    font-size: 18px !important;
+    line-height: 19px !important;
   }
 }
 
@@ -183,14 +183,14 @@ a.btn {
   font-family: Pragmatica, sans-serif;
   font-weight: bold;
   font-style: normal;
-  font-size: 10px;
-  line-height: 12px;
-  letter-spacing: -0.05px;
+  font-size: 10px !important;
+  line-height: 12px !important;
+  letter-spacing: -0.05px !important;
 }
 @media (min-width: 668px) {
   .typography-h6 {
-    font-size: 14px;
-    line-height: 14px;
+    font-size: 14px !important;
+    line-height: 14px !important;
   }
 }
 
@@ -198,32 +198,32 @@ a.btn {
   font-family: Pragmatica, sans-serif;
   font-weight: normal;
   font-style: normal;
-  font-size: 16px;
-  line-height: 18px;
-  letter-spacing: -0.1px;
+  font-size: 16px !important;
+  line-height: 18px !important;
+  letter-spacing: -0.1px !important;
 }
 
 .typography-btn-sm {
   font-family: Pragmatica, sans-serif;
   font-weight: bold;
   font-style: normal;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: -0.4px;
+  font-size: 14px !important;
+  line-height: 16px !important;
+  letter-spacing: -0.4px !important;
 }
 
 .typography-text-sm {
   font-family: Pragmatica, sans-serif;
   font-weight: normal;
   font-style: normal;
-  font-size: 11px;
-  line-height: 13px;
-  letter-spacing: -0.05px;
+  font-size: 11px !important;
+  line-height: 13px !important;
+  letter-spacing: -0.05px !important;
 }
 @media (min-width: 668px) {
   .typography-text-sm {
-    font-size: 14px;
-    line-height: 14px;
+    font-size: 14px !important;
+    line-height: 14px !important;
   }
 }
 
@@ -231,14 +231,14 @@ a.btn {
   font-family: Pragmatica, sans-serif;
   font-weight: normal;
   font-style: normal;
-  font-size: 14px;
-  line-height: 15px;
-  letter-spacing: -0.1px;
+  font-size: 14px !important;
+  line-height: 15px !important;
+  letter-spacing: -0.1px !important;
 }
 @media (min-width: 668px) {
   .typography-text {
-    font-size: 16px;
-    line-height: 17px;
+    font-size: 16px !important;
+    line-height: 17px !important;
   }
 }
 
@@ -689,6 +689,12 @@ a.btn {
   flex-shrink: 0;
 }
 
+.offer__title h3,
+.offer-item__main-description p,
+.offer-item__price span {
+  color: #000;
+}
+
 .offer__header {
   display: flex;
   justify-content: space-between;
@@ -977,32 +983,38 @@ a.btn {
 
 .related-product__title h3,
 .related-product__price span {
-  font-size: 14px;
-  line-height: 16px;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
-  line-clamp: 2;
-  display: -webkit-box;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  font-size: 14px !important;
+  line-height: 16px !important;
+  -webkit-box-orient: vertical !important;
+  -webkit-line-clamp: 2 !important;
+  line-clamp: 2 !important;
+  display: -webkit-box !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  letter-spacing: normal !important;
+  color: #000 !important;
 }
 
 .btn-related-product__add-to-cart {
-  padding: 4px 15px 4px 10px;
+  padding: 4px 15px 4px 10px !important;
   width: 100%;
   background-color: #000;
   color: #fff;
   border: 5px solid #000;
-  text-align: left;
-  font-weight: bold;
-  font-size: 13px;
+  text-align: left !important;
+  font-weight: bold !important;
+  font-size: 13px !important;
+}
+
+.related-products-section h2 {
+  color: #000 !important;
 }
 
 @media (width >= 768px) {
   .related-products-section h2 {
-    margin-bottom: 30px;
-    font-size: 50px;
-    line-height: 40px;
+    margin-bottom: 30px !important;
+    font-size: 50px !important;
+    line-height: 40px !important;
   }
 }
 /** FAQ section */
@@ -1012,8 +1024,9 @@ a.btn {
 
 .faq h2 {
   margin-bottom: 30px;
-  font-size: 30px;
-  line-height: 30px;
+  font-size: 30px !important;
+  line-height: 30px !important;
+  color: #000;
 }
 
 .faq-question__answer {
@@ -1042,9 +1055,11 @@ a.btn {
   user-select: none;
 }
 .faq-question__header h3 {
-  font-size: 23px;
-  line-height: 23px;
-  font-weight: bold;
+  font-size: 23px !important;
+  line-height: 23px !important;
+  font-weight: bold !important;
+  letter-spacing: normal !important;
+  color: #000 !important;
 }
 
 .btn-faq-question-toggle {
@@ -1056,6 +1071,7 @@ a.btn {
 
 .faq-question__answer p {
   margin: 10px 0;
+  color: #000 !important;
 }
 
 .faq-question__answer[aria-hidden=false] {
@@ -1068,6 +1084,10 @@ a.btn {
 
 .btn-faq-question-toggle[aria-expanded=true] {
   transform: rotate(45deg);
+}
+
+body {
+  color: #000;
 }
 
 .main-content {

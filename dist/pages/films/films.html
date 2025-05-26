@@ -3,31 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/tickets/dist/style.css" />
+    <link rel="stylesheet" href="/tickets/dist/app.min.css" />
     <title>Сеансы</title>
     <script type="module" crossorigin src="/tickets/dist/pages/films/films.js"></script>
-    <link rel="modulepreload" crossorigin href="/tickets/dist/pages/shared/shared.js">
     <link rel="stylesheet" crossorigin href="/tickets/dist/pages/films/films.css">
   </head>
 
   <body>
+    <!-- Header
     <header class="main-header grid-wrapper">
       <div class="shop-logo">
-        <img src="/tickets/dist/assets/icons/logo-shop.svg" alt="Магазин 'никола-ленивец'" />
+        <img src="/assets/icons/logo-shop.svg" alt="Магазин 'никола-ленивец'" />
       </div>
       <div class="header-menu">
         <div class="cart">
-          <img src="data:image/svg+xml,%3csvg%20width='36'%20height='43'%20viewBox='0%200%2036%2043'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M0.0149176%2018L0%2020.7523L35.9851%2021L36%2018.2477L0.0149176%2018Z'%20fill='%231D1D1B'/%3e%3cpath%20d='M11.0649%2039L11%2041.6137L23.9351%2042L24%2039.3863L11.0649%2039Z'%20fill='%231D1D1B'/%3e%3cpath%20d='M33.6544%2022L26%2040.1052L28.3456%2041L36%2022.8948L33.6544%2022Z'%20fill='%231D1D1B'/%3e%3cpath%20d='M2.28864%2022L0%2022.9154L7.71136%2041L10%2040.0846L2.28864%2022Z'%20fill='%231D1D1B'/%3e%3cpath%20d='M21.1244%200L19%200.999442L25.8756%2017L28%2016.0006L21.1244%200Z'%20fill='%231D1D1B'/%3e%3cpath%20d='M14.8545%200L8%2015.0216L10.1455%2016L17%200.978317L14.8545%200Z'%20fill='%231D1D1B'/%3e%3c/svg%3e" alt="Корзина" />
+          <img src="/assets/icons/cart.svg" alt="Корзина" />
           <span class="cart__counter">1</span>
         </div>
         <div class="mobile-navigation">
-          <button class="btn btn__mobile-menu">
-            <img src="data:image/svg+xml,%3csvg%20width='27'%20height='14'%20viewBox='0%200%2027%2014'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M27%200.5H0V3.5H27V0.5Z'%20fill='black'/%3e%3cpath%20d='M27%205.5H0V8.5H27V5.5Z'%20fill='black'/%3e%3cpath%20d='M27%2010.5H0V13.5H27V10.5Z'%20fill='black'/%3e%3c/svg%3e" alt="Открыть меню навигации" />
+          <button class="custom-btn btn__mobile-menu">
+            <img src="/assets/icons/mobile-nav.svg" alt="Открыть меню навигации" />
           </button>
         </div>
-        <button class="btn cart-overlay">
+        <button class="custom-btn cart-overlay">
           <span>оформить заказ</span>
           <div class="cart">
-            <img src="data:image/svg+xml,%3csvg%20width='36'%20height='43'%20viewBox='0%200%2036%2043'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M0.0149176%2018L0%2020.7523L35.9851%2021L36%2018.2477L0.0149176%2018Z'%20fill='%231D1D1B'/%3e%3cpath%20d='M11.0649%2039L11%2041.6137L23.9351%2042L24%2039.3863L11.0649%2039Z'%20fill='%231D1D1B'/%3e%3cpath%20d='M33.6544%2022L26%2040.1052L28.3456%2041L36%2022.8948L33.6544%2022Z'%20fill='%231D1D1B'/%3e%3cpath%20d='M2.28864%2022L0%2022.9154L7.71136%2041L10%2040.0846L2.28864%2022Z'%20fill='%231D1D1B'/%3e%3cpath%20d='M21.1244%200L19%200.999442L25.8756%2017L28%2016.0006L21.1244%200Z'%20fill='%231D1D1B'/%3e%3cpath%20d='M14.8545%200L8%2015.0216L10.1455%2016L17%200.978317L14.8545%200Z'%20fill='%231D1D1B'/%3e%3c/svg%3e" alt="Корзина" />
+            <img src="/assets/icons/cart.svg" alt="Корзина" />
             <span class="cart__counter">1</span>
           </div>
         </button>
@@ -44,7 +46,7 @@
         </nav>
       </div>
 
-      <!-- Mobile Menu Panel -->
+      <!- - Mobile Menu Panel - ->
       <div class="mobile-menu" id="mobileMenu">
         <button class="mobile-menu__close" id="closeMobileMenu">✕</button>
         <nav>
@@ -57,12 +59,13 @@
         </nav>
       </div>
 
-      <!-- Optional overlay for better UX -->
+      <!- - Optional overlay for better UX - ->
       <div class="mobile-menu__overlay" id="menuOverlay"></div>
     </header>
+    -->
 
     <main class="main-content grid-wrapper">
-      <section class="hero-section">
+      <section class="hero-section shortcode-section">
         <div class="hero-text">
           <h1>масленица 2025</h1>
           <p>
@@ -86,7 +89,7 @@
           <img src="/tickets/dist/assets/img/hero.png" alt="1 марта 2025, масленица в никола-ленивце" />
         </div>
       </section>
-      <section class="offers-section">
+      <section class="offers-section shortcode-section">
         <div class="offer">
           <div class="offer__header">
             <div class="offer__title">
@@ -107,15 +110,15 @@
                   <span><b>2300 ₽</b></span>
                 </div>
                 <div class="offer-item__to-cart">
-                  <button class="btn btn-offer-to-cart typography-h3">в корзину</button>
+                  <button class="custom-btn btn-offer-to-cart typography-h3">в корзину</button>
                   <div class="cart-controls" style="display: none">
-                    <button class="btn btn-decrease">
+                    <button class="custom-btn btn-decrease">
                       <img src="data:image/svg+xml,%3csvg%20width='20'%20height='4'%20viewBox='0%200%2020%204'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8.19789%204H0V0H8.19789H11.8021H20V4H11.8021H8.19789Z'%20fill='black'/%3e%3c/svg%3e" alt="Добавить" />
                     </button>
                     <span class="typography-h3">в корзине</span>
 
                     <span class="typography-h3 counter">1</span>
-                    <button class="btn btn-increase">
+                    <button class="custom-btn btn-increase">
                       <img src="data:image/svg+xml,%3csvg%20width='20'%20height='20'%20viewBox='0%200%2020%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8.19789%2011.8021H0V8.1979H8.19789V0H11.8021V8.1979H20V11.8021H11.8021V20H8.19789V11.8021Z'%20fill='black'/%3e%3c/svg%3e" alt="Удалить" />
                     </button>
                   </div>
@@ -140,15 +143,15 @@
                   </p>
                 </div>
                 <div class="offer-item__to-cart">
-                  <button class="btn btn-offer-to-cart typography-h3">в корзину</button>
+                  <button class="custom-btn btn-offer-to-cart typography-h3">в корзину</button>
                   <div class="cart-controls" style="display: none">
-                    <button class="btn btn-decrease">
+                    <button class="custom-btn btn-decrease">
                       <img src="data:image/svg+xml,%3csvg%20width='20'%20height='4'%20viewBox='0%200%2020%204'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8.19789%204H0V0H8.19789H11.8021H20V4H11.8021H8.19789Z'%20fill='black'/%3e%3c/svg%3e" alt="Добавить" />
                     </button>
                     <span class="typography-h3">в корзине</span>
 
                     <span class="typography-h3 counter">1</span>
-                    <button class="btn btn-increase">
+                    <button class="custom-btn btn-increase">
                       <img src="data:image/svg+xml,%3csvg%20width='20'%20height='20'%20viewBox='0%200%2020%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8.19789%2011.8021H0V8.1979H8.19789V0H11.8021V8.1979H20V11.8021H11.8021V20H8.19789V11.8021Z'%20fill='black'/%3e%3c/svg%3e" alt="Удалить" />
                     </button>
                   </div>
@@ -176,15 +179,15 @@
                   </p>
                 </div>
                 <div class="offer-item__to-cart">
-                  <button class="btn btn-offer-to-cart typography-h3">в корзину</button>
+                  <button class="custom-btn btn-offer-to-cart typography-h3">в корзину</button>
                   <div class="cart-controls" style="display: none">
-                    <button class="btn btn-decrease">
+                    <button class="custom-btn btn-decrease">
                       <img src="data:image/svg+xml,%3csvg%20width='20'%20height='4'%20viewBox='0%200%2020%204'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8.19789%204H0V0H8.19789H11.8021H20V4H11.8021H8.19789Z'%20fill='black'/%3e%3c/svg%3e" alt="Добавить" />
                     </button>
                     <span class="typography-h3">в корзине</span>
 
                     <span class="typography-h3 counter">1</span>
-                    <button class="btn btn-increase">
+                    <button class="custom-btn btn-increase">
                       <img src="data:image/svg+xml,%3csvg%20width='20'%20height='20'%20viewBox='0%200%2020%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8.19789%2011.8021H0V8.1979H8.19789V0H11.8021V8.1979H20V11.8021H11.8021V20H8.19789V11.8021Z'%20fill='black'/%3e%3c/svg%3e" alt="Удалить" />
                     </button>
                   </div>
@@ -216,7 +219,7 @@
                 </div>
                 <div class="offer-item__price typography-h3"></div>
                 <div class="offer-item__to-cart">
-                  <a href="#" class="btn btn-offer-to-cart typography-h3 btn-offer-to-cart__out-of-stock"
+                  <a href="#" class="custom-btn btn-offer-to-cart typography-h3 btn-offer-to-cart__out-of-stock"
                     >что делать?</a
                   >
                 </div>
@@ -238,7 +241,7 @@
                 </div>
                 <div class="offer-item__price typography-h3"></div>
                 <div class="offer-item__to-cart">
-                  <a href="#" class="btn btn-offer-to-cart typography-h3 btn-offer-to-cart__out-of-stock"
+                  <a href="#" class="custom-btn btn-offer-to-cart typography-h3 btn-offer-to-cart__out-of-stock"
                     >что делать?</a
                   >
                 </div>
@@ -261,15 +264,15 @@
                 </div>
 
                 <div class="offer-item__to-cart">
-                  <button class="btn btn-offer-to-cart typography-h3">в корзину</button>
+                  <button class="custom-btn btn-offer-to-cart typography-h3">в корзину</button>
                   <div class="cart-controls" style="display: none">
-                    <button class="btn btn-decrease">
+                    <button class="custom-btn btn-decrease">
                       <img src="data:image/svg+xml,%3csvg%20width='20'%20height='4'%20viewBox='0%200%2020%204'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8.19789%204H0V0H8.19789H11.8021H20V4H11.8021H8.19789Z'%20fill='black'/%3e%3c/svg%3e" alt="Добавить" />
                     </button>
                     <span class="typography-h3">в корзине</span>
 
                     <span class="typography-h3 counter">1</span>
-                    <button class="btn btn-increase">
+                    <button class="custom-btn btn-increase">
                       <img src="data:image/svg+xml,%3csvg%20width='20'%20height='20'%20viewBox='0%200%2020%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8.19789%2011.8021H0V8.1979H8.19789V0H11.8021V8.1979H20V11.8021H11.8021V20H8.19789V11.8021Z'%20fill='black'/%3e%3c/svg%3e" alt="Удалить" />
                     </button>
                   </div>
@@ -279,7 +282,7 @@
           </div>
         </div>
       </section>
-      <section class="related-products-section">
+      <section class="related-products-section shortcode-section">
         <h2 class="typography-h3">сопутствующие товары</h2>
         <div class="related-products">
           <div class="related-product">
@@ -295,7 +298,7 @@
               <span><b>990 ₽</b></span>
             </div>
             <div class="related-product__add-to-cart">
-              <button class="btn btn-related-product__add-to-cart">в корзину</button>
+              <button class="custom-btn btn-related-product__add-to-cart">в корзину</button>
             </div>
           </div>
           <div class="related-product">
@@ -309,7 +312,7 @@
               <span><b>1500 ₽</b></span>
             </div>
             <div class="related-product__add-to-cart">
-              <button class="btn btn-related-product__add-to-cart">в корзину</button>
+              <button class="custom-btn btn-related-product__add-to-cart">в корзину</button>
             </div>
           </div>
           <div class="related-product">
@@ -323,19 +326,19 @@
               <span><b>1200 ₽</b></span>
             </div>
             <div class="related-product__add-to-cart">
-              <button class="btn btn-related-product__add-to-cart">в корзину</button>
+              <button class="custom-btn btn-related-product__add-to-cart">в корзину</button>
             </div>
           </div>
         </div>
       </section>
-      <section class="faq">
+      <section class="faq shortcode-section">
         <h2 class="typography-h3">вопрос - ответ</h2>
         <div class="faq-question">
           <div class="faq-question__header" aria-expanded="false">
             <div class="faq-question__title">
               <h3>билеты закончились</h3>
             </div>
-            <button class="btn btn-faq-question-toggle" aria-hidden="true">
+            <button class="custom-btn btn-faq-question-toggle" aria-hidden="true">
               <img src="data:image/svg+xml,%3csvg%20width='20'%20height='20'%20viewBox='0%200%2020%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8.19789%2011.8021H0V8.1979H8.19789V0H11.8021V8.1979H20V11.8021H11.8021V20H8.19789V11.8021Z'%20fill='black'/%3e%3c/svg%3e" alt="Узнать ответ" />
             </button>
           </div>
@@ -352,7 +355,7 @@
             <div class="faq-question__title">
               <h3>проблема с билетами</h3>
             </div>
-            <button class="btn btn-faq-question-toggle" aria-hidden="true">
+            <button class="custom-btn btn-faq-question-toggle" aria-hidden="true">
               <img src="data:image/svg+xml,%3csvg%20width='20'%20height='20'%20viewBox='0%200%2020%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8.19789%2011.8021H0V8.1979H8.19789V0H11.8021V8.1979H20V11.8021H11.8021V20H8.19789V11.8021Z'%20fill='black'/%3e%3c/svg%3e" alt="Узнать ответ" />
             </button>
           </div>
@@ -370,7 +373,7 @@
             <div class="faq-question__title">
               <h3>входной билет стандарт</h3>
             </div>
-            <button class="btn btn-faq-question-toggle" aria-hidden="true">
+            <button class="custom-btn btn-faq-question-toggle" aria-hidden="true">
               <img src="data:image/svg+xml,%3csvg%20width='20'%20height='20'%20viewBox='0%200%2020%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8.19789%2011.8021H0V8.1979H8.19789V0H11.8021V8.1979H20V11.8021H11.8021V20H8.19789V11.8021Z'%20fill='black'/%3e%3c/svg%3e" alt="Узнать ответ" />
             </button>
           </div>
@@ -388,7 +391,7 @@
             <div class="faq-question__title">
               <h3>билет приоритет</h3>
             </div>
-            <button class="btn btn-faq-question-toggle" aria-hidden="true">
+            <button class="custom-btn btn-faq-question-toggle" aria-hidden="true">
               <img src="data:image/svg+xml,%3csvg%20width='20'%20height='20'%20viewBox='0%200%2020%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8.19789%2011.8021H0V8.1979H8.19789V0H11.8021V8.1979H20V11.8021H11.8021V20H8.19789V11.8021Z'%20fill='black'/%3e%3c/svg%3e" alt="Узнать ответ" />
             </button>
           </div>
@@ -406,7 +409,7 @@
             <div class="faq-question__title">
               <h3>билеты для детей</h3>
             </div>
-            <button class="btn btn-faq-question-toggle" aria-hidden="true">
+            <button class="custom-btn btn-faq-question-toggle" aria-hidden="true">
               <img src="data:image/svg+xml,%3csvg%20width='20'%20height='20'%20viewBox='0%200%2020%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8.19789%2011.8021H0V8.1979H8.19789V0H11.8021V8.1979H20V11.8021H11.8021V20H8.19789V11.8021Z'%20fill='black'/%3e%3c/svg%3e" alt="Узнать ответ" />
             </button>
           </div>
@@ -424,7 +427,7 @@
             <div class="faq-question__title">
               <h3>поездка с животным</h3>
             </div>
-            <button class="btn btn-faq-question-toggle" aria-hidden="true">
+            <button class="custom-btn btn-faq-question-toggle" aria-hidden="true">
               <img src="data:image/svg+xml,%3csvg%20width='20'%20height='20'%20viewBox='0%200%2020%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8.19789%2011.8021H0V8.1979H8.19789V0H11.8021V8.1979H20V11.8021H11.8021V20H8.19789V11.8021Z'%20fill='black'/%3e%3c/svg%3e" alt="Узнать ответ" />
             </button>
           </div>
@@ -442,7 +445,7 @@
             <div class="faq-question__title">
               <h3>трансфер</h3>
             </div>
-            <button class="btn btn-faq-question-toggle" aria-hidden="true">
+            <button class="custom-btn btn-faq-question-toggle" aria-hidden="true">
               <img src="data:image/svg+xml,%3csvg%20width='20'%20height='20'%20viewBox='0%200%2020%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8.19789%2011.8021H0V8.1979H8.19789V0H11.8021V8.1979H20V11.8021H11.8021V20H8.19789V11.8021Z'%20fill='black'/%3e%3c/svg%3e" alt="Узнать ответ" />
             </button>
           </div>
@@ -460,7 +463,7 @@
             <div class="faq-question__title">
               <h3>место и время отправления трансфера</h3>
             </div>
-            <button class="btn btn-faq-question-toggle" aria-hidden="true">
+            <button class="custom-btn btn-faq-question-toggle" aria-hidden="true">
               <img src="data:image/svg+xml,%3csvg%20width='20'%20height='20'%20viewBox='0%200%2020%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8.19789%2011.8021H0V8.1979H8.19789V0H11.8021V8.1979H20V11.8021H11.8021V20H8.19789V11.8021Z'%20fill='black'/%3e%3c/svg%3e" alt="Узнать ответ" />
             </button>
           </div>
@@ -478,7 +481,7 @@
             <div class="faq-question__title">
               <h3>жильё</h3>
             </div>
-            <button class="btn btn-faq-question-toggle" aria-hidden="true">
+            <button class="custom-btn btn-faq-question-toggle" aria-hidden="true">
               <img src="data:image/svg+xml,%3csvg%20width='20'%20height='20'%20viewBox='0%200%2020%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8.19789%2011.8021H0V8.1979H8.19789V0H11.8021V8.1979H20V11.8021H11.8021V20H8.19789V11.8021Z'%20fill='black'/%3e%3c/svg%3e" alt="Узнать ответ" />
             </button>
           </div>
@@ -496,7 +499,7 @@
             <div class="faq-question__title">
               <h3>парковка</h3>
             </div>
-            <button class="btn btn-faq-question-toggle" aria-hidden="true">
+            <button class="custom-btn btn-faq-question-toggle" aria-hidden="true">
               <img src="data:image/svg+xml,%3csvg%20width='20'%20height='20'%20viewBox='0%200%2020%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8.19789%2011.8021H0V8.1979H8.19789V0H11.8021V8.1979H20V11.8021H11.8021V20H8.19789V11.8021Z'%20fill='black'/%3e%3c/svg%3e" alt="Узнать ответ" />
             </button>
           </div>
@@ -514,7 +517,7 @@
             <div class="faq-question__title">
               <h3>парковка для автобусов и микроавтобусов</h3>
             </div>
-            <button class="btn btn-faq-question-toggle" aria-hidden="true">
+            <button class="custom-btn btn-faq-question-toggle" aria-hidden="true">
               <img src="data:image/svg+xml,%3csvg%20width='20'%20height='20'%20viewBox='0%200%2020%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8.19789%2011.8021H0V8.1979H8.19789V0H11.8021V8.1979H20V11.8021H11.8021V20H8.19789V11.8021Z'%20fill='black'/%3e%3c/svg%3e" alt="Узнать ответ" />
             </button>
           </div>
@@ -532,7 +535,7 @@
             <div class="faq-question__title">
               <h3>способ оплаты</h3>
             </div>
-            <button class="btn btn-faq-question-toggle" aria-hidden="true">
+            <button class="custom-btn btn-faq-question-toggle" aria-hidden="true">
               <img src="data:image/svg+xml,%3csvg%20width='20'%20height='20'%20viewBox='0%200%2020%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8.19789%2011.8021H0V8.1979H8.19789V0H11.8021V8.1979H20V11.8021H11.8021V20H8.19789V11.8021Z'%20fill='black'/%3e%3c/svg%3e" alt="Узнать ответ" />
             </button>
           </div>
@@ -550,7 +553,7 @@
             <div class="faq-question__title">
               <h3>условия возврата</h3>
             </div>
-            <button class="btn btn-faq-question-toggle" aria-hidden="true">
+            <button class="custom-btn btn-faq-question-toggle" aria-hidden="true">
               <img src="data:image/svg+xml,%3csvg%20width='20'%20height='20'%20viewBox='0%200%2020%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8.19789%2011.8021H0V8.1979H8.19789V0H11.8021V8.1979H20V11.8021H11.8021V20H8.19789V11.8021Z'%20fill='black'/%3e%3c/svg%3e" alt="Узнать ответ" />
             </button>
           </div>
@@ -568,7 +571,7 @@
             <div class="faq-question__title">
               <h3>льготы</h3>
             </div>
-            <button class="btn btn-faq-question-toggle" aria-hidden="true">
+            <button class="custom-btn btn-faq-question-toggle" aria-hidden="true">
               <img src="data:image/svg+xml,%3csvg%20width='20'%20height='20'%20viewBox='0%200%2020%2020'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M8.19789%2011.8021H0V8.1979H8.19789V0H11.8021V8.1979H20V11.8021H11.8021V20H8.19789V11.8021Z'%20fill='black'/%3e%3c/svg%3e" alt="Узнать ответ" />
             </button>
           </div>
@@ -584,10 +587,11 @@
       </section>
     </main>
 
+    <!--
     <footer class="main-footer grid-wrapper">
       <div class="footer-left-block">
         <div class="logo">
-          <img src="/tickets/dist/assets/icons/logo.svg" alt="никола-ленивец" />
+          <img src="/assets/icons/logo.svg" alt="никола-ленивец" />
         </div>
         <div class="info">
           <div class="info-title">
@@ -622,7 +626,7 @@
         <div class="subscribe">
           <h4 class="typography-h4">подписаться на новости, скидки, старт продаж фестивалей</h4>
           <input type="email" class="subscribe-input typography-input" placeholder="nikola-lenivets@mail.ru" />
-          <button class="btn btn-subscribe typography-btn-sm">подписаться</button>
+          <button class="custom-btn btn-subscribe typography-btn-sm">подписаться</button>
         </div>
 
         <div class="legal-info typography-text-sm">
@@ -635,6 +639,7 @@
         </div>
       </div>
     </footer>
+    -->
 
   </body>
 </html>
