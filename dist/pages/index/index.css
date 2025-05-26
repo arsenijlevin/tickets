@@ -132,6 +132,36 @@ a.custom-btn {
   cursor: pointer;
 }
 
+.important-text-with-selection {
+  font-family: Pragmatica, sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  font-weight: bold !important;
+  background: #000 !important;
+  color: white !important;
+}
+
+.important-text-with-border {
+  font-family: Pragmatica, sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  padding: 10px !important;
+  border: 2px solid #000 !important;
+}
+
+@media (width <= 668px) {
+  .important-text-with-border {
+    border-top: 2px solid #000 !important;
+    border-bottom: 2px solid #000 !important;
+    border-left: 0 !important;
+    border-right: 0 !important;
+    padding: 10px 0 !important;
+  }
+}
+.important-text-with-border::marker {
+  font-size: 0 !important;
+}
+
 .typography-h2 {
   font-family: Pragmatica, sans-serif;
   font-weight: bold;
