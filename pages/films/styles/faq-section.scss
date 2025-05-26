@@ -6,8 +6,9 @@
 
 .faq h2 {
   margin-bottom: 30px;
-  font-size: 30px;
-  line-height: 30px;
+  font-size: 30px !important;
+  line-height: 30px !important;
+  color: #000;
 }
 
 .faq-question__answer {
@@ -37,9 +38,11 @@
   user-select: none;
 
   h3 {
-    font-size: 23px;
-    line-height: 23px;
-    font-weight: bold;
+    font-size: 23px !important;
+    line-height: 23px !important;
+    font-weight: bold !important;
+    letter-spacing: normal !important;
+    color: #000 !important;
   }
 }
 
@@ -52,6 +55,7 @@
 
 .faq-question__answer p {
   margin: 10px 0;
+  color: #000 !important;
 }
 
 .faq-question__answer[aria-hidden="false"] {

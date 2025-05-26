@@ -15,6 +15,12 @@
   flex-shrink: 0;
 }
 
+.offer__title h3,
+.offer-item__main-description p,
+.offer-item__price span {
+  color: #000;
+}
+
 .offer__header {
   display: flex;
   justify-content: space-between;

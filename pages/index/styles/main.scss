@@ -4,6 +4,10 @@
 @use "./related-products-section";
 @use "./faq-section";
 
+body {
+  color: #000;
+}
+
 .main-content {
   display: flex;
   flex-direction: column;
