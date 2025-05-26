@@ -1,0 +1,207 @@
+/*!
+Theme Name: nikola
+Theme URI: http://underscores.me/
+Author: panchenko_dev
+Author URI: http://@panchenko_dev
+Description: theme for nikola by panchenko_dev
+Version: 1.0.0
+Tested up to: 5.4
+Requires PHP: 5.6
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: nikola
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Generic
+	- Normalize
+	- Box sizing
+# Base
+	- Typography
+	- Elements
+	- Links
+	- Forms
+## Layouts
+# Components
+	- Navigation
+	- Posts and pages
+	- Comments
+	- Widgets
+	- Media
+	- Captions
+	- Galleries
+# plugins
+	- Jetpack infinite scroll
+# Utilities
+	- Accessibility
+	- Alignments
+
+--------------------------------------------------------------*/
+
+.links {
+  list-style: none;
+}
+
+.woocommerce-result-count {
+  display: none;
+}
+
+.catalog__menu__filters__list__unit.active .catalog__menu__filters__list__unit__list,
+.catalog__menu__filters__list__unit.active .catalog__menu__filters__list__unit__slider {
+  z-index: 20 !important;
+  opacity: 1 !important;
+  pointer-events: all !important;
+}
+
+.filter-checkbox__square:checked ~ .btn {
+  background: #141414 !important;
+}
+
+.woocommerce-variation.single_variation {
+  display: none !important;
+}
+
+.navigation {
+  margin: 60px 0 !important;
+  text-align: center;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 1;
+}
+.Pagination__Nav {
+  display: block;
+  list-style: none;
+}
+.Pagination__NavItem,
+.page-numbers {
+  display: inline-block;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.6);
+  padding: 16px 20px;
+  border-bottom: 1px solid #d9d9d9;
+}
+.page-numbers svg {
+  width: 6px;
+  height: 10px;
+  vertical-align: -1px;
+}
+.Pagination__NavItem.is-active,
+.page-numbers.current {
+  color: #000;
+  border-bottom-color: #000;
+  box-shadow: 0 -2px #000 inset;
+}
+
+.woocommerce-notices-wrapper,
+.added_to_cart.wc-forward {
+  display: none;
+}
+
+@media (min-width: 576px) {
+  .woocommerce ~ p {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .woocommerce ~ p {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .woocommerce ~ p {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .woocommerce ~ p {
+    max-width: 1140px;
+  }
+}
+
+.woocommerce ~ p {
+  max-width: 1320px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+}
+
+#billing_country_field {
+  display: none;
+}
+
+.single-fest .products .button.added,
+.single-product .button.added,
+.catalog .products .button.added {
+  background: #d8d3c6;
+  border-color: #d8d3c6;
+  color: #000;
+}
+
+label.checkbox input {
+  display: inline-block !important;
+  width: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.catalog__menu__filters__list.filter-item.filter.d-block.d-lg-none .title {
+  font-size: 12px;
+  line-height: 102%;
+  font-weight: 700;
+}
+
+.select2-container {
+  border: none;
+  margin-bottom: 14px;
+  text-transform: lowercase;
+  width: 100%;
+}
+
+.select2-selection {
+  background: #f3f2f3 !important;
+  border: none !important;
+  padding: 0 !important;
+  display: block !important;
+  height: auto !important;
+}
+
+.select2-selection__rendered {
+  padding: 20px !important;
+  font-size: 16px;
+  color: #767676 !important;
+  font-weight: 400;
+  line-height: 110%;
+}
+
+.over-button {
+  pointer-events: none;
+  opacity: 0.3;
+  border-color: silver !important;
+}
+
+@media (max-width: 768px) {
+  .fest__descroption li {
+    font-size: 10px;
+  }
+  .fest .tickets__list-title {
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between !important;
+  }
+  .fest .tickets__list-img {
+    margin-bottom: -122% !important;
+  }
+  .block-catalog .block-catalog__link .block-catalog__img img {
+    object-fit: cover;
+  }
+}

@@ -3,11 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/public/style.css" />
+    <link rel="stylesheet" href="/public/app.min.css" />
     <link rel="stylesheet" href="/pages/films/styles/main.scss" />
     <title>Сеансы</title>
   </head>
 
   <body>
+    <!-- Header
     <header class="main-header grid-wrapper">
       <div class="shop-logo">
         <img src="/assets/icons/logo-shop.svg" alt="Магазин 'никола-ленивец'" />
@@ -42,7 +45,7 @@
         </nav>
       </div>
 
-      <!-- Mobile Menu Panel -->
+      <!- - Mobile Menu Panel - ->
       <div class="mobile-menu" id="mobileMenu">
         <button class="mobile-menu__close" id="closeMobileMenu">✕</button>
         <nav>
@@ -55,12 +58,13 @@
         </nav>
       </div>
 
-      <!-- Optional overlay for better UX -->
+      <!- - Optional overlay for better UX - ->
       <div class="mobile-menu__overlay" id="menuOverlay"></div>
     </header>
+    -->
 
     <main class="main-content grid-wrapper">
-      <section class="hero-section">
+      <section class="hero-section shortcode-section">
         <div class="hero-text">
           <h1>масленица 2025</h1>
           <p>
@@ -84,7 +88,7 @@
           <img src="/assets/img/hero.png" alt="1 марта 2025, масленица в никола-ленивце" />
         </div>
       </section>
-      <section class="offers-section">
+      <section class="offers-section shortcode-section">
         <div class="offer">
           <div class="offer__header">
             <div class="offer__title">
@@ -277,7 +281,7 @@
           </div>
         </div>
       </section>
-      <section class="related-products-section">
+      <section class="related-products-section shortcode-section">
         <h2 class="typography-h3">сопутствующие товары</h2>
         <div class="related-products">
           <div class="related-product">
@@ -326,7 +330,7 @@
           </div>
         </div>
       </section>
-      <section class="faq">
+      <section class="faq shortcode-section">
         <h2 class="typography-h3">вопрос - ответ</h2>
         <div class="faq-question">
           <div class="faq-question__header" aria-expanded="false">
@@ -582,6 +586,7 @@
       </section>
     </main>
 
+    <!--
     <footer class="main-footer grid-wrapper">
       <div class="footer-left-block">
         <div class="logo">
@@ -633,6 +638,7 @@
         </div>
       </div>
     </footer>
+    -->
 
     <script type="module" src="/pages/films/js/main.js"></script>
   </body>
