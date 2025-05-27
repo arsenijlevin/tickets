@@ -874,6 +874,9 @@ button.btn-related-product__add-to-cart:hover {
 .faq {
   margin-bottom: 40px;
 }
+.faq > br, .faq > p {
+  display: none;
+}
 
 .faq h2 {
   margin-bottom: 30px;

@@ -2,6 +2,11 @@
 
 .faq {
   margin-bottom: 40px;
+
+  & > br,
+  & > p {
+    display: none;
+  }
 }
 
 .faq h2 {
