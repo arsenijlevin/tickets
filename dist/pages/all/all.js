@@ -255,7 +255,22 @@ function closeAnswer(content, button) {
   content.setAttribute("aria-hidden", "true");
   button.setAttribute("aria-expanded", "false");
 }
+function setupHeaderCart() {
+  document.addEventListener("scroll", function() {
+    const header = document.querySelector("[data-main-header]");
+    const cart = document.querySelector(".cart-overlay");
+    const headerPosition = header.getBoundingClientRect();
+    if (headerPosition.top > 0) {
+      cart.style.opacity = "0";
+      cart.style.zIndex = "-1";
+    } else {
+      cart.style.opacity = "1";
+      cart.style.zIndex = "10";
+    }
+  });
+}
 document.addEventListener("DOMContentLoaded", () => {
+  setupHeaderCart();
   setupAddToCardButtons();
   setupFAQ();
   setupOffersAccordions();

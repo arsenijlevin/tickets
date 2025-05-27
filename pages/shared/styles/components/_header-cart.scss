@@ -1,0 +1,67 @@
+/** Header styles */
+
+@use "../fonts" as *;
+@use "../breakpoints" as *;
+
+.fixed-header-cart {
+  position: relative;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+.fixed-header-cart__counter {
+  @include pragmatica-bold;
+
+  font-size: 14px;
+  line-height: 16px;
+  color: #000;
+  position: absolute;
+  top: 22px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.cart-overlay {
+  @include pragmatica-bold;
+
+  filter: invert(1);
+  position: fixed;
+  z-index: -1;
+  right: 20px;
+  top: 20px;
+  padding: 20px;
+  background-color: #fff;
+  display: flex;
+  opacity: 0;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.4s ease;
+
+  .fixed-header-cart {
+    width: 26px;
+    height: 31px;
+
+    &__counter {
+      top: 13px;
+      font-size: 12px;
+    }
+  }
+
+  > span {
+    display: none;
+  }
+
+  @media (width >= $mobile-md) {
+    > span {
+      display: block;
+    }
+  }
+
+  @media (width >= $mobile-md) {
+    right: 40px;
+  }
+
+  @media (width >= $laptop-sm) {
+    right: 80px;
+  }
+}

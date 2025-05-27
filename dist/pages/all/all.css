@@ -272,6 +272,71 @@ a.custom-btn {
   }
 }
 
+/** Components styles */
+/** Header styles */
+.fixed-header-cart {
+  position: relative;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+.fixed-header-cart__counter {
+  font-family: PragmaticaNew, sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #000;
+  position: absolute;
+  top: 22px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.cart-overlay {
+  font-family: PragmaticaNew, sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  filter: invert(1);
+  position: fixed;
+  z-index: -1;
+  right: 20px;
+  top: 20px;
+  padding: 20px;
+  background-color: #fff;
+  display: flex;
+  opacity: 0;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.4s ease;
+}
+.cart-overlay .fixed-header-cart {
+  width: 26px;
+  height: 31px;
+}
+.cart-overlay .fixed-header-cart__counter {
+  top: 13px;
+  font-size: 12px;
+}
+.cart-overlay > span {
+  display: none;
+}
+@media (width >= 668px) {
+  .cart-overlay > span {
+    display: block;
+  }
+}
+@media (width >= 668px) {
+  .cart-overlay {
+    right: 40px;
+  }
+}
+@media (width >= 1280px) {
+  .cart-overlay {
+    right: 80px;
+  }
+}
+
 /** Pages specific styles */
 /** "Hero" section */
 @media (min-width: 1280px) {

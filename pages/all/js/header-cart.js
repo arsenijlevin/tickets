@@ -1,6 +1,6 @@
 export function setupHeaderCart() {
   document.addEventListener("scroll", function () {
-    const header = document.querySelector(".main-header");
+    const header = document.querySelector("[data-main-header]");
     const cart = document.querySelector(".cart-overlay");
     // Get the position of the header relative to the viewport
     const headerPosition = header.getBoundingClientRect();
