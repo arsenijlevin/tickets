@@ -280,6 +280,7 @@ a.custom-btn {
   position: relative;
   flex-shrink: 0;
   cursor: pointer;
+  display: flex;
 }
 
 .fixed-header-cart__counter {
