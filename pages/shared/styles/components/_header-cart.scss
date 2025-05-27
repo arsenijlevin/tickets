@@ -65,4 +65,8 @@ a.cart-overlay {
   @media (width >= $laptop-sm) {
     right: 80px;
   }
+
+  &:hover {
+    color: #000;
+  }
 }

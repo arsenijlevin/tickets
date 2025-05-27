@@ -339,6 +339,9 @@ a.cart-overlay > span {
     right: 80px;
   }
 }
+a.cart-overlay:hover {
+  color: #000;
+}
 
 /** Pages specific styles */
 /** "Hero" section */
