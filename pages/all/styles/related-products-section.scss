@@ -27,6 +27,7 @@
   flex: 1;
   flex-shrink: 0;
   max-width: 160px;
+  min-width: 130px;
   display: flex;
   flex-direction: column;
 
@@ -63,7 +64,7 @@
   font-weight: bold !important;
   font-size: 13px !important;
 
-  @media (width <= $mobile-md) {
+  @media (width <= $tablet-md) {
     padding: 4px 8px 4px 5px !important;
   }
 }

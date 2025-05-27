@@ -351,8 +351,8 @@ a.custom-btn {
 @media (width <= 768px) {
   .btn-increase,
   .btn-decrease {
-    width: 14px;
-    height: 14px;
+    width: 10px;
+    height: 10px;
   }
 }
 
@@ -728,6 +728,7 @@ a.custom-btn {
   flex: 1;
   flex-shrink: 0;
   max-width: 160px;
+  min-width: 130px;
   display: flex;
   flex-direction: column;
 }
@@ -766,7 +767,7 @@ a.custom-btn {
   font-weight: bold !important;
   font-size: 13px !important;
 }
-@media (width <= 668px) {
+@media (width <= 1024px) {
   .btn-related-product__add-to-cart {
     padding: 4px 8px 4px 5px !important;
   }
