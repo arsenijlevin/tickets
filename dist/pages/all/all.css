@@ -1013,10 +1013,6 @@ button.btn-related-product__add-to-cart:hover {
   gap: 20px;
   flex-wrap: wrap;
 }
-.films-offers-section .offer-item__out-of-stock .offer-item__main-description,
-.films-offers-section .offer-item__out-of-stock .offer-item__full-description {
-  opacity: 0.4;
-}
 .films-offers-section .offer-item__image {
   width: 100%;
   flex: 0 1 100px;
@@ -1091,6 +1087,13 @@ button.btn-related-product__add-to-cart:hover {
   color: #e63b11;
   flex: 1;
   text-align: right;
+}
+.films-offers-section .offer-item__out-of-stock .offer-item__main-description,
+.films-offers-section .offer-item__out-of-stock .offer-item__full-description {
+  opacity: 0.4;
+}
+.films-offers-section .offer-item__out-of-stock .offer-item__tickets-count-text {
+  order: -1;
 }
 @media (width >= 668px) {
   .films-offers-section .offer-item {
