@@ -1,38 +1,38 @@
 /** Fonts */
 @font-face {
-  font-family: Pragmatica;
-  src: url("/assets/fonts/Pragmatica-Bold.eot");
+  font-family: PragmaticaNew;
+  src: url("/assets/fonts/Pragmatica-Bold-new.eot");
   src:
-    url("/assets/fonts/Pragmatica-Bold.eot?#iefix") format("embedded-opentype"),
-    url("/assets/fonts/Pragmatica-Bold.woff2") format("woff2"),
-    url("/assets/fonts/Pragmatica-Bold.woff") format("woff"),
-    url("/assets/fonts/Pragmatica-Bold.ttf") format("truetype");
+    url("/assets/fonts/Pragmatica-Bold-new.eot?#iefix") format("embedded-opentype"),
+    url("/assets/fonts/Pragmatica-Bold-new.woff2") format("woff2"),
+    url("/assets/fonts/Pragmatica-Bold-new.woff") format("woff"),
+    url("/assets/fonts/Pragmatica-Bold-new.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
   text-rendering: optimizelegibility;
 }
 
 @font-face {
-  font-family: Pragmatica;
-  src: url("/assets/fonts/Pragmatica-Book.eot");
+  font-family: PragmaticaNew;
+  src: url("/assets/fonts/Pragmatica-Book-new.eot");
   src:
-    url("/assets/fonts/Pragmatica-Book.eot?#iefix") format("embedded-opentype"),
-    url("/assets/fonts/Pragmatica-Book.woff2") format("woff2"),
-    url("/assets/fonts/Pragmatica-Book.woff") format("woff"),
-    url("/assets/fonts/Pragmatica-Book.ttf") format("truetype");
+    url("/assets/fonts/Pragmatica-Book-new.eot?#iefix") format("embedded-opentype"),
+    url("/assets/fonts/Pragmatica-Book-new.woff2") format("woff2"),
+    url("/assets/fonts/Pragmatica-Book-new.woff") format("woff"),
+    url("/assets/fonts/Pragmatica-Book-new.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   text-rendering: optimizelegibility;
 }
 
 @mixin pragmatica-bold {
-  font-family: Pragmatica, sans-serif;
+  font-family: PragmaticaNew, sans-serif;
   font-weight: bold;
   font-style: normal;
 }
 
 @mixin pragmatica-book {
-  font-family: Pragmatica, sans-serif;
+  font-family: PragmaticaNew, sans-serif;
   font-weight: normal;
   font-style: normal;
 }

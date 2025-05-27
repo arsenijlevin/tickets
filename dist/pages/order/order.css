@@ -59,17 +59,17 @@ h6 {
 /** Media-query breakpoints  */
 /** Fonts */
 @font-face {
-  font-family: Pragmatica;
-  src: url("/tickets/dist/assets/fonts/Pragmatica-Bold.eot");
-  src: url("/tickets/dist/assets/fonts/Pragmatica-Bold.eot?#iefix") format("embedded-opentype"), url("/tickets/dist/assets/fonts/Pragmatica-Bold.woff2") format("woff2"), url("/tickets/dist/assets/fonts/Pragmatica-Bold.woff") format("woff"), url("/tickets/dist/assets/fonts/Pragmatica-Bold.ttf") format("truetype");
+  font-family: PragmaticaNew;
+  src: url("/tickets/dist/assets/fonts/Pragmatica-Bold-new.eot");
+  src: url("/tickets/dist/assets/fonts/Pragmatica-Bold-new.eot?#iefix") format("embedded-opentype"), url("/tickets/dist/assets/fonts/Pragmatica-Bold-new.woff2") format("woff2"), url("/tickets/dist/assets/fonts/Pragmatica-Bold-new.woff") format("woff"), url("/tickets/dist/assets/fonts/Pragmatica-Bold-new.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
   text-rendering: optimizelegibility;
 }
 @font-face {
-  font-family: Pragmatica;
-  src: url("/tickets/dist/assets/fonts/Pragmatica-Book.eot");
-  src: url("/tickets/dist/assets/fonts/Pragmatica-Book.eot?#iefix") format("embedded-opentype"), url("/tickets/dist/assets/fonts/Pragmatica-Book.woff2") format("woff2"), url("/tickets/dist/assets/fonts/Pragmatica-Book.woff") format("woff"), url("/tickets/dist/assets/fonts/Pragmatica-Book.ttf") format("truetype");
+  font-family: PragmaticaNew;
+  src: url("/tickets/dist/assets/fonts/Pragmatica-Book-new.eot");
+  src: url("/tickets/dist/assets/fonts/Pragmatica-Book-new.eot?#iefix") format("embedded-opentype"), url("/tickets/dist/assets/fonts/Pragmatica-Book-new.woff2") format("woff2"), url("/tickets/dist/assets/fonts/Pragmatica-Book-new.woff") format("woff"), url("/tickets/dist/assets/fonts/Pragmatica-Book-new.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   text-rendering: optimizelegibility;
@@ -93,7 +93,7 @@ h6 {
   padding-right: 20px;
 }
 .grid-wrapper * {
-  font-family: Pragmatica, sans-serif;
+  font-family: PragmaticaNew, sans-serif;
 }
 @media (width >= 668px) {
   .grid-wrapper {
@@ -133,7 +133,7 @@ a.custom-btn {
 }
 
 .important-text-with-selection {
-  font-family: Pragmatica, sans-serif;
+  font-family: PragmaticaNew, sans-serif;
   font-weight: bold;
   font-style: normal;
   font-weight: bold !important;
@@ -142,7 +142,7 @@ a.custom-btn {
 }
 
 .important-text-with-border {
-  font-family: Pragmatica, sans-serif;
+  font-family: PragmaticaNew, sans-serif;
   font-weight: bold;
   font-style: normal;
   padding: 10px !important;
@@ -163,7 +163,7 @@ a.custom-btn {
 }
 
 .typography-h2 {
-  font-family: Pragmatica, sans-serif;
+  font-family: PragmaticaNew, sans-serif;
   font-weight: bold;
   font-style: normal;
   font-size: 30px !important;
@@ -172,7 +172,7 @@ a.custom-btn {
 }
 
 .typography-h3 {
-  font-family: Pragmatica, sans-serif;
+  font-family: PragmaticaNew, sans-serif;
   font-weight: bold;
   font-style: normal;
   font-size: 23px !important;
@@ -181,7 +181,7 @@ a.custom-btn {
 }
 
 .typography-h4 {
-  font-family: Pragmatica, sans-serif;
+  font-family: PragmaticaNew, sans-serif;
   font-weight: bold;
   font-style: normal;
   font-size: 19px !important;
@@ -195,7 +195,7 @@ a.custom-btn {
 }
 
 .typography-h5 {
-  font-family: Pragmatica, sans-serif;
+  font-family: PragmaticaNew, sans-serif;
   font-weight: bold;
   font-style: normal;
   font-size: 16px !important;
@@ -210,7 +210,7 @@ a.custom-btn {
 }
 
 .typography-h6 {
-  font-family: Pragmatica, sans-serif;
+  font-family: PragmaticaNew, sans-serif;
   font-weight: bold;
   font-style: normal;
   font-size: 10px !important;
@@ -225,7 +225,7 @@ a.custom-btn {
 }
 
 .typography-input {
-  font-family: Pragmatica, sans-serif;
+  font-family: PragmaticaNew, sans-serif;
   font-weight: normal;
   font-style: normal;
   font-size: 16px !important;
@@ -234,7 +234,7 @@ a.custom-btn {
 }
 
 .typography-btn-sm {
-  font-family: Pragmatica, sans-serif;
+  font-family: PragmaticaNew, sans-serif;
   font-weight: bold;
   font-style: normal;
   font-size: 14px !important;
@@ -243,7 +243,7 @@ a.custom-btn {
 }
 
 .typography-text-sm {
-  font-family: Pragmatica, sans-serif;
+  font-family: PragmaticaNew, sans-serif;
   font-weight: normal;
   font-style: normal;
   font-size: 11px !important;
@@ -258,7 +258,7 @@ a.custom-btn {
 }
 
 .typography-text {
-  font-family: Pragmatica, sans-serif;
+  font-family: PragmaticaNew, sans-serif;
   font-weight: normal;
   font-style: normal;
   font-size: 14px !important;
@@ -272,375 +272,6 @@ a.custom-btn {
   }
 }
 
-/** Components styles */
-/** Header styles */
-.main-header {
-  display: flex;
-  margin: 30px 0;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 15px;
-  max-height: 47px;
-}
-@media (width >= 1024px) {
-  .main-header {
-    gap: 30px;
-  }
-}
-@media (width >= 668px) {
-  .main-header {
-    margin-bottom: 80px;
-    max-height: 100%;
-  }
-}
-
-.shop-logo {
-  display: flex;
-  flex: 1;
-}
-@media (width >= 1280px) {
-  .shop-logo {
-    order: 2;
-    flex: unset;
-  }
-}
-
-.shop-logo img {
-  height: 47px;
-  width: 157px;
-}
-@media (width >= 668px) {
-  .shop-logo img {
-    height: 86px;
-    width: 290px;
-  }
-}
-
-.header-menu {
-  display: flex;
-  gap: 30px;
-  align-items: center;
-  height: 100%;
-  flex: 1;
-  justify-content: flex-end;
-}
-@media (width >= 1280px) {
-  .header-menu {
-    order: 3;
-    flex: unset;
-  }
-}
-
-.cart,
-.mobile-navigation {
-  position: relative;
-  flex-shrink: 0;
-  cursor: pointer;
-}
-
-.mobile-navigation {
-  display: flex;
-}
-.mobile-navigation .btn__mobile-menu {
-  z-index: 100;
-}
-@media (width >= 1024px) {
-  .mobile-navigation {
-    display: none;
-  }
-}
-
-.desktop-navigation {
-  display: none;
-  flex: 100%;
-}
-.desktop-navigation nav ul {
-  display: flex;
-  gap: 40px;
-}
-@media (width >= 1024px) {
-  .desktop-navigation {
-    display: flex;
-  }
-}
-@media (width >= 1280px) {
-  .desktop-navigation {
-    order: 2;
-    flex: unset;
-  }
-}
-
-.cart__counter {
-  font-family: Pragmatica, sans-serif;
-  font-weight: bold;
-  font-style: normal;
-  font-size: 14px;
-  line-height: 16px;
-  color: #000;
-  position: absolute;
-  top: 22px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.cart-overlay {
-  font-family: Pragmatica, sans-serif;
-  font-weight: bold;
-  font-style: normal;
-  filter: invert(1);
-  position: fixed;
-  z-index: -1;
-  top: 30px;
-  padding: 20px;
-  background-color: #fff;
-  display: flex;
-  opacity: 0;
-  align-items: center;
-  gap: 10px;
-  transition: all 0.4s ease;
-}
-.cart-overlay .cart {
-  width: 26px;
-  height: 31px;
-}
-.cart-overlay .cart__counter {
-  top: 13px;
-  font-size: 12px;
-}
-.cart-overlay > span {
-  display: none;
-}
-@media (width >= 668px) {
-  .cart-overlay > span {
-    display: block;
-  }
-}
-@media (width >= 768px) {
-  .cart-overlay {
-    top: 40px;
-  }
-}
-
-.mobile-menu {
-  position: fixed;
-  top: 0;
-  right: -450px;
-  width: 450px;
-  height: 100%;
-  background-color: #000;
-  padding: 24px 24px 25px;
-  z-index: 1000;
-  transition: right 0.3s ease;
-  color: white;
-}
-@media (width <= 480px) {
-  .mobile-menu {
-    width: 100%;
-  }
-}
-
-.mobile-menu.open {
-  right: 0;
-}
-
-.mobile-menu__close {
-  background: none;
-  border: none;
-  color: white;
-  font-size: 28px;
-  cursor: pointer;
-  position: absolute;
-  top: 35px;
-  right: 20px;
-}
-@media (width >= 668px) {
-  .mobile-menu__close {
-    top: 55px;
-    right: 35px;
-  }
-}
-@media (width >= 1280px) {
-  .mobile-menu__close {
-    right: 80px;
-  }
-}
-
-.mobile-menu__list {
-  list-style: none;
-  margin-top: 60px;
-  padding: 0;
-}
-
-.mobile-menu__list li {
-  margin-bottom: 20px;
-}
-
-.mobile-menu__list a {
-  color: white;
-  text-decoration: none;
-  font-size: 20px;
-}
-
-.mobile-menu__overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(255, 255, 255, 0.7);
-  z-index: 999;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.3s ease;
-}
-
-.mobile-menu__overlay.visible {
-  opacity: 1;
-  visibility: visible;
-}
-
-/** Footer styles */
-.main-footer {
-  background-color: #000;
-  color: #fff;
-  padding-top: 65px;
-  display: flex;
-  flex-direction: column;
-  gap: 35px;
-  padding-bottom: 65px;
-}
-@media (min-width: 668px) {
-  .main-footer {
-    gap: 10px;
-  }
-}
-@media (min-width: 1280px) {
-  .main-footer {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-}
-
-.logo img {
-  width: 156px;
-  height: 43px;
-}
-@media (min-width: 668px) {
-  .logo img {
-    width: 441px;
-    height: 122px;
-  }
-}
-
-.info {
-  max-width: 160px;
-}
-@media (min-width: 668px) {
-  .info {
-    max-width: unset;
-  }
-}
-
-.info-contact {
-  margin-left: 25px;
-}
-.info-contact .address {
-  display: block;
-  margin-top: 10px;
-}
-.info-contact .contacts {
-  display: flex;
-  flex-direction: column;
-  margin-top: 9px;
-  gap: 9px;
-}
-
-@media (min-width: 668px) {
-  .subscribe h4 {
-    padding-left: 40px;
-    text-align: right;
-    float: right;
-    text-wrap: wrap;
-  }
-}
-@media (min-width: 1280px) {
-  .subscribe h4 {
-    padding-left: 0;
-  }
-}
-
-.subscribe-input {
-  width: 100%;
-  padding: 19px 16px;
-  margin: 12px 0;
-}
-.subscribe-input::placeholder {
-  color: #767676;
-}
-.subscribe-input:focus-within {
-  outline: #ddd;
-  border-color: #ddd;
-}
-
-.btn-subscribe {
-  border: 5px solid #fff;
-  padding: 7px 35px 7px 10px;
-}
-@media (min-width: 668px) {
-  .btn-subscribe {
-    float: right;
-    font-size: 23px;
-    padding: 8px 100px 20px 12px;
-  }
-}
-
-.policy ul {
-  display: flex;
-  flex-direction: column;
-  gap: 7px;
-}
-
-@media (min-width: 668px) {
-  .legal-info {
-    text-align: right;
-  }
-}
-@media (min-width: 1280px) {
-  .legal-info {
-    margin-top: 60px;
-  }
-}
-
-.legal-title {
-  text-decoration: underline;
-  font-size: 14px;
-}
-
-.footer-left-block,
-.footer-right-block {
-  display: contents;
-}
-@media (min-width: 1280px) {
-  .footer-left-block,
-  .footer-right-block {
-    display: flex;
-    flex-direction: column;
-    gap: 35px;
-  }
-}
-
-@media (min-width: 1280px) {
-  .footer-left-block {
-    max-width: 290px;
-  }
-  .footer-right-block {
-    max-width: 400px;
-  }
-  .policy {
-    margin-top: 80px;
-  }
-}
 /** Pages specific styles */
 /** Form */
 .user-form {
