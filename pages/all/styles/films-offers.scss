@@ -90,8 +90,6 @@
     flex-wrap: wrap;
 
     &__out-of-stock {
-      gap: 0;
-
       .offer-item__main-description,
       .offer-item__full-description {
         opacity: 0.4;

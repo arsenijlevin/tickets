@@ -132,13 +132,15 @@ a.custom-btn {
   cursor: pointer;
 }
 
-.important-text-with-selection {
+.important-text-with-selection > *:not(ul),
+.important-text-with-selection > ul > li > * {
   font-family: PragmaticaNew, sans-serif;
   font-weight: bold;
   font-style: normal;
   font-weight: bold !important;
-  background: #000 !important;
+  background-color: #000;
   color: white !important;
+  display: inline;
 }
 
 .important-text-with-border {
@@ -1010,9 +1012,6 @@ button.btn-related-product__add-to-cart:hover {
   gap: 20px;
   flex-wrap: wrap;
 }
-.films-offers-section .offer-item__out-of-stock {
-  gap: 0;
-}
 .films-offers-section .offer-item__out-of-stock .offer-item__main-description,
 .films-offers-section .offer-item__out-of-stock .offer-item__full-description {
   opacity: 0.4;
@@ -1229,6 +1228,7 @@ body {
 }
 .main-content ul li::marker {
   font-size: 9px;
+  color: #000;
 }
 
 @media (width >= 768px) {
