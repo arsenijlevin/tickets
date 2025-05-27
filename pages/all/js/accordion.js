@@ -27,6 +27,8 @@ function setupOfferAccordion(offer) {
 }
 
 function openAccordion(offer, content, toggleButton) {
+  if (!toggleButton) return;
+
   offer.dataset.transitioning = "true";
   content.style.height = content.scrollHeight + "px";
 
@@ -44,6 +46,8 @@ function openAccordion(offer, content, toggleButton) {
 }
 
 function closeAccordion(offer, content, toggleButton) {
+  if (!toggleButton) return;
+
   offer.dataset.transitioning = "true";
 
   // Force reflow to ensure transition triggers

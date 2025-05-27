@@ -20,6 +20,7 @@ function setupOfferAccordion(offer) {
   });
 }
 function openAccordion(offer, content, toggleButton) {
+  if (!toggleButton) return;
   offer.dataset.transitioning = "true";
   content.style.height = content.scrollHeight + "px";
   const onTransitionEnd = () => {
@@ -33,6 +34,7 @@ function openAccordion(offer, content, toggleButton) {
   content.setAttribute("aria-hidden", "false");
 }
 function closeAccordion(offer, content, toggleButton) {
+  if (!toggleButton) return;
   offer.dataset.transitioning = "true";
   content.style.height = content.scrollHeight + "px";
   requestAnimationFrame(() => {

@@ -1258,7 +1258,6 @@ button.btn-related-product__add-to-cart:hover {
 .films-offers-section .offer__header {
   display: flex;
   justify-content: space-between;
-  cursor: pointer;
   user-select: none;
   border-top: 5px solid black;
 }
