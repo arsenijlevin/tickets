@@ -22,7 +22,7 @@
   transform: translateX(-50%);
 }
 
-.cart-overlay {
+a.cart-overlay {
   @include pragmatica-bold;
 
   filter: invert(1);
