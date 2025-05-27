@@ -200,7 +200,8 @@
 
     &__out-of-stock {
       .offer-item__main-description,
-      .offer-item__full-description {
+      .offer-item__full-description,
+      .offer-item__price {
         opacity: 0.4;
       }
     }
