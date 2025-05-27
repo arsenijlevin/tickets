@@ -416,13 +416,6 @@ a.custom-btn {
 .btn-decrease {
   filter: invert(1);
 }
-@media (width <= 768px) {
-  .btn-increase,
-  .btn-decrease {
-    width: 10px;
-    height: 10px;
-  }
-}
 
 .btn-offer-to-cart {
   background: #000;
@@ -780,6 +773,13 @@ a.custom-btn {
 @media (width >= 768px) {
   .related-products {
     justify-content: flex-start;
+  }
+}
+@media (width <= 768px) {
+  .related-products .btn-increase,
+  .related-products .btn-decrease {
+    width: 10px;
+    height: 10px;
   }
 }
 

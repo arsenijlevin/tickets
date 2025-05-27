@@ -12,11 +12,6 @@
 .btn-increase,
 .btn-decrease {
   filter: invert(1);
-
-  @media (width <= $tablet-sm) {
-    width: 10px;
-    height: 10px;
-  }
 }
 
 .btn-offer-to-cart {

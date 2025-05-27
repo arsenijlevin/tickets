@@ -12,6 +12,14 @@
   @media (width >= $tablet-sm) {
     justify-content: flex-start;
   }
+
+  .btn-increase,
+  .btn-decrease {
+    @media (width <= $tablet-sm) {
+      width: 10px;
+      height: 10px;
+    }
+  }
 }
 
 .related-product__title {
