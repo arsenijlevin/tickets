@@ -793,7 +793,7 @@ button.btn-related-product__add-to-cart:hover {
   font-size: inherit !important;
 }
 
-@media (width <= 768px) {
+@media (width <= 1024px) {
   .btn-related-product__add-to-cart.cart-controls {
     gap: 5px;
     justify-content: space-between;

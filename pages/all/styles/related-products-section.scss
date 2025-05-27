@@ -91,7 +91,7 @@ button.btn-related-product__add-to-cart:hover {
 }
 
 .btn-related-product__add-to-cart.cart-controls {
-  @media (width <= $tablet-sm) {
+  @media (width <= $tablet-md) {
     gap: 5px;
     justify-content: space-between;
   }
