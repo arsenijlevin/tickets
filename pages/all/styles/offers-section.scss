@@ -1,0 +1,436 @@
+/** Offers section */
+@use "../../shared/styles/shared" as *;
+
+.cart-controls {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  user-select: none;
+  align-items: center;
+}
+
+.btn-increase,
+.btn-decrease {
+  filter: invert(1);
+
+  @media (width <= $tablet-sm) {
+    width: 14px;
+    height: 14px;
+  }
+}
+
+.btn-offer-to-cart {
+  background: #000;
+  border: 5px solid #000;
+  padding: 10px 15px;
+  color: #fff;
+  width: 100%;
+  text-align: left;
+}
+
+.btn-offer-to-cart:hover {
+  background: #fff;
+  color: #000;
+  transition: all 0.4s ease;
+}
+
+.sticky-cart-button {
+  position: fixed;
+  bottom: 5px;
+  opacity: 1;
+  z-index: 999;
+  animation: fade-in-slide-up 0.3s ease-out;
+  left: 20px;
+  width: calc(100% - 40px);
+
+  @media (width >= $mobile-md) {
+    left: 63px;
+    width: calc(100% - 126px);
+  }
+
+  @media (width >= $laptop-sm) {
+    left: 103px;
+    width: calc(100% - 206px);
+  }
+}
+
+@keyframes fade-in-slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.sticky-cart-button.fade-out {
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+  z-index: -1;
+}
+
+.offers-section {
+  .offer__header,
+  .offer-item {
+    border-bottom: 3px solid black;
+    padding: 20px 0;
+
+    @media (width >= $tablet-sm) {
+      padding: 25px 0;
+    }
+  }
+
+  .offer__header {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  @media (width >= $mobile-md) {
+    .offer.open {
+      border-bottom: 3px solid black;
+    }
+  }
+
+  .offer.open .offer__header {
+    border-bottom: 0;
+  }
+
+  @media (width >= $mobile-md) and (width < $tablet-sm) {
+    .offer:not(.open) .offer-item {
+      border-top: 0;
+    }
+  }
+
+  @media (width >= $tablet-sm) {
+    .offer__header {
+      border-bottom: 0;
+    }
+
+    .offer:not(:first-child) .offer__header {
+      border-top: 5px solid black;
+    }
+  }
+
+  .btn__offer-toggle {
+    flex-shrink: 0;
+  }
+
+  .offer__title h3,
+  .offer-item__main-description p,
+  .offer-item__price span {
+    color: #000;
+  }
+
+  .offer-item__full-description {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    overflow: hidden;
+    height: 0;
+    transition: height 0.4s ease;
+    position: relative;
+
+    > *:nth-child(2) {
+      margin-bottom: 30px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 20px;
+      background: linear-gradient(to bottom, rgb(255 255 255 / 0%) 0%, rgb(255 255 255 / 100%) 100%);
+      transition: background 0.4s ease;
+    }
+
+    @media (width < $mobile-md) {
+      right: 120px;
+      width: calc(100% + 120px);
+
+      .btn-offer-item__show-full-description {
+        right: 120px;
+        position: relative;
+      }
+
+      > *:first-child,
+      > *:nth-child(2) {
+        position: relative;
+        width: calc(100% - 120px);
+        left: 120px;
+      }
+    }
+
+    @media (width >= $mobile-md) and (width < $tablet-sm) {
+      right: 178px;
+      width: calc(100% + 178px);
+
+      > *:first-child,
+      > *:nth-child(2) {
+        position: relative;
+        width: calc(100% - 178px);
+        left: 178px;
+      }
+    }
+  }
+
+  @media (width < $mobile-md) {
+    .btn-offer-item__show-full-description {
+      right: 120px;
+      position: relative;
+    }
+  }
+
+  @media (width >= $mobile-md) and (width < $tablet-sm) {
+    .btn-offer-item__show-full-description {
+      right: 178px;
+      position: relative;
+    }
+  }
+
+  .offer-item.description-open .offer-item__full-description::after {
+    background: none;
+  }
+
+  .offer-item {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+
+    &__out-of-stock {
+      .offer-item__main-description,
+      .offer-item__full-description {
+        opacity: 0.4;
+      }
+    }
+
+    &__image {
+      width: 100%;
+      flex: 0 1 100px;
+      position: relative;
+      height: fit-content;
+
+      @media (width >= $mobile-md) {
+        flex: 0 1 158px;
+      }
+
+      @media (width >= $tablet-md) {
+        flex: 0 1 290px;
+      }
+
+      img {
+        width: 100px;
+        height: 100px;
+
+        @media (width >= $mobile-md) {
+          width: 158px;
+          height: 158px;
+        }
+
+        @media (width >= $tablet-md) {
+          width: 290px;
+          height: 290px;
+        }
+      }
+
+      &-overlay-text {
+        @include pragmatica-bold;
+
+        position: absolute;
+        background: rgb(0 0 0 / 80%);
+        width: 100%;
+        height: 100%;
+        font-size: 17px;
+        line-height: 14px;
+        letter-spacing: -0.5px;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        &:empty {
+          display: none;
+        }
+
+        @media (width >= $mobile-md) {
+          font-size: 27px;
+          line-height: 21px;
+        }
+
+        @media (width >= $tablet-md) {
+          font-size: 50px;
+          line-height: 40px;
+        }
+      }
+    }
+
+    &__info {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+
+      .offer-item__main-description {
+        margin-top: -3px;
+      }
+
+      @media (width >= $laptop-sm) {
+        .offer-item__main-description p,
+        .offer-item__tickets-count-text p {
+          font-size: 23px;
+          line-height: 23px;
+        }
+      }
+    }
+
+    &__commerce {
+      flex: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    &__tickets-count-text {
+      color: #e63b11;
+    }
+
+    @media (width >= $mobile-md) {
+      border: 3px solid #000;
+      margin-bottom: 30px;
+      padding: 20px;
+    }
+
+    @media (width >= $laptop-md) {
+      flex-wrap: nowrap;
+
+      .offer-item__commerce {
+        max-width: 290px;
+        justify-content: space-between;
+
+        .offer-item__price {
+          text-align: right;
+        }
+      }
+    }
+  }
+
+  @media (width >= $mobile-md) {
+    .offer-item.offer-item__out-of-stock {
+      border: 3px solid rgb(0 0 0 / 40%);
+    }
+  }
+
+  // <div class="cart-controls" id="cart-controls" style="display: none">
+  //                     <button class="custom-btn-decrease" id="decrease">-</button>
+  //                     <span class="counter" id="counter">1</span>
+  //                     <button class="custom-btn-increase" id="increase">+</button>
+  //                     <span>в корзине</span>
+  //                   </div>
+
+  .btn-offer-to-cart,
+  .cart-controls {
+    background: #000;
+    border: 5px solid #000;
+    padding: 10px 15px;
+    color: #fff;
+    width: 100%;
+    text-align: left;
+  }
+
+  .btn-offer-item__show-full-description {
+    color: #e63b11;
+    font-weight: bold;
+    text-decoration: underline;
+    text-align: left;
+  }
+
+  .offer__content {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.4s ease;
+  }
+
+  @media (width >= $tablet-sm) {
+    .offer__header {
+      cursor: default;
+    }
+
+    .btn__offer-toggle {
+      display: none;
+    }
+
+    .offer__content {
+      height: auto !important;
+      overflow: visible;
+      transition: none !important;
+    }
+  }
+
+  .offer .btn__offer-toggle img {
+    transition: transform 0.3s ease;
+  }
+
+  .offer.open .btn__offer-toggle img {
+    transform: rotate(180deg); /* or 90deg if you prefer */
+  }
+
+  .main-content p.out-of-stock-text {
+    font-size: 23px !important;
+    line-height: 23px !important;
+    font-weight: normal !important;
+  }
+
+  @media (width >= $mobile-md) {
+    .main-content p.out-of-stock-text {
+      font-size: 30px !important;
+      line-height: 30px !important;
+      font-weight: normal !important;
+    }
+  }
+
+  .btn-offer-to-cart:hover,
+  button.btn-related-product__add-to-cart:hover {
+    background: #fff;
+    color: #000;
+    transition: all 0.4s ease;
+  }
+
+  // /* Debug: highlight active item */
+  // .offer-item.debug-active {
+  //   outline: 2px solid red;
+  // }
+
+  // /* Debug: blue line at showButtonHeight */
+  // #sticky-debug-line {
+  //   position: fixed;
+  //   top: 700px;
+  //   left: 0;
+  //   right: 0;
+  //   height: 1px;
+  //   background-color: blue;
+  //   z-index: 9999;
+  //   pointer-events: none;
+  // }
+
+  // /* Debug: floating info panel */
+  // #sticky-debug-panel {
+  //   position: fixed;
+  //   bottom: 10px;
+  //   right: 10px;
+  //   background: rgb(0 0 0 / 70%);
+  //   color: white;
+  //   padding: 8px;
+  //   font-size: 12px;
+  //   z-index: 9999;
+  //   max-height: 200px;
+  //   overflow-y: auto;
+  //   white-space: pre;
+  // }
+}

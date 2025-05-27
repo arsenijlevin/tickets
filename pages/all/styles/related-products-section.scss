@@ -1,0 +1,98 @@
+/** Related products section */
+@use "../../shared/styles/shared" as *;
+
+.related-products {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  gap: 15px;
+
+  @media (width >= $tablet-sm) {
+    justify-content: flex-start;
+  }
+}
+
+.related-product__title {
+  flex-basis: 40px;
+  margin-top: 10px;
+}
+
+.related-product__price {
+  margin-bottom: 10px;
+}
+
+.related-product {
+  flex: 1;
+  flex-shrink: 0;
+  max-width: 160px;
+  display: flex;
+  flex-direction: column;
+
+  @media (width >= $tablet-sm) {
+    max-width: 260px;
+  }
+
+  @media (width <= 500px) {
+    flex: 100%;
+  }
+}
+
+.related-product__title h3,
+.related-product__price span {
+  font-size: 14px !important;
+  line-height: 16px !important;
+  -webkit-box-orient: vertical !important;
+  -webkit-line-clamp: 2 !important;
+  line-clamp: 2 !important;
+  display: -webkit-box !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  letter-spacing: normal !important;
+  color: #000 !important;
+}
+
+.btn-related-product__add-to-cart {
+  padding: 4px 15px 4px 10px !important;
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  border: 5px solid #000;
+  text-align: left !important;
+  font-weight: bold !important;
+  font-size: 13px !important;
+
+  @media (width <= $mobile-md) {
+    padding: 4px 8px 4px 5px !important;
+  }
+}
+
+.related-products-section h2 {
+  color: #000 !important;
+}
+
+@media (width >= $tablet-sm) {
+  .related-products-section h2 {
+    margin-bottom: 30px !important;
+    font-size: 50px !important;
+    line-height: 40px !important;
+  }
+}
+
+button.btn-related-product__add-to-cart:hover {
+  background: #fff;
+  color: #000;
+  transition: all 0.4s ease;
+}
+
+.btn-related-product__add-to-cart.cart-controls span {
+  font-size: inherit !important;
+}
+
+.btn-related-product__add-to-cart.cart-controls {
+  @media (width <= $tablet-sm) {
+    gap: 5px;
+    justify-content: space-between;
+  }
+}

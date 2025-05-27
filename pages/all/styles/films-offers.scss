@@ -1,0 +1,288 @@
+/** Offers section */
+@use "../../shared/styles/shared" as *;
+
+.films-offers-section {
+  .offer__header,
+  .offer-item {
+    padding-top: 20px;
+  }
+
+  .offer:last-child {
+    border-bottom: 5px solid black;
+    padding-bottom: 20px;
+  }
+
+  .btn__offer-toggle {
+    flex-shrink: 0;
+  }
+
+  .offer__title h3,
+  .offer-item__main-description p,
+  .offer-item__price span {
+    color: #000;
+  }
+
+  .offer__header {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    user-select: none;
+    border-top: 5px solid black;
+  }
+
+  .offer-item__full-description {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    overflow: hidden;
+    height: 0;
+    transition: height 0.4s ease;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 20px;
+      background: linear-gradient(to bottom, rgb(255 255 255 / 0%) 0%, rgb(255 255 255 / 100%) 100%);
+      transition: background 0.4s ease;
+    }
+  }
+
+  .offer:not(:first-child) {
+    margin-top: 40px;
+  }
+
+  .offer-item.description-open .offer-item__full-description::after {
+    background: none;
+  }
+
+  @media (width <= $mobile-md) {
+    .offer-item {
+      padding-left: 8px;
+      padding-right: 8px;
+
+      &:not(:last-child) {
+        border-bottom: 3px solid #000;
+        padding-bottom: 20px;
+      }
+
+      &__to-cart {
+        margin-left: -4px;
+        margin-right: -4px;
+      }
+    }
+  }
+
+  @media (width >= $laptop-sm) {
+    .offer-item__main-description p,
+    .offer-item__tickets-count-text p {
+      font-size: 23px !important;
+      line-height: 24px !important;
+      letter-spacing: -0.7px !important;
+    }
+  }
+
+  .offer-item {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+
+    &__out-of-stock {
+      gap: 0;
+
+      .offer-item__main-description,
+      .offer-item__full-description {
+        opacity: 0.4;
+      }
+    }
+
+    &__image {
+      width: 100%;
+      flex: 0 1 100px;
+      position: relative;
+      height: fit-content;
+
+      @media (width >= $mobile-md) {
+        flex: 0 1 158px;
+      }
+
+      @media (width >= $tablet-md) {
+        flex: 0 1 290px;
+      }
+
+      img {
+        width: 100px;
+        height: 100px;
+
+        @media (width >= $mobile-md) {
+          width: 158px;
+          height: 158px;
+        }
+
+        @media (width >= $tablet-md) {
+          width: 290px;
+          height: 290px;
+        }
+      }
+
+      &-overlay-text {
+        @include pragmatica-bold;
+
+        position: absolute;
+        background: rgb(0 0 0 / 80%);
+        width: 100%;
+        height: 100%;
+        font-size: 17px;
+        line-height: 14px;
+        letter-spacing: -0.5px;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        &:empty {
+          display: none;
+        }
+
+        @media (width >= $mobile-md) {
+          font-size: 27px;
+          line-height: 21px;
+        }
+      }
+    }
+
+    &__info {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    &__commerce {
+      flex: 100%;
+      display: flex;
+      flex-flow: row wrap;
+      gap: 20px;
+    }
+
+    &__tickets-count-text {
+      color: #e63b11;
+      flex: 1;
+      text-align: right;
+    }
+
+    @media (width >= $mobile-md) {
+      border: 3px solid #000;
+      margin: 30px 0;
+      padding: 20px;
+    }
+  }
+
+  @media (width >= $mobile-md) {
+    .offer-item.offer-item__out-of-stock {
+      border: 3px solid rgb(0 0 0 / 40%);
+    }
+  }
+
+  .btn-offer-to-cart,
+  .cart-controls {
+    background: #000;
+    border: 5px solid #000;
+    padding: 10px 15px;
+    color: #fff;
+    width: 100%;
+    text-align: left;
+  }
+
+  .btn-offer-item__show-full-description {
+    color: #e63b11;
+    font-weight: bold;
+    text-decoration: underline;
+    text-align: left;
+  }
+
+  p.out-of-stock-text {
+    font-size: 23px !important;
+    line-height: 30px !important;
+    font-weight: normal !important;
+    text-align: left !important;
+  }
+
+  @media (width >= $mobile-md) {
+    p.out-of-stock-text {
+      font-size: 30px !important;
+      line-height: 30px !important;
+      font-weight: normal !important;
+    }
+  }
+
+  .btn-offer-to-cart:hover {
+    background: #fff;
+    color: #000;
+    transition: all 0.4s ease;
+  }
+
+  .cart-controls {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    user-select: none;
+    float: right;
+  }
+
+  .btn-increase,
+  .btn-decrease {
+    filter: invert(1);
+  }
+
+  .offer-item__price {
+    flex: 1;
+    max-width: 30%;
+  }
+
+  .offer-item__to-cart {
+    flex: 100%;
+  }
+
+  @media (width <= $tablet-md) {
+    .offer-item__tickets-count-text,
+    .offer-item__price {
+      align-self: flex-end;
+    }
+  }
+
+  @media (width >= $tablet-md) {
+    .offer-item__tickets-count-text {
+      position: absolute;
+      top: 40px;
+    }
+
+    .offer-item__price {
+      margin-left: auto;
+      text-align: right;
+    }
+
+    .btn-offer-to-cart {
+      max-width: 290px;
+      float: right;
+    }
+
+    .offer-item__main-description {
+      max-width: 70%;
+    }
+
+    .offer-item__commerce {
+      position: relative;
+      bottom: 40px;
+      margin-bottom: -40px;
+    }
+
+    .cart-controls {
+      max-width: 290px;
+    }
+  }
+}

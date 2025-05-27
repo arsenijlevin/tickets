@@ -12,6 +12,7 @@ export default defineConfig({
         index: resolve(__dirname, "pages/index/index.html"),
         order: resolve(__dirname, "pages/order/order.html"),
         films: resolve(__dirname, "pages/films/films.html"),
+        all: resolve(__dirname, "pages/all/all.html"),
       },
       output: {
         entryFileNames: ({ name }) => `pages/${name}/[name].js`,
