@@ -32,10 +32,6 @@
     user-select: none;
   }
 
-  .offer:not(:first-of-type) .offer__header {
-    border-top: 5px solid black;
-  }
-
   .offer-item__full-description {
     display: flex;
     flex-direction: column;
