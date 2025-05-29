@@ -990,6 +990,8 @@ button.btn-related-product__add-to-cart:hover {
   display: flex;
   justify-content: space-between;
   user-select: none;
+}
+.films-offers-section .offer:not(:first-of-type) .offer__header {
   border-top: 5px solid black;
 }
 .films-offers-section .offer-item__full-description {
