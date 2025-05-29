@@ -39,7 +39,7 @@
     border-bottom: 0;
   }
 
-  .offer:not(:first-child) .offer__header {
+  .offer:not(:first-of-type) .offer__header {
     border-top: 5px solid black;
   }
 }

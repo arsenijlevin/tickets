@@ -47,6 +47,12 @@
     left: 103px;
     width: calc(100% - 206px);
   }
+
+  @media (width >= $laptop-md) {
+    max-width: 290px;
+    right: 103px;
+    left: unset;
+  }
 }
 
 @keyframes fade-in-slide-up {
@@ -68,6 +74,10 @@
 }
 
 .offers-section {
+  & > br {
+    display: none;
+  }
+
   .offer__header,
   .offer-item {
     border-bottom: 3px solid black;
@@ -106,7 +116,7 @@
       border-bottom: 0;
     }
 
-    .offer:not(:first-child) .offer__header {
+    .offer:not(:first-of-type) .offer__header {
       border-top: 5px solid black;
     }
   }
@@ -377,14 +387,14 @@
     transform: rotate(180deg); /* or 90deg if you prefer */
   }
 
-  .main-content p.out-of-stock-text {
+  p.out-of-stock-text {
     font-size: 23px !important;
     line-height: 23px !important;
     font-weight: normal !important;
   }
 
   @media (width >= $mobile-md) {
-    .main-content p.out-of-stock-text {
+    p.out-of-stock-text {
       font-size: 30px !important;
       line-height: 30px !important;
       font-weight: normal !important;

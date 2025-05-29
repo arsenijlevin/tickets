@@ -28,8 +28,8 @@ a.cart-overlay {
   filter: invert(1);
   position: fixed;
   z-index: -1;
-  right: 20px;
-  top: calc(20px + 107px);
+  right: 24px;
+  bottom: calc(53px + 20px);
   padding: 20px;
   background-color: #fff;
   display: flex;
@@ -53,17 +53,26 @@ a.cart-overlay {
   }
 
   @media (width >= $mobile-md) {
+    right: 63px;
+  }
+
+  @media (width >= $laptop-sm) {
+    right: 103px;
+  }
+
+  @media (width >= $laptop-md) {
+    max-width: 290px;
+  }
+
+  @media (width >= $mobile-md) {
     > span {
       display: block;
     }
   }
 
-  @media (width >= $mobile-md) {
-    right: 40px;
-  }
-
-  @media (width >= $laptop-sm) {
-    right: 80px;
+  @media (width >= 992px) {
+    top: 20px;
+    bottom: unset;
   }
 
   &:hover {

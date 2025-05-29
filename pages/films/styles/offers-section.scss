@@ -50,7 +50,7 @@
   }
 }
 
-.offer:not(:first-child) {
+.offer:not(:first-of-type) {
   margin-top: 40px;
 }
 
@@ -63,7 +63,7 @@
     padding-left: 8px;
     padding-right: 8px;
 
-    &:not(:last-child) {
+    &:not(:last-of-type) {
       border-bottom: 3px solid #000;
       padding-bottom: 20px;
     }
