@@ -530,6 +530,9 @@ a.cart-overlay:hover {
   flex: 1 0 150px;
   max-width: 150px;
 }
+.cart-item__image img {
+  max-width: 100%;
+}
 
 .cart-item__title {
   display: flex;
