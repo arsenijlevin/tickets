@@ -16,11 +16,15 @@
 
   @media (width >= $laptop-sm) {
     flex-flow: row wrap;
-    gap: 20px;
+    gap: 60px;
 
     > * {
       flex: 1;
     }
+  }
+
+  @media (width >= $laptop-lg) {
+    gap: 100px;
   }
 }
 
