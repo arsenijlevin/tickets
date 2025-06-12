@@ -1230,7 +1230,7 @@ body {
   flex-direction: column;
   gap: 40px;
 }
-.main-content h1 {
+.main-content:not(.checkout-section) h1 {
   font-family: PragmaticaNew, sans-serif;
   font-weight: bold;
   font-style: normal;
@@ -1238,7 +1238,7 @@ body {
   line-height: 30px;
   letter-spacing: -0.9px;
 }
-.main-content p {
+.main-content:not(.checkout-section) p {
   font-family: PragmaticaNew, sans-serif;
   font-weight: normal;
   font-style: normal;
@@ -1246,13 +1246,13 @@ body {
   line-height: 17.6px;
   letter-spacing: -0.1px;
 }
-.main-content ul {
+.main-content:not(.checkout-section) ul {
   display: flex;
   flex-direction: column;
   gap: 5px;
   padding-left: 23px;
 }
-.main-content li {
+.main-content:not(.checkout-section) li {
   font-family: PragmaticaNew, sans-serif;
   font-weight: bold;
   font-style: normal;
@@ -1261,7 +1261,7 @@ body {
   letter-spacing: -0.1px;
   font-weight: normal;
 }
-.main-content ul li::marker {
+.main-content:not(.checkout-section) ul li::marker {
   font-size: 9px;
   color: #000;
 }

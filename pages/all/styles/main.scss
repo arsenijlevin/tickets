@@ -14,41 +14,43 @@ body {
   flex-direction: column;
   gap: 40px;
 
-  h1 {
-    @include pragmatica-bold;
+  &:not(.checkout-section) {
+    h1 {
+      @include pragmatica-bold;
 
-    font-size: 30px;
-    line-height: 30px;
-    letter-spacing: -0.9px;
-  }
+      font-size: 30px;
+      line-height: 30px;
+      letter-spacing: -0.9px;
+    }
 
-  p {
-    @include pragmatica-book;
+    p {
+      @include pragmatica-book;
 
-    font-size: 16px;
-    line-height: 17.6px;
-    letter-spacing: -0.1px;
-  }
+      font-size: 16px;
+      line-height: 17.6px;
+      letter-spacing: -0.1px;
+    }
 
-  ul {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    padding-left: 23px;
-  }
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      padding-left: 23px;
+    }
 
-  li {
-    @include pragmatica-bold;
+    li {
+      @include pragmatica-bold;
 
-    font-size: 16px;
-    line-height: 18px;
-    letter-spacing: -0.1px;
-    font-weight: normal;
-  }
+      font-size: 16px;
+      line-height: 18px;
+      letter-spacing: -0.1px;
+      font-weight: normal;
+    }
 
-  ul li::marker {
-    font-size: 9px;
-    color: #000;
+    ul li::marker {
+      font-size: 9px;
+      color: #000;
+    }
   }
 }
 
