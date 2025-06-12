@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /** Reset CSS */
 *,
 *::before,
@@ -502,7 +503,7 @@ a.cart-overlay:hover {
 }
 @media (width >= 1024px) {
   .cart-item {
-    min-width: calc(50% - 20px);
+    min-width: 100% ж;
   }
 }
 
