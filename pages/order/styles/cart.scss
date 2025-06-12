@@ -51,6 +51,10 @@
 .cart-item__image {
   flex: 1 0 150px;
   max-width: 150px;
+
+  img {
+    max-width: 100%;
+  }
 }
 
 .cart-item__title {
