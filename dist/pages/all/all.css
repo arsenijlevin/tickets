@@ -407,6 +407,7 @@ a.cart-overlay:hover {
   .hero-text,
   .hero-image {
     display: flex;
+    align-items: flex-start;
   }
 }
 
